@@ -1,0 +1,9 @@
+[book]
+authors = ["zzy"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "舌尖上的 Rust"
+
+[output.html]
+theme = "theme"
