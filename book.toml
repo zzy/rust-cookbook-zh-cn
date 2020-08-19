@@ -1,9 +1,31 @@
 [book]
+title = "舌尖上的 Rust"
 authors = ["zzy"]
 language = "zh"
-multilingual = false
+description = "舌尖上的 Rust, Rust 生态, Rust crate 集成应用, Rust crate 优秀实践指南"
 src = "src"
-title = "舌尖上的 Rust"
+multilingual = false
+
+# [build]
+# build-dir = "docs"
 
 [output.html]
 theme = "theme"
+# default-theme = "rust"
+git-repository-url = "https://github.com/zzy/rust-cookbook-zh-cn"
+curly-quotes = true
+mathjax-support = true
+
+[output.html.playpen]
+editable = true
+copy-js = true
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true

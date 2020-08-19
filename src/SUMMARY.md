@@ -1,6 +1,6 @@
 # Summary
 
-[Table of Contents](intro.md)
+[舌尖上的 Rust](intro.md)
 [About](about.md)
 - [Algorithms](algorithms.md)
   - [Generate Random Values](algorithms/randomness.md)
