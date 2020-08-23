@@ -1,5 +1,5 @@
 [book]
-title = "舌尖上的 Rust"
+title = "舌尖上的 Rust - A Rust Cookbook"
 authors = ["zzy"]
 language = "zh"
 description = "rust-cookbook 中文, 舌尖上的 Rust, Rust 生态, Rust crate 集成应用, Rust crate 优秀实践指南"
