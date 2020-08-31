@@ -1,6 +1,6 @@
 # Summary
 
-[舌尖上的 Rust](intro.md)
+[Rust 编程实战](intro.md)
 [About](about.md)
 - [Algorithms](algorithms.md)
   - [Generate Random Values](algorithms/randomness.md)

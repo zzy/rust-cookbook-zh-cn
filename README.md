@@ -1,4 +1,4 @@
-# 舌尖上的 Rust &emsp; [![Build Status travis]][travis]
+# Rust 编程实战 &emsp; [![Build Status travis]][travis]
 
 [Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
 [travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
