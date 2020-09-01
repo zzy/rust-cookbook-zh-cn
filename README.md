@@ -1,9 +1,9 @@
-# Rust 编程实战 &emsp; [![Build Status travis]][travis]
+# 舌尖上的 Rust &emsp; [![Build Status travis]][travis]
 
 [Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
 [travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
 
-**[Read it here]**.
+**《舌尖上的 Rust》** [在线阅读 - https://books.budshome.com/rust-cookbook](https://books.budshome.com/rust-cookbook)。
 
 This _Rust Cookbook_ is a collection of simple [Rust] examples that
 demonstrate good practices to accomplish common programming tasks,
@@ -31,7 +31,6 @@ $ start .\book\index.html    # windows
 $ open ./book/index.html     # mac
 ```
 
-[Read it here]: https://rust-lang-nursery.github.io/rust-cookbook
 [Rust]: https://www.rust-lang.org/
 
 ## Contributing

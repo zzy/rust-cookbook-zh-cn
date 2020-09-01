@@ -1,7 +1,7 @@
 # Summary
 
-[Rust 编程实战](intro.md)
-[About](about.md)
+[舌尖上的 Rust](intro.md)
+[关于本书](about.md)
 - [Algorithms](algorithms.md)
   - [Generate Random Values](algorithms/randomness.md)
   - [Sort a Vector](algorithms/sorting.md)

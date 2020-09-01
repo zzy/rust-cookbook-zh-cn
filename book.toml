@@ -1,8 +1,8 @@
 [book]
-title = "Rust 编程实战 - A Rust Cookbook"
+title = "舌尖上的 Rust - A Rust Cookbook"
 authors = ["zzy"]
 language = "zh"
-description = "rust-cookbook 中文, Rust 编程实战, Rust crate 生态实践, Rust crate 集成应用"
+description = "舌尖上的 Rust, rust-cookbook 中文版, Rust 示例实例, Rust 编程实战, Rust crate 生态实践, Rust crate 集成应用"
 src = "src"
 multilingual = true
 

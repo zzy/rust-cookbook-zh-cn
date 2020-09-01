@@ -1,6 +1,6 @@
-# About "Cookin' with Rust"
+# 关于“用 Rust 做菜”
 
-## Table of contents
+## 目录
 
 - [Who this book is for](#who-this-book-is-for)
 - [How to read this book](#how-to-read-this-book)
