@@ -52,7 +52,7 @@ cargo new my-example --bin
 cd my-example
 ```
 
-然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://books.budshome.com/cargo/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面示例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
+然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：了解更多请阅读 [Cargo 中文文档](https://books.budshome.com/cargo)，关于 Cargo.toml 详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://books.budshome.com/cargo/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面示例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
 
 ```sh
 cargo install cargo-edit
