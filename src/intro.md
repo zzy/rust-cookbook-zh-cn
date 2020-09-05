@@ -1,22 +1,18 @@
 # 舌尖上的 Rust
 
-## 翻译中，即将发布
+> [intro.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/intro.md)
+> <br />
+> commit - a79932c9a624fd17977eaea5df3d5a9600d014f6 - 2018.12.05
 
-This _Rust Cookbook_ is a collection of
-simple examples that demonstrate good practices to accomplish common
-programming tasks, using the crates of the Rust ecosystem.
+《舌尖上的 Rust》是 Rust（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)） 程序设计语言的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 
-[Read more about _Rust Cookbook_](about.html), including tips for
-how to read the book, how to use the examples, and notes on conventions.
+了解更多关于《舌尖上的 Rust》一书的信息，请阅读[关于本手册](about.md)，包括：如何阅读本书的提示、如何使用实例示例，以及关于注释的约定。
 
-## Contributing
+## 做贡献
 
-This project is intended to be easy for new Rust programmers to
-contribute to, and an easy way to get involved with the Rust
-community. It needs and welcomes help. For details see
-[CONTRIBUTING.md].
+《舌尖上的 Rust》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎你做出自己力所能及的贡献。
 
-[CONTRIBUTING.md]: https://github.com/rust-lang-nursery/rust-cookbook/blob/master/CONTRIBUTING.md
+祝你学习愉快，欢迎提交问题，欢迎发送 PR。
 
 {{#include algorithms.md}}
 
