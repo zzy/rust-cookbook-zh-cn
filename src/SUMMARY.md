@@ -7,7 +7,7 @@
 -->
 
 [Rust 实例手册](intro.md)
-[关于本手册](about.md)
+[关于手册](about.md)
 - [算法](algorithms.md)
   - [生成随机值](algorithms/randomness.md)
   - [对向量排序](algorithms/sorting.md)
