@@ -3,7 +3,7 @@
 [Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
 [travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
 
-《Rust 实例手册》是 Rust（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)） 程序设计语言的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
+《Rust 实例手册》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 
 书中的实例都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://books.budshome.com/cargo)）项目中进行使用。
 
