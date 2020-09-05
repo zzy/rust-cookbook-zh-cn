@@ -1,22 +1,22 @@
 # 关于“用 Rust 做菜”
 
+> [about.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/about.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+
 ## 目录
 
-- [Who this book is for](#who-this-book-is-for)
-- [How to read this book](#how-to-read-this-book)
-- [How to use the recipes](#how-to-use-the-recipes)
-- [A note about error handling](#a-note-about-error-handling)
-- [A note about crate representation](#a-note-about-crate-representation)
+- [本书目标读者](#本书目标读者)
+- [如何阅读本书](#如何阅读本书)
+- [如何使用例子](#如何使用例子)
+- [关于错误处理](#关于错误处理)
+- [关于 crate 的说明](#关于-crate-的说明)
 
-## Who this book is for
+## 本书目标读者
 
-This cookbook is intended for new Rust programmers, so that they may
-quickly get an overview of the capabilities of the Rust crate
-ecosystem. It is also intended for experienced Rust programmers, who
-should find in the recipes an easy reminder of how to accomplish
-common tasks.
+本手册适用于 Rust 程序员新手，以便于他们可以快速了解 Rust crate 生态系统的功能。同时，本手册也适用于经验丰富的 Rust 程序员，他们可以在本手册中找到如何完成常见任务的简单提示。
 
-## How to read this book
+## 如何阅读本书
 
 The cookbook [index] contains the full list of recipes, organized into
 a number of sections: "basics", "encoding", "concurrency", etc.  The
@@ -42,7 +42,7 @@ a specific recipe is to scan the index looking for the crates and
 categories one is interested in. From there, click on the name of the
 recipe to view it. This will improve in the future.
 
-## How to use the recipes
+## 如何使用例子
 
 Recipes are designed to give you instant access to working code, along
 with a full explanation of what it is doing, and to guide you to
@@ -95,7 +95,7 @@ The crate badges that accompany the examples link to the crates' full
 documentation on [docs.rs], and is often the next documentation you
 should read after deciding which crate suites your purpose.
 
-## A note about error handling
+## 关于错误处理
 
 Error handling in Rust is robust when done correctly, but in today's
 Rust it requires a fair bit of boilerplate. Because of this one often
@@ -169,7 +169,7 @@ fn main() -> Result<()> {
 For more background on error handling in Rust, read [this page of the
 Rust book][error-docs] and [this blog post][error-blog].
 
-## A note about crate representation
+## 关于 crate 的说明
 
 This cookbook is intended eventually to provide expansive coverage of
 the Rust crate ecosystem, but today is limited in scope while we get
