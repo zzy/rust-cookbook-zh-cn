@@ -12,11 +12,11 @@
 | [生成范围内随机数][ex-rand-range] | [![rand-badge]][rand] | [![cat-science-badge]][cat-science] |
 | [生成给定分布随机数][ex-rand-dist] | [![rand-badge]][rand] [![rand_distr-badge]][rand_distr] | [![cat-science-badge]][cat-science] |
 | [生成自定义类型随机值][ex-rand-custom] | [![rand-badge]][rand] | [![cat-science-badge]][cat-science] |
-| [从一组字母/数字字符创建随机密码][ex-rand-passwd] | [![rand-badge]][rand] | [![cat-os-badge]][cat-os] |
+| [从一组字母数字字符创建随机密码][ex-rand-passwd] | [![rand-badge]][rand] | [![cat-os-badge]][cat-os] |
 | [从一组用户定义字符创建随机密码][ex-rand-choose] | [![rand-badge]][rand] | [![cat-os-badge]][cat-os] |
-| [对整数向量排序][ex-sort-integers] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
-| [对浮点数向量排序][ex-sort-floats] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
-| [对结构体向量排序][ex-sort-structs] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
+| [整数 Vector 排序][ex-sort-integers] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
+| [浮点数 Vector 排序][ex-sort-floats] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
+| [结构体 Vector 排序][ex-sort-structs] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
 
 [ex-rand]: algorithms/randomness.md#generate-random-numbers
 [ex-rand-range]: algorithms/randomness.md#generate-random-numbers-within-a-range

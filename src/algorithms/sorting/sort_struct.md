@@ -1,11 +1,16 @@
-## Sort a Vector of Structs
+## 结构体 Vector 排序
+
+<!--
+> [algorithms/sorting/sort_struct.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/sorting/sort_struct.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-Sorts a Vector of Person structs with properties `name` and `age` by its natural
-order (By name and age). In order to make Person sortable you need four traits [`Eq`],
-[`PartialEq`], [`Ord`] and [`PartialOrd`]. These traits can be simply derived.
-You can also provide a custom comparator function using a [`vec:sort_by`] method and sort only by age.
+按其自然顺序(按名称和年龄)对带有属性名称和年龄的Person结构体向量进行排序。为了使人有条理，你需要四个特质情商，情商，情商和情商。这些特性可以简单地推导出来。您还可以使用vec提供一个自定义比较器函数:按方法排序和仅按年龄排序。
+
+依据自然顺序（按名称和年龄），对具有 `name` 和 `age` 属性的 Person 结构体 Vector 排序。为了使 Person 可排序，你需要四个 traits：[`Eq`]、[`PartialEq`]、[`Ord`]，以及 [`PartialOrd`]。这些 traits 可以被简单地派生。你也可以使用 [`vec:sort_by`] 方法自定义比较函数，仅按照年龄排序。
 
 ```rust,edition2018
 #[derive(Debug, Eq, Ord, PartialEq, PartialOrd)]

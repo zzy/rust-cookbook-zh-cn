@@ -1,10 +1,16 @@
-## Sort a Vector of Integers
+## 整数 Vector 排序
+
+<!--
+> [algorithms/sorting/sort.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/sorting/sort.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-This example sorts a Vector of integers via [`vec::sort`]. Alternative would
-be to use [`vec::sort_unstable`] which can be faster, but does not preserve
-the order of equal elements.
+此示例通过vec:：sort对整数向量进行排序。另一种方法是使用vec:：sort_unstable，它可以更快，但不保留相等元素的顺序。
+
+这个例子通过 [`vec::sort`] 对一个整数 Vector 进行排序。另一种方法是使用 [`vec::sort_unstable`]，后者运行速度更快一些，但不保持相等元素的顺序。
 
 ```rust,edition2018
 fn main() {

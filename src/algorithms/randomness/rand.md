@@ -8,11 +8,7 @@
 
 [![rand-badge]][rand] [![cat-science-badge]][cat-science]
 
-Generates random numbers with help of random-number
-generator [`rand::Rng`] obtained via [`rand::thread_rng`]. Each thread has an
-initialized generator. Integers are uniformly distributed over the range of the
-type, and floating point numbers are uniformly distributed from 0 up to but not
-including 1.
+在随机数生成器 [`rand::Rng`] 的帮助下，通过 [`rand::thread_rng`] 生成随机数。每个线程都有一个初始化的生成器。整数在其类型范围内均匀分布，浮点数是从 0 均匀分布到 1，但不包括 1。
 
 ```rust,edition2018
 use rand::Rng;

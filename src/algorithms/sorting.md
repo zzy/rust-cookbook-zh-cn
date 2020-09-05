@@ -1,4 +1,4 @@
-# 对向量排序
+# Vector 排序
 
 <!--
 > [algorithms/sorting.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/sorting.md)

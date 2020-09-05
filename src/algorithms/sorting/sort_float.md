@@ -1,8 +1,14 @@
-## Sort a Vector of Floats 
+## 浮点数 Vector 排序
+
+<!--
+> [algorithms/sorting/sort_float.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/sorting/sort_float.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-A Vector of f32 or f64 can be sorted with [`vec::sort_by`] and [`PartialOrd::partial_cmp`].
+f32 或 f64 的 vector，可以使用 [`vec::sort_by`] 和 [`PartialOrd::partial_cmp`] 对其进行排序。
 
 ```rust,edition2018
 fn main() {

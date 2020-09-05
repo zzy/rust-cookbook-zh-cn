@@ -1,9 +1,14 @@
-## Generate random values of a custom type
+## 生成自定义类型随机值
+
+<!--
+> [algorithms/randomness/rand-custom.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/randomness/rand-custom.md)
+> <br />
+> commit - 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
 
 [![rand-badge]][rand] [![cat-science-badge]][cat-science]
 
-Randomly generates a tuple `(i32, bool, f64)` and variable of user defined type `Point`.
-Implements the [`Distribution`] trait on type Point for [`Standard`] in order to allow random generation.
+随机生成一个元组 `(i32, bool, f64)` 和用户定义类型为 `Point` 的变量。为  [`Standard`]  实现 [`Distribution`] trait，以允许随机生成。
 
 ```rust,edition2018
 use rand::Rng;
