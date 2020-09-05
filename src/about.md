@@ -96,10 +96,10 @@ error_chain! {
 fn main() -> Result<()> {
     let bytes = b"2001:db8::1";
 
-    // Bytes to string.
+    // Bytes 格式化为 string
     let s = str::from_utf8(bytes)?;
 
-    // String to IP address.
+    // String 解析为 IP address
     let addr: IpAddr = s.parse()?;
 
     println!("{:?}", addr);

@@ -1,4 +1,10 @@
 <!--
+> [links.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/links.md)
+> <br />
+> commit - 7a06c79008f3998fc03d23c56aee885ddcf366ac - 2020.05.05
+-->
+
+<!--
 Links, in a few categories. Follow the existing structure.
 Keep lines sorted.
 -->

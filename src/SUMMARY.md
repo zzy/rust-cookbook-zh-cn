@@ -10,7 +10,7 @@
 [关于手册](about.md)
 - [算法](algorithms.md)
   - [生成随机值](algorithms/randomness.md)
-  - [对向量排序](algorithms/sorting.md)
+  - [Vector 排序](algorithms/sorting.md)
 - [命令行](cli.md)
   - [参数解析](cli/arguments.md)
   - [ANSI 终端](cli/ansi_terminal.md)
