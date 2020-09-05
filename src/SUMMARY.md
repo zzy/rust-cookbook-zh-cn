@@ -1,7 +1,13 @@
-# 纲要
+# 舌尖上的 Rust
+
+<!--
+> [SUMMARY.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/SUMMARY.md)
+> <br />
+> commit c5f6880ac0c514faf863aa7e86007fda0dd5e0bb - 2019.01.11
+-->
 
 [舌尖上的 Rust](intro.md)
-[关于本书](about.md)
+[关于本手册](about.md)
 - [算法](algorithms.md)
   - [生成随机值](algorithms/randomness.md)
   - [对向量排序](algorithms/sorting.md)
