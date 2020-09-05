@@ -3,27 +3,28 @@
 [Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
 [travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
 
-**《舌尖上的 Rust》** [在线阅读 - https://books.budshome.com/rust-cookbook](https://books.budshome.com/rust-cookbook)。
+《舌尖上的 Rust》是 [Rust] 程序设计语言的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 
-This _Rust Cookbook_ is a collection of simple [Rust] examples that
-demonstrate good practices to accomplish common programming tasks,
-using the crates of the Rust ecosystem.
+书中的例子都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://books.budshome.com/cargo)）项目中进行使用。
 
-These examples are complete, and suitable for copying directly into
-new cargo projects. They are tested and guaranteed to work.
+> 注：《舌尖上的 Rust》翻译自 rust-lang-nursery 组织撰写的 [_"A Rust Cookbook"_](https://github.com/rust-lang-nursery/rust-cookbook)，感谢 rust-lang-nursery 组织的无私奉献！
 
-## Read it offline
+## 在线阅读
 
-If you'd like to read it locally:
+在线阅读地址：[**《舌尖上的 Rust》** - https://books.budshome.com/rust-cookbook](https://books.budshome.com/rust-cookbook)。
+
+## 离线阅读
+
+如果你喜欢本地阅读方式，可以使用 mdBook（[中文文档](https://books.budshome.com/mdbook)） 进行书籍构建：
 
 ```bash
-$ git clone https://github.com/rust-lang-nursery/rust-cookbook
-$ cd rust-cookbook
-$ cargo install mdbook --vers "0.3.5"
-$ mdbook serve --open
+$ git clone https://github.com/zzy/rust-cookbook-zh-cn
+$ cd rust-cookbook-zh-cn
+$ cargo install mdbook # 指定版本使用参数：--vers "0.3.5"
+$ mdbook serve --open # 或者 mdbook build
 ```
 
-The output can also be opened from the `book` subdirectory in your web browser.
+也可以直接用你喜欢的浏览器从 `book` 子目录打开 `index.html` 文件。
 
 ```bash
 $ xdg-open ./book/index.html # linux
@@ -31,27 +32,16 @@ $ start .\book\index.html    # windows
 $ open ./book/index.html     # mac
 ```
 
-[Rust]: https://www.rust-lang.org/
+## 测试
 
-## Contributing
+如果欲运行构建本书的测试组件，请执行：
 
-This project is intended to be easy for new [Rust] programmers to
-contribute to, and an easy way to get involved with the Rust
-community. It needs and welcomes help.
+> 测试组件需要安装一些 crate，中国大陆推荐[更换默认的 Cargo 源为国内镜像源](https://books.budshome.com/cargo/reference/source-replacement.html)。
 
-For details see [CONTRIBUTING.md] on GitHub.
+```bash
+$ cargo test
+```
 
-[CONTRIBUTING.md]: https://github.com/rust-lang-nursery/rust-cookbook/blob/master/CONTRIBUTING.md
+[Rust]: https://www.rust-lang.org/zh-CN
 
-## License [![CC0-badge]][CC0-deed]
-
-Rust Cookbook is licensed under Creative Commons Zero v1.0 Universal License
-([LICENSE-CC0](LICENSE-CC0) or https://creativecommons.org/publicdomain/zero/1.0/legalcode)
-
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in Rust Cookbook by you, as defined in the CC0-1.0 license, shall be
-[dedicated to the public domain][CC0-deed] and licensed as above, without any additional
-terms or conditions.
-
-[CC0-deed]: https://creativecommons.org/publicdomain/zero/1.0/deed.en
-[CC0-badge]: https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg
+祝你学习愉快，欢迎提交问题，欢迎发送 PR。
