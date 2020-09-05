@@ -1,8 +1,10 @@
 # Rust 实例手册
 
+<!--
 > [intro.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/intro.md)
 > <br />
 > commit - a79932c9a624fd17977eaea5df3d5a9600d014f6 - 2018.12.05
+-->
 
 《Rust 实例手册》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 

@@ -1,8 +1,10 @@
 # 关于手册
 
+<!--
 > [about.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/about.md)
 > <br />
 > commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 ## 目录
 

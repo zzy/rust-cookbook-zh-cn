@@ -1,4 +1,10 @@
-## Generate random numbers
+## 生成随机数
+
+<!--
+> [algorithms/randomness/rand.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/randomness/rand.md)
+> <br />
+> commit - c6d6b58835980bd307a5974c6742cedf3cca022c - 2018.09.20
+-->
 
 [![rand-badge]][rand] [![cat-science-badge]][cat-science]
 

@@ -1,8 +1,10 @@
 # 算法
 
+<!--
 > [algorithms.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms.md)
 > <br />
 > commit - 2eee7043988e4289f16b5deca9f3b36e2516362b - 2020.04.18
+-->
 
 | 实例 | Crates | 类别 |
 |--------|--------|------------|
