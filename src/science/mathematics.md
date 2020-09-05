@@ -1,4 +1,4 @@
-## Mathematics
+## 数学
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

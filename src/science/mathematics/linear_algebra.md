@@ -1,4 +1,4 @@
-# Linear Algebra
+# 线性代数
 
 {{#include linear_algebra/add-matrices.md}}
 {{#include linear_algebra/multiply-matrices.md}}

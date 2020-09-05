@@ -1,4 +1,4 @@
-# Data Structures
+# 数据结构
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

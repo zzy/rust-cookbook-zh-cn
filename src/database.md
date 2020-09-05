@@ -1,4 +1,4 @@
-# Database
+# 数据库
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

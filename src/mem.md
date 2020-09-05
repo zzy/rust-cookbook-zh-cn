@@ -1,4 +1,4 @@
-# Memory Management
+# 内存管理
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

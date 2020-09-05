@@ -1,4 +1,4 @@
-# Trigonometry
+# 三角学
 
 {{#include trigonometry/side-length.md}}
 {{#include trigonometry/tan-sin-cos.md}}

@@ -1,4 +1,4 @@
-# Extracting Links
+# 链接萃取
 
 {{#include scraping/extract-links.md}}
 

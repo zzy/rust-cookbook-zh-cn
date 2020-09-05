@@ -1,4 +1,4 @@
-## Debugging
+## 调试工具
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

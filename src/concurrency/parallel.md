@@ -1,4 +1,4 @@
-# Parallel Tasks
+# 数据并行
 
 {{#include parallel/rayon-iter-mut.md}}
 

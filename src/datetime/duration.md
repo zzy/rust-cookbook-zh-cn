@@ -1,4 +1,4 @@
-# Duration and Calculation
+# 期间和计算
 
 {{#include duration/profile.md}}
 

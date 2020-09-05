@@ -1,4 +1,4 @@
-# Algorithms
+# 算法
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

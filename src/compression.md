@@ -1,4 +1,4 @@
-# Compression
+# 压缩
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

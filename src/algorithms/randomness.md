@@ -1,4 +1,4 @@
-# Generate Random Values
+# 生成随机值
 
 {{#include randomness/rand.md}}
 

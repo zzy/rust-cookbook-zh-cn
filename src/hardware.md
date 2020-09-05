@@ -1,4 +1,4 @@
-# Hardware Support
+# 硬件支持
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

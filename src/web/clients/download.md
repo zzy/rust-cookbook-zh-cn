@@ -1,4 +1,4 @@
-# Downloads
+# 下载
 
 {{#include download/basic.md}}
 

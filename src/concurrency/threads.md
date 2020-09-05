@@ -1,4 +1,4 @@
-# Threads
+# 显式线程
 
 {{#include thread/crossbeam-spawn.md}}
 

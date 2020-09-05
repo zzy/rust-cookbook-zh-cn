@@ -1,4 +1,4 @@
-# Structured Data
+# 结构化资料
 
 {{#include complex/json.md}}
 

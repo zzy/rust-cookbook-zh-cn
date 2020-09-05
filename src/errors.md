@@ -1,4 +1,4 @@
-# Error Handling
+# 错误处理
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

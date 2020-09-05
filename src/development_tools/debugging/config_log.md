@@ -1,4 +1,4 @@
-# Configure Logging
+# 日志配置
 
 {{#include config_log/log-mod.md}}
 

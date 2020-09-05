@@ -1,4 +1,4 @@
-# Media Types
+# 媒介类型
 
 {{#include mime/string.md}}
 

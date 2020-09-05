@@ -1,4 +1,4 @@
-# Development Tools
+# 开发工具
 
 {{#include development_tools/debugging.md}}
 

@@ -1,4 +1,4 @@
-# Hashing
+# 散列（哈希）
 
 {{#include hashing/sha-digest.md}}
 

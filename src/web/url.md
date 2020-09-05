@@ -1,4 +1,4 @@
-# Uniform Resource Location
+# URL
 
 {{#include url/parse.md}}
 

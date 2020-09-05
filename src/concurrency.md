@@ -1,4 +1,4 @@
-# Concurrency
+# 并发
 
 | Recipe | Crates | Categories |
 |--------|--------|------------|

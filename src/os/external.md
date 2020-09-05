@@ -1,4 +1,4 @@
-# External Command
+# 外部命令
 
 {{#include external/process-output.md}}
 
