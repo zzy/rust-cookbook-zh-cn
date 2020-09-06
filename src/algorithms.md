@@ -6,7 +6,7 @@
 > commit - 2eee7043988e4289f16b5deca9f3b36e2516362b - 2020.04.18
 -->
 
-| 实例 | Crates | 类别 |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [生成随机数][ex-rand] | [![rand-badge]][rand] | [![cat-science-badge]][cat-science] |
 | [生成范围内随机数][ex-rand-range] | [![rand-badge]][rand] | [![cat-science-badge]][cat-science] |

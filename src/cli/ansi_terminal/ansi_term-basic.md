@@ -1,14 +1,20 @@
-## ANSI Terminal
+## ANSI 终端
+
+<!--
+> [cli/ansi_terminal/ansi_term-basic.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/cli/ansi_terminal/ansi_term-basic.md)
+> <br />
+> commit - ffaa6acec85e1837558384cc7ac191715931f8c9 - 2018.06.14
+-->
 
 [![ansi_term-badge]][ansi_term] [![cat-command-line-badge]][cat-command-line]
 
-This program depicts the use of [`ansi_term`] crate and how it is used for controlling colours and formatting, such as blue bold text or yellow underlined text, on ANSI terminals.
+此程序描述了 [`ansi_term`] crate 的使用方法，以及它如何用于控制 ANSI 终端上的颜色和格式，如蓝色粗体文本或黄色下划线文本。
 
-There are two main data structures in [`ansi_term`]: [`ANSIString`] and [`Style`]. A [`Style`] holds stylistic information: colours, whether the text should be bold, or blinking, or whatever. There are also Colour variants that represent simple foreground colour styles. An [`ANSIString`] is a string paired with a [`Style`].
+[`ansi_term`] 中有两种主要的数据结构：[`ANSIString`] 和 [`Style`]。[`Style`] 包含样式信息：颜色，是否粗体文本，或者是否闪烁，或者其他样式。也有 Colour 变体，代表简单的前景色样式。[`ANSIString`] 是与 [`Style`] 配对的字符串。
 
-**Note:** British English uses *Colour* instead of *Color*, don't get confused
+**注意**：英式英语中使用 *Colour* 而不是 *Color*，不要混淆。
 
-### Printing colored text to the Terminal
+### 打印彩色文本到终端
 
 ```rust,edition2018
 use ansi_term::Colour;
@@ -21,11 +27,9 @@ fn main() {
 }
 ```
 
-### Bold text in Terminal
+### 终端中的粗体文本
 
-For anything more complex than plain foreground colour changes, the code
-needs to construct `Style` struct. [`Style::new()`] creates the struct,
-and properties chained.
+对于比简单的前景色变化更复杂的事情，代码需要构造 `Style` 结构体。[`Style::new()`] 创建结构体，并链接属性。
 
 ```rust,edition2018
 use ansi_term::Style;
@@ -35,9 +39,9 @@ fn main() {
              Style::new().bold().paint("This is Bold"));
 }
 ```
-### Bold and colored text in terminal
+### 终端中的粗体和彩色文本
 
-`Colour` implements many similar functions as `Style` and can chain methods.
+`Colour` 模块实现了许多类似 `Style` 的函数，并且可以链接方法。
 
 ```rust,edition2018
 use ansi_term::Colour;
