@@ -30,5 +30,4 @@ fn main() -> Result<(), NormalError> {
 [`rand::Rng`]: https://docs.rs/rand/*/rand/trait.Rng.html
 [`rand_distr`]: https://docs.rs/rand_distr/*/rand_distr/index.html
 [rand-distributions]: https://docs.rs/rand_distr/*/rand_distr/index.html
-
 [uniform distribution]: https://en.wikipedia.org/wiki/Uniform_distribution_(continuous)

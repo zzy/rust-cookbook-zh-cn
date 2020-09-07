@@ -8,8 +8,6 @@
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-此示例通过vec:：sort对整数向量进行排序。另一种方法是使用vec:：sort_unstable，它可以更快，但不保留相等元素的顺序。
-
 这个实例通过 [`vec::sort`] 对一个整数 Vector 进行排序。另一种方法是使用 [`vec::sort_unstable`]，后者运行速度更快一些，但不保持相等元素的顺序。
 
 ```rust,edition2018
