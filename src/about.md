@@ -20,11 +20,11 @@
 
 ## 如何阅读指南
 
-指南[索引][index]包含完整的实例列表，组织为数个章节：基础、编码、并发等。这些章节基本是按照顺序排列的；后面的章节更深入一些，并且有些实例是在前面章节的概念之上构建。
+指南的[索引][index]包含完整的实例列表，组织为数个章节：基础、编码、并发等。这些章节基本是按照顺序排列的；后面的章节更深入一些，并且有些实例是在前面章节的概念之上构建。
 
 在[索引][index]中，每个章节都包含实例列表。实例名称是要完成任务的简单描述，比如“在一个范围内生成随机数”；每个实例都有标记指示所使用的 _crates_，比如 [![rand-badge]][rand]；以及 crate 在 [crates.io] 上的分类，比如 [![cat-science-badge]][cat-science]。
 
-Rust 程序员新手应该按照由第一章节直至最后章节的顺序来阅读，这种方式易于理解。同时，这样也可以对 crate 生态系统有一个全面的了解。点击索引中的章节标题，或者在侧边栏中导航到指南的章节页面。
+Rust 程序员新手应该按照由第一章节直至最后章节的顺序来阅读，这种方式易于理解书中的实例。同时，这样也可以对 crate 生态系统有一个全面的了解。点击索引中的章节标题，或者在侧边栏中导航到指南的章节页面。
 
 如果你只是在简单地为一个任务的寻找解决方案，那么指南就较难以导航。找到特定实例的最简单的方法是详细查看索引，寻找感兴趣的 crate 及其类别，然后点击实例的名称来阅读它。指南的导航和浏览还在改进，以后或许会有所改善。
 
@@ -54,14 +54,14 @@ cargo new my-example --bin
 cd my-example
 ```
 
-然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：了解更多请阅读 [Cargo 中文文档](https://books.budshome.com/cargo)，关于 Cargo.toml 详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://books.budshome.com/cargo/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面示例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
+然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：了解更多请阅读 [Cargo 中文文档](https://books.budshome.com/cargo)，关于 Cargo.toml 详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://books.budshome.com/cargo/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面实例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
 
 ```sh
 cargo install cargo-edit
 cargo add rand
 ```
 
-接下来，可以使用示例代码替换 `src/main.rs` 文件的全部内容，并通过如下命令运行：
+接下来，可以使用实例代码替换 `src/main.rs` 文件的全部内容，并通过如下命令运行：
 
 ```sh
 cargo run
@@ -69,11 +69,11 @@ cargo run
 
 > 亲，成功执行了吧？你已经是一个 Rustacean（Rust 开发者）了！——此处应该有掌声 :-)
 
-上面示例代码顶部的 crate 标志，链接到了 crate 在站点 [docs.rs] 上的完整文档，通常你在决定使用那个 crate 组件后，应该阅读一下它的文档。
+上面实例代码顶部的 crate 标志，链接到了 crate 在站点 [docs.rs] 上的完整文档，通常你在决定使用那个 crate 组件后，应该阅读一下它的文档。
 
 ## 关于错误处理
 
-正确处理时，Rust 中的错误处理是健壮的，但在现今的 Rust 中，它需要大量的模板文件。正因为如此，你会发现 Rust 示例中经常充满了 `unwrap` 调用，而不是正确的错误处理。
+正确处理时，Rust 中的错误处理是健壮的，但在现今的 Rust 中，它需要大量的模板文件。正因为如此，你会发现 Rust 实例中经常充满了 `unwrap` 调用，而不是正确的错误处理。
 
 由于本指南旨在提供原样重用的实例，并鼓励最佳实践。因此当涉及到 `Result` 类型时，它们可以正确地设置错误处理。
 
