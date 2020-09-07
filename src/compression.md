@@ -8,9 +8,9 @@
 
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
-| [解压 tar 文件][ex-tar-decompress] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
-| [压缩目录为 tar 文件][ex-tar-compress] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
-| [解压 tar 文件，同时从路径中删除前缀][ex-tar-strip-prefix] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
+| [解压 tar 包][ex-tar-decompress] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
+| [压缩目录为 tar 包][ex-tar-compress] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
+| [从路径删除前缀时，解压 tar 包][ex-tar-strip-prefix] | [![flate2-badge]][flate2] [![tar-badge]][tar] | [![cat-compression-badge]][cat-compression] |
 
 [ex-tar-decompress]: compression/tar.html#decompress-a-tarball
 [ex-tar-compress]: compression/tar.html#compress-a-directory-into-tarball
