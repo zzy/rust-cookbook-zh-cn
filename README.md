@@ -1,7 +1,7 @@
 # Rust 实践指南 &emsp; [![Build Status travis]][travis]
 
-[Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
-[travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
+[Build Status travis]: https://api.travis-ci.com/zzy/rust-cookbook-zh-cn.svg?branch=master
+[travis]: https://travis-ci.com/zzy/rust-cookbook-zh-cn
 
 《Rust 实践指南》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 

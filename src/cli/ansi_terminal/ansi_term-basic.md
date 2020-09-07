@@ -10,7 +10,7 @@
 
 此程序描述了 [`ansi_term`] crate 的使用方法，以及它如何用于控制 ANSI 终端上的颜色和格式，如蓝色粗体文本或黄色下划线文本。
 
-[`ansi_term`] 中有两种主要的数据结构：[`ANSIString`] 和 [`Style`]。[`Style`] 包含样式信息：颜色，是否粗体文本，或者是否闪烁，或者其他样式。也有 Colour 变体，代表简单的前景色样式。[`ANSIString`] 是与 [`Style`] 配对的字符串。
+[`ansi_term`] 中有两种主要的数据结构：[`ANSIString`] 和 [`Style`]。[`Style`] 包含样式信息：颜色，是否粗体文本，或者是否闪烁，或者其它样式。也有 Colour 变体，代表简单的前景色样式。[`ANSIString`] 是与 [`Style`] 配对的字符串。
 
 **注意**：英式英语中使用 *Colour* 而不是 *Color*，不要混淆。
 
