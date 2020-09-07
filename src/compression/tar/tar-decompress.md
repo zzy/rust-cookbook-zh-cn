@@ -1,11 +1,14 @@
-## Decompress a tarball
+## 解压 tar 包
+
+<!--
+> [compression/tar/tar-decompress.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/compression/tar/tar-decompress.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![flate2-badge]][flate2] [![tar-badge]][tar] [![cat-compression-badge]][cat-compression]
 
-Decompress ([`GzDecoder`]) and
-extract ([`Archive::unpack`]) all files from a compressed tarball
-named `archive.tar.gz` located in the current working directory
-to the same location.
+从当前工作目录中的压缩包 `archive.tar.gz`，解压（[`GzDecoder`]）和提取（[`Archive::unpack`]）所有文件，并放在同一位置。
 
 ```rust,edition2018,no_run
 

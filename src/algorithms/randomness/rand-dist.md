@@ -10,7 +10,7 @@
 
 默认情况下，随机数在 `rand` crate 中是[均匀分布][uniform distribution]。[`rand_distr`] crate 提供其它的分布类型。如要使用，首先实例化一个分布，然后在随机数生成器 [`rand::Rng`] 的帮助下，使用 [`Distribution::sample`] 从该分布中进行采样。
 
-关于更多信息，点击阅读[可用分布文档][rand-distributions]。如下是一个使用[`正态（Normal）`][`Normal`]分布的实例。
+关于更多信息，阅读[可用分布文档][rand-distributions]。如下是一个使用[`正态（Normal）`][`Normal`]分布的实例。
 
 ```rust,edition2018,ignore
 use rand_distr::{Distribution, Normal, NormalError};

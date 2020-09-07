@@ -1,10 +1,14 @@
-## Decompress a tarball while removing a prefix from the paths
+## 从路径移除前缀时，解压 tar 包
+
+<!--
+> [compression/tar/tar-strip-prefix.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/compression/tar/tar-strip-prefix.md)
+> <br />
+> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![flate2-badge]][flate2] [![tar-badge]][tar] [![cat-compression-badge]][cat-compression]
 
-Iterate over the [`Archive::entries`].  Use [`Path::strip_prefix`] to remove
-the specified path prefix (`bundle/logs`).  Finally, extract the [`tar::Entry`]
-via [`Entry::unpack`].
+循环遍历 [`Archive::entries`]。使用 [`Path::strip_prefix`] 移除指定的路径前缀（`bundle/logs`）。最终，通过 [`Entry::unpack`] 提取 [`tar::Entry`]（tar 包中的内容）。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;
