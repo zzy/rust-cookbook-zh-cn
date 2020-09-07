@@ -1,17 +1,17 @@
-# Rust 实例手册 &emsp; [![Build Status travis]][travis]
+# Rust 实践指南 &emsp; [![Build Status travis]][travis]
 
 [Build Status travis]: https://api.travis-ci.com/rust-lang-nursery/rust-cookbook.svg?branch=master
 [travis]: https://travis-ci.com/rust-lang-nursery/rust-cookbook
 
-《Rust 实例手册》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
+《Rust 实践指南》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://books.budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 
 书中的实例都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://books.budshome.com/cargo)）项目中进行使用。
 
-> 注：《Rust 实例手册》翻译自 rust-lang-nursery 组织撰写的 [_"A Rust Cookbook"_](https://github.com/rust-lang-nursery/rust-cookbook)，感谢 rust-lang-nursery 组织的无私奉献！
+> 注：《Rust 实践指南》翻译自 rust-lang-nursery 组织撰写的 [_"A Rust Cookbook"_](https://github.com/rust-lang-nursery/rust-cookbook)，感谢 rust-lang-nursery 组织的无私奉献！
 
 ## 在线阅读
 
-在线阅读地址：[**《Rust 实例手册》** - https://books.budshome.com/rust-cookbook](https://books.budshome.com/rust-cookbook)。
+在线阅读地址：[**《Rust 实践指南》** - https://books.budshome.com/rust-cookbook](https://books.budshome.com/rust-cookbook)。
 
 ## 离线阅读
 
@@ -44,6 +44,6 @@ $ cargo test
 
 ## 贡献
 
-《Rust 实例手册》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎你做出自己力所能及的贡献。
+《Rust 实践指南》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎你做出自己力所能及的贡献。
 
 祝你学习愉快，欢迎提交问题，欢迎发送 PR。
