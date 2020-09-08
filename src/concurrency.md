@@ -1,32 +1,38 @@
 # 并发
 
-| Recipe | Crates | Categories |
+<!--
+> [concurrency.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency.md)
+> <br />
+> commit 3c32c84475a2d99aa1d1b2d5d2e480aeada47293 - 2020.06.07
+-->
+
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
-| [Spawn a short-lived thread][ex-crossbeam-spawn] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Create a parallel data pipeline][ex-crossbeam-pipeline] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Pass data between two threads][ex-crossbeam-spsc] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Maintain global mutable state][ex-global-mut-state] | [![lazy_static-badge]][lazy_static] | [![cat-rust-patterns-badge]][cat-rust-patterns] |
-| [Calculate SHA1 sum of *.iso files concurrently][ex-threadpool-walk]  | [![threadpool-badge]][threadpool] [![walkdir-badge]][walkdir] [![num_cpus-badge]][num_cpus] [![ring-badge]][ring] | [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem] |
-| [Draw fractal dispatching work to a thread pool][ex-threadpool-fractal] | [![threadpool-badge]][threadpool] [![num-badge]][num] [![num_cpus-badge]][num_cpus] [![image-badge]][image] | [![cat-concurrency-badge]][cat-concurrency][![cat-science-badge]][cat-science][![cat-rendering-badge]][cat-rendering] |
-| [Mutate the elements of an array in parallel][ex-rayon-iter-mut] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Test in parallel if any or all elements of a collection match a given predicate][ex-rayon-any-all] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Search items using given predicate in parallel][ex-rayon-parallel-search] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Sort a vector in parallel][ex-rayon-parallel-sort] | [![rayon-badge]][rayon] [![rand-badge]][rand] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Map-reduce in parallel][ex-rayon-map-reduce] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
-| [Generate jpg thumbnails in parallel][ex-rayon-thumbnails] | [![rayon-badge]][rayon] [![glob-badge]][glob] [![image-badge]][image] | [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem] |
+| [生成短期线程][ex-crossbeam-spawn] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
+| [创建并行数据管道][ex-crossbeam-pipeline] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
+| [在两个线程间传递数据][ex-crossbeam-spsc] | [![crossbeam-badge]][crossbeam] | [![cat-concurrency-badge]][cat-concurrency] |
+| [保持全局可变状态][ex-global-mut-state] | [![lazy_static-badge]][lazy_static] | [![cat-rust-patterns-badge]][cat-rust-patterns] |
+| [对所有 iso 文件的 SHA1 值并发求和][ex-threadpool-walk]  | [![threadpool-badge]][threadpool] [![walkdir-badge]][walkdir] [![num_cpus-badge]][num_cpus] [![ring-badge]][ring] | [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem] |
+| [将绘制分形（不规则碎片形）的线程，分派到线程池][ex-threadpool-fractal] | [![threadpool-badge]][threadpool] [![num-badge]][num] [![num_cpus-badge]][num_cpus] [![image-badge]][image] | [![cat-concurrency-badge]][cat-concurrency][![cat-science-badge]][cat-science][![cat-rendering-badge]][cat-rendering] |
+| [并行改变数组中元素][ex-rayon-iter-mut] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
+| [并行测试集合中任意或所有的元素是否匹配定义][ex-rayon-any-all] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
+| [并行搜索定义项][ex-rayon-parallel-search] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
+| [对 vector 并行排序][ex-rayon-parallel-sort] | [![rayon-badge]][rayon] [![rand-badge]][rand] | [![cat-concurrency-badge]][cat-concurrency] |
+| [Map-reduce 并行计算][ex-rayon-map-reduce] | [![rayon-badge]][rayon] | [![cat-concurrency-badge]][cat-concurrency] |
+| [并行生成 jpg 缩略图][ex-rayon-thumbnails] | [![rayon-badge]][rayon] [![glob-badge]][glob] [![image-badge]][image] | [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem] |
 
 
-[ex-crossbeam-spawn]: concurrency/threads.html#spawn-a-short-lived-thread
-[ex-crossbeam-pipeline]: concurrency/threads.html#create-a-parallel-pipeline
-[ex-crossbeam-spsc]: concurrency/threads.html#pass-data-between-two-threads
-[ex-global-mut-state]: concurrency/threads.html#maintain-global-mutable-state
-[ex-threadpool-walk]: concurrency/threads.html#calculate-sha256-sum-of-iso-files-concurrently
-[ex-threadpool-fractal]: concurrency/threads.html#draw-fractal-dispatching-work-to-a-thread-pool
-[ex-rayon-iter-mut]: concurrency/parallel.html#mutate-the-elements-of-an-array-in-parallel
-[ex-rayon-any-all]: concurrency/parallel.html#test-in-parallel-if-any-or-all-elements-of-a-collection-match-a-given-predicate
-[ex-rayon-parallel-search]: concurrency/parallel.html#search-items-using-given-predicate-in-parallel
-[ex-rayon-parallel-sort]: concurrency/parallel.html#sort-a-vector-in-parallel
-[ex-rayon-map-reduce]: concurrency/parallel.html#map-reduce-in-parallel
-[ex-rayon-thumbnails]: concurrency/parallel.html#generate-jpg-thumbnails-in-parallel
+[ex-crossbeam-spawn]: concurrency/threads.md#spawn-a-short-lived-thread
+[ex-crossbeam-pipeline]: concurrency/threads.md#create-a-parallel-pipeline
+[ex-crossbeam-spsc]: concurrency/threads.md#pass-data-between-two-threads
+[ex-global-mut-state]: concurrency/threads.md#maintain-global-mutable-state
+[ex-threadpool-walk]: concurrency/threads.md#calculate-sha256-sum-of-iso-files-concurrently
+[ex-threadpool-fractal]: concurrency/threads.md#draw-fractal-dispatching-work-to-a-thread-pool
+[ex-rayon-iter-mut]: concurrency/parallel.md#mutate-the-elements-of-an-array-in-parallel
+[ex-rayon-any-all]: concurrency/parallel.md#test-in-parallel-if-any-or-all-elements-of-a-collection-match-a-given-predicate
+[ex-rayon-parallel-search]: concurrency/parallel.md#search-items-using-given-predicate-in-parallel
+[ex-rayon-parallel-sort]: concurrency/parallel.md#sort-a-vector-in-parallel
+[ex-rayon-map-reduce]: concurrency/parallel.md#map-reduce-in-parallel
+[ex-rayon-thumbnails]: concurrency/parallel.md#generate-jpg-thumbnails-in-parallel
 
 {{#include links.md}}

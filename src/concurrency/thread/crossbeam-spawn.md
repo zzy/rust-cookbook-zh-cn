@@ -1,13 +1,10 @@
-## Spawn a short-lived thread
+## 生成短期线程
 
 [![crossbeam-badge]][crossbeam] [![cat-concurrency-badge]][cat-concurrency]
 
-The example uses the [crossbeam] crate, which provides data structures and functions
-for concurrent and parallel programming. [`Scope::spawn`] spawns a new scoped thread that is guaranteed
-to terminate before returning from the closure that passed into [`crossbeam::scope`] function, meaning that
-you can reference data from the calling function.
+本实例使用 [crossbeam] crate 为并发和并行编程提供了数据结构和函数。[`Scope::spawn`] 生成一个新的作用域线程，该线程确保传入 [`crossbeam::scope`] 函数的闭包在返回之前终止，这意味着您可以从调用的函数中引用数据。
 
-This example splits the array in half and performs the work in separate threads.
+本实例将数组一分为二，并在不同的线程中并行计算。
 
 ```rust,edition2018
 fn main() {
