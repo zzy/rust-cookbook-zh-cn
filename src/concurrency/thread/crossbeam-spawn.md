@@ -1,5 +1,11 @@
 ## 生成短期线程
 
+<!--
+> [concurrency/thread/crossbeam-spawn.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/crossbeam-spawn.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![crossbeam-badge]][crossbeam] [![cat-concurrency-badge]][cat-concurrency]
 
 本实例使用 [crossbeam] crate 为并发和并行编程提供了数据结构和函数。[`Scope::spawn`] 生成一个新的作用域线程，该线程确保传入 [`crossbeam::scope`] 函数的闭包在返回之前终止，这意味着您可以从调用的函数中引用数据。

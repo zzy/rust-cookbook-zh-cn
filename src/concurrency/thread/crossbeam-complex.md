@@ -1,4 +1,10 @@
-## Create a parallel pipeline
+## 创建并行的数据管道
+
+<!--
+> [concurrency/thread/crossbeam-complex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/crossbeam-complex.md)
+> <br />
+> commit 4789410122527d556a3520204e5bab637326e13f - 2020.07.31
+-->
 
 [![crossbeam-badge]][crossbeam] [![cat-concurrency-badge]][cat-concurrency]
 
