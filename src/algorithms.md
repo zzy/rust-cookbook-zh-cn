@@ -18,14 +18,14 @@
 | [浮点数 Vector 排序][ex-sort-floats] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
 | [结构体 Vector 排序][ex-sort-structs] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
 
-[ex-rand]: algorithms/randomness.md#generate-random-numbers
-[ex-rand-range]: algorithms/randomness.md#generate-random-numbers-within-a-range
-[ex-rand-dist]: algorithms/randomness.md#generate-random-numbers-with-given-distribution
-[ex-rand-custom]: algorithms/randomness.md#generate-random-values-of-a-custom-type
-[ex-rand-passwd]: algorithms/randomness.md#create-random-passwords-from-a-set-of-alphanumeric-characters
-[ex-rand-choose]:   algorithms/randomness.md#create-random-passwords-from-a-set-of-user-defined-characters
-[ex-sort-integers]:   algorithms/sorting.md#sort-a-vector-of-integers
-[ex-sort-floats]:   algorithms/sorting.md#sort-a-vector-of-floats
-[ex-sort-structs]:   algorithms/sorting.md#sort-a-vector-of-structs
+[ex-rand]: algorithms/randomness.md#生成随机数
+[ex-rand-range]: algorithms/randomness.md#生成范围内随机数
+[ex-rand-dist]: algorithms/randomness.md#生成给定分布随机数
+[ex-rand-custom]: algorithms/randomness.md#生成自定义类型随机值
+[ex-rand-passwd]: algorithms/randomness.md#从一组字母数字字符创建随机密码
+[ex-rand-choose]:   algorithms/randomness.md#从一组用户定义字符创建随机密码
+[ex-sort-integers]:   algorithms/sorting.md#整数-vector-排序
+[ex-sort-floats]:   algorithms/sorting.md#浮点数-vector-排序
+[ex-sort-structs]:   algorithms/sorting.md#结构体-vector-排序
 
 {{#include links.md}}
