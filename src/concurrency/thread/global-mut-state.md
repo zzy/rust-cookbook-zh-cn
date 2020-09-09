@@ -1,13 +1,14 @@
 ## 保持全局可变状态
 
+<!--
+> [concurrency/thread/global-mut-state.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/global-mut-state.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![lazy_static-badge]][lazy_static] [![cat-rust-patterns-badge]][cat-rust-patterns]
 
-Declare global state using [lazy_static]. [lazy_static]
-creates a globally available `static ref` which requires a [`Mutex`]
-to allow mutation (also see [`RwLock`]). The [`Mutex`] wrap ensures
-the state cannot be simultaneously accessed by multiple threads, preventing
-race conditions. A [`MutexGuard`] must be acquired to read or mutate the
-value stored in a [`Mutex`].
+使用 [lazy_static] 声明全局状态。[lazy_static] 创建了一个全局可用的 `static ref`，它需要 [`Mutex`] 来允许变化（请参阅 [`RwLock`]）。在 [`Mutex`] 的包裹下，保证了状态不能被多个线程同时访问，从而防止出现争用情况。必须获取 [`MutexGuard`]，方可读取或更改存储在 [`Mutex`] 中的值。
 
 ```rust,edition2018
 # use error_chain::error_chain;

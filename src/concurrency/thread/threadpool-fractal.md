@@ -1,11 +1,16 @@
 ## 将绘制分形的线程分派到线程池
 
+<!--
+> [concurrency/thread/threadpool-fractal.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/threadpool-fractal.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![threadpool-badge]][threadpool] [![num-badge]][num] [![num_cpus-badge]][num_cpus] [![image-badge]][image] [![cat-concurrency-badge]][cat-concurrency][![cat-science-badge]][cat-science][![cat-rendering-badge]][cat-rendering]
 
-This example generates an image by drawing a fractal from the [Julia set]
-with a thread pool for distributed computation.
+此实例通过从[朱莉娅集][Julia set]绘制分形来生成图像，该集合具有用于分布式计算的线程池。
 
-<a href="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png"><img src="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png" width="150" /></a>
+<a href="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png"><img src="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png" width="450" /></a>
 
 Allocate memory for output image of given width and height with [`ImageBuffer::new`].
 [`Rgb::from_channels`] calculates RGB pixel values.

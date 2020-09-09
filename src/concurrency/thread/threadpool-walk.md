@@ -1,12 +1,14 @@
 ## 对所有 iso 文件的 SHA256 值并发求和
 
+<!--
+> [concurrency/thread/threadpool-walk.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/threadpool-walk.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![threadpool-badge]][threadpool] [![num_cpus-badge]][num_cpus] [![walkdir-badge]][walkdir] [![ring-badge]][ring] [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem]
 
-This example calculates the SHA256 for every file with iso extension in the
-current directory. A threadpool generates threads equal to the number of cores
-present in the system found with [`num_cpus::get`].  [`Walkdir::new`] iterates
-the current directory and calls [`execute`] to perform the operations of reading
-and computing SHA256 hash.
+下面的实例计算了当前目录中每个扩展名为 iso 的文件的 SHA256 哈希值。线程池生成的线程数与使用 [`num_cpus::get`] 发现的系统内核数相等。[`Walkdir::new`] 遍历当前目录，并调用 [`execute`] 来执行读取和计算 SHA256 哈希值的操作。
 
 ```rust,edition2018,no_run
 
