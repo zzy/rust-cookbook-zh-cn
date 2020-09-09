@@ -1,4 +1,10 @@
-# Pass data between two threads
+# 在两个线程间传递数据
+
+<!--
+> [concurrency/thread/crossbeam-spsc.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/crossbeam-spsc.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![crossbeam-badge]][crossbeam] [![cat-concurrency-badge]][cat-concurrency]
 
