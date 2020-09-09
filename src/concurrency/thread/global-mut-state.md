@@ -1,4 +1,4 @@
-## Maintain global mutable state
+## 保持全局可变状态
 
 [![lazy_static-badge]][lazy_static] [![cat-rust-patterns-badge]][cat-rust-patterns]
 

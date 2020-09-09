@@ -1,4 +1,4 @@
-## Draw fractal dispatching work to a thread pool
+## 将绘制分形的线程分派到线程池
 
 [![threadpool-badge]][threadpool] [![num-badge]][num] [![num_cpus-badge]][num_cpus] [![image-badge]][image] [![cat-concurrency-badge]][cat-concurrency][![cat-science-badge]][cat-science][![cat-rendering-badge]][cat-rendering]
 

@@ -1,4 +1,4 @@
-## Calculate SHA256 sum of iso files concurrently
+## 对所有 iso 文件的 SHA256 值并发求和
 
 [![threadpool-badge]][threadpool] [![num_cpus-badge]][num_cpus] [![walkdir-badge]][walkdir] [![ring-badge]][ring] [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem]
 

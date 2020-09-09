@@ -1,4 +1,4 @@
-## 创建并行的管道
+## 创建并发的数据管道
 
 <!--
 > [concurrency/thread/crossbeam-complex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/thread/crossbeam-complex.md)

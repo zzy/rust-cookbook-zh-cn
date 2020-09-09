@@ -1,4 +1,4 @@
-## Test in parallel if any or all elements of a collection match a given predicate
+## 并行测试集合中任意或所有的元素是否匹配定义
 
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 

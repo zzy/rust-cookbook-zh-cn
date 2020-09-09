@@ -16,7 +16,7 @@
   - [ANSI 终端](cli/ansi_terminal.md)
 - [压缩](compression.md)
   - [使用 tar 包](compression/tar.md)
-- [并发](concurrency.md)
+- [并发/并行](concurrency.md)
   - [显式线程](concurrency/threads.md)
   - [数据并行](concurrency/parallel.md)
 - [密码学](cryptography.md)

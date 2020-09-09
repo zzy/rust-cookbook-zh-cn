@@ -1,4 +1,4 @@
-## Mutate the elements of an array in parallel
+## 并行改变数组中元素
 
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 

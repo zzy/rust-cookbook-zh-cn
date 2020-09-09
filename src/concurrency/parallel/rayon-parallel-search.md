@@ -1,4 +1,4 @@
-## Search items using given predicate in parallel
+## 并行搜索定义项
 
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 

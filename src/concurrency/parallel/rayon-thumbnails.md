@@ -1,4 +1,4 @@
-## Generate jpg thumbnails in parallel
+## 并行生成 jpg 缩略图
 
 [![rayon-badge]][rayon] [![glob-badge]][glob] [![image-badge]][image] [![cat-concurrency-badge]][cat-concurrency] [![cat-filesystem-badge]][cat-filesystem]
 

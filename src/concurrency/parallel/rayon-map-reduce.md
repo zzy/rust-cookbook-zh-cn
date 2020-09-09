@@ -1,4 +1,4 @@
-## Map-reduce in parallel
+## Map-reduce 并行计算
 
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 

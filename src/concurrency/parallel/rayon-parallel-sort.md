@@ -1,4 +1,4 @@
-## Sort a vector in parallel
+## 对 vector 并行排序
 
 [![rayon-badge]][rayon] [![rand-badge]][rand] [![cat-concurrency-badge]][cat-concurrency]
 
