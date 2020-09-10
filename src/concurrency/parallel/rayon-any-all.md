@@ -1,5 +1,11 @@
 ## 并行测试集合中任意或所有的元素是否匹配定义
 
+<!--
+> [concurrency/parallel/rayon-any-all.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-any-all.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 
 This example demonstrates using the [`rayon::any`] and [`rayon::all`] methods, which are parallelized counterparts to [`std::any`] and [`std::all`]. [`rayon::any`] checks in parallel whether any element of the iterator matches the predicate, and returns as soon as one is found. [`rayon::all`] checks in parallel whether all elements of the iterator match the predicate, and returns as soon as a non-matching element is found.
