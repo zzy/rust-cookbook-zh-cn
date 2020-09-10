@@ -8,7 +8,7 @@
 
 [![threadpool-badge]][threadpool] [![num_cpus-badge]][num_cpus] [![walkdir-badge]][walkdir] [![ring-badge]][ring] [![cat-concurrency-badge]][cat-concurrency][![cat-filesystem-badge]][cat-filesystem]
 
-下面的实例计算了当前目录中每个扩展名为 iso 的文件的 SHA256 哈希值。线程池生成的线程数与使用 [`num_cpus::get`] 发现的系统内核数相等。[`Walkdir::new`] 遍历当前目录，并调用 [`execute`] 来执行读取和计算 SHA256 哈希值的操作。
+下面的实例计算了当前目录中每个扩展名为 iso 的文件的 SHA256 哈希值。线程池生成的线程数与使用 [`num_cpus::get`] 获取的系统内核数相等。[`Walkdir::new`] 遍历当前目录，并调用 [`execute`] 来执行读取和计算 SHA256 哈希值的操作。
 
 ```rust,edition2018,no_run
 

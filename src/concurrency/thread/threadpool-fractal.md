@@ -10,16 +10,11 @@
 
 此实例通过从[朱莉娅集][Julia set]绘制分形来生成图像，该集合具有用于分布式计算的线程池。
 
-<a href="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png"><img src="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png" width="450" /></a>
+<a href="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png"><img src="https://cloud.githubusercontent.com/assets/221000/26546700/9be34e80-446b-11e7-81dc-dd9871614ea1.png" width="300" /></a>
 
-Allocate memory for output image of given width and height with [`ImageBuffer::new`].
-[`Rgb::from_channels`] calculates RGB pixel values.
-Create [`ThreadPool`] with thread count equal to number of cores with [`num_cpus::get`].
-[`ThreadPool::execute`] receives each pixel as a separate job.
+使用 [`ImageBuffer::new`] 为指定宽度和高度的输出图像分配内存，[`Rgb::from_channels`] 信道则计算输出图像的 RGB 像素值。使用 [`ThreadPool`] 创建线程池，线程池中的线程数量和使用 [`num_cpus::get`] 获取的系统内核数相等。[`ThreadPool::execute`] 将每个像素作为单独的作业接收。
 
-[`mpsc::channel`] receives the jobs and [`Receiver::recv`] retrieves them.
-[`ImageBuffer::put_pixel`] uses the data to set the pixel color.
-[`ImageBuffer::save`] writes the image to `output.png`.
+[`mpsc::channel`] 信道接收作业，[`Receiver::recv`] 接收器则检索作业。[`ImageBuffer::put_pixel`] 处理数据，设置像素颜色。最后，[`ImageBuffer::save`] 将图像存储为 `output.png`。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;
@@ -35,8 +30,8 @@ use image::{ImageBuffer, Pixel, Rgb};
 #     }
 # }
 #
-# // Function converting intensity values to RGB
-# // Based on http://www.efg2.com/Lab/ScienceAndEngineering/Spectra.htm
+# // 将强度值转换为 RGB 值的函数
+# // 基于 http://www.efg2.com/Lab/ScienceAndEngineering/Spectra.htm
 # fn wavelength_to_rgb(wavelength: u32) -> Rgb<u8> {
 #     let wave = wavelength as f32;
 #
@@ -60,7 +55,7 @@ use image::{ImageBuffer, Pixel, Rgb};
 #     Rgb::from_channels(r, g, b, 0)
 # }
 #
-# // Maps Julia set distance estimation to intensity values
+# // 将茱莉亚集距离映射为强度值
 # fn julia(c: Complex<f32>, x: u32, y: u32, width: u32, height: u32, max_iter: u32) -> u32 {
 #     let width = width as f32;
 #     let height = height as f32;
@@ -82,7 +77,7 @@ use image::{ImageBuffer, Pixel, Rgb};
 #     i
 # }
 #
-# // Normalizes color intensity values within RGB range
+# // 规格 RGB 颜色值范围内的强度值
 # fn normalize(color: f32, factor: f32) -> u8 {
 #     ((color * factor).powf(0.8) * 255.) as u8
 # }
@@ -124,5 +119,4 @@ fn main() -> Result<()> {
 [`Rgb::from_channels`]: https://docs.rs/image/*/image/struct.Rgb.html#method.from_channels
 [`ThreadPool`]: https://docs.rs/threadpool/*/threadpool/struct.ThreadPool.html
 [`ThreadPool::execute`]: https://docs.rs/threadpool/*/threadpool/struct.ThreadPool.html#method.execute
-
 [Julia set]: https://en.wikipedia.org/wiki/Julia_set
