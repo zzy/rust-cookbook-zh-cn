@@ -1,4 +1,4 @@
-## 并行搜索定义项
+## 使用指定断言并行搜索项
 
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 
