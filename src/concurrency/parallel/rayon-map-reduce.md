@@ -1,15 +1,16 @@
 ## Map-reduce 并行计算
 
+<!--
+> [concurrency/parallel/rayon-map-reduce.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-map-reduce.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![rayon-badge]][rayon] [![cat-concurrency-badge]][cat-concurrency]
 
-This example uses [`rayon::filter`], [`rayon::map`], and [`rayon::reduce`]
-to calculate the average age of `Person` objects whose age is over 30.
+此实例使用 [`rayon::filter`]、[`rayon::map`]，以及 [`rayon::reduce`] 计算 `Person` 对象中年龄超过 30 岁的那些人的平均年龄。
 
-[`rayon::filter`] returns elements from a collection that satisfy the given
-predicate.  [`rayon::map`] performs an operation on every element, creating a
-new iteration, and [`rayon::reduce`] performs an operation given the previous
-reduction and the current element.  Also shows use of [`rayon::sum`],
-which has the same result as the reduce operation in this example.
+[`rayon::filter`] 过滤集合中满足给定断言的元素。[`rayon::map`] 对每个元素执行一次计算，创建一个新的迭代；然后，基于前一次的 reduce 计算结果和当前元素一起，[`rayon::reduce`] 执行新的计算。也可以查看 [`rayon::sum`]，它与本实例中的 reduce 计算具有相同的结果。
 
 ```rust,edition2018
 use rayon::prelude::*;

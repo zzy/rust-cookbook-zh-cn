@@ -1,12 +1,16 @@
 ## 并行生成 jpg 缩略图
 
+<!--
+> [concurrency/parallel/rayon-thumbnails.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-thumbnails.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
+
 [![rayon-badge]][rayon] [![glob-badge]][glob] [![image-badge]][image] [![cat-concurrency-badge]][cat-concurrency] [![cat-filesystem-badge]][cat-filesystem]
 
-This example generates thumbnails for all .jpg files in the current directory
-then saves them in a new folder called `thumbnails`.
+本实例为当前目录中的所有 .jpg 图像文件生成缩略图，然后将生成的缩略图保存在一个名为 `thumbnails` 的新文件夹中。
 
-[`glob::glob_with`] finds jpeg files in current directory. `rayon` resizes
-images in parallel using [`par_iter`] calling  [`DynamicImage::resize`].
+[`glob::glob_with`] 在当前目录中查找 jpeg 图像文件，`rayon` 通过 [`par_iter`] 方法调用 [`DynamicImage::resize`]，并行地调整图像大小。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;

@@ -1,13 +1,16 @@
 ## 对 vector 并行排序
 
+<!--
+> [concurrency/parallel/rayon-parallel-sort.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-parallel-sort.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
+
 [![rayon-badge]][rayon] [![rand-badge]][rand] [![cat-concurrency-badge]][cat-concurrency]
 
-This example will sort in parallel a vector of Strings.
+本实例对字符串 vector 并行排序。
 
-Allocate a vector of empty Strings. `par_iter_mut().for_each` populates random
-values in parallel.  Although [multiple options]
-exist to sort an enumerable data type, [`par_sort_unstable`]
-is usually faster than [stable sorting] algorithms.
+首先，分配空字符串 vector；然后，通过 `par_iter_mut().for_each` 并行对 vector 填充随机值。尽管存在[多种选择][multiple options]，可以对可枚举数据类型进行排序，但 [`par_sort_unstable`] 通常比[稳定排序（相同的值排序后相对顺序不变）][stable sorting]算法快。
 
 ```rust,edition2018
 
