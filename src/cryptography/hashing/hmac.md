@@ -1,4 +1,4 @@
-## Sign and verify a message with HMAC digest
+## 使用 HMAC 摘要对消息进行签名和验证
 
 [![ring-badge]][ring] [![cat-cryptography-badge]][cat-cryptography]
 

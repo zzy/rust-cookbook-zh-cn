@@ -1,4 +1,4 @@
-## Calculate the SHA-256 digest of a file
+## 计算文件的 SHA-256 摘要
 
 [![ring-badge]][ring] [![data-encoding-badge]][data-encoding] [![cat-cryptography-badge]][cat-cryptography]
 
