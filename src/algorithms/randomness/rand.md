@@ -8,7 +8,7 @@
 
 [![rand-badge]][rand] [![cat-science-badge]][cat-science]
 
-在随机数生成器 [`rand::Rng`] 的帮助下，通过 [`rand::thread_rng`] 生成随机数。每个线程都有一个初始化的生成器。整数在其类型范围内均匀分布，浮点数是从 0 均匀分布到 1，但不包括 1。
+在随机数生成器 [`rand::Rng`] 的帮助下，通过 [`rand::thread_rng`] 生成随机数。可以开启多个线程，每个线程都有一个初始化的生成器。整数在其类型范围内均匀分布，浮点数是从 0 均匀分布到 1，但不包括 1。
 
 ```rust,edition2018
 use rand::Rng;

@@ -1,4 +1,3 @@
-<a name="ex-pbkdf2"></a>
 ## 使用 PBKDF2 对密码进行随机（salt）和散列（hash）运算
 
 [![ring-badge]][ring] [![data-encoding-badge]][data-encoding] [![cat-cryptography-badge]][cat-cryptography]
