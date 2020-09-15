@@ -1,8 +1,14 @@
 ## 时间的时区转换
 
+<!--
+> [datetime/duration/timezone.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/duration/timezone.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Gets the local time and displays it using [`offset::Local::now`] and then converts it to the UTC standard using the [`DateTime::from_utc`] struct method. A time is then converted using the [`offset::FixedOffset`] struct and the UTC time is then converted to UTC+8 and UTC-2.
+使用 [`offset::Local::now`] 获取本地时间并显示，然后使用 [`DateTime::from_utc`] 结构体方法将其转换为 UTC 标准格式。最后，使用 [`offset::FixedOffset`] 结构体，可以将 UTC 时间转换为 UTC+8 和 UTC-2。
 
 ```rust,edition2018
 

@@ -1,14 +1,16 @@
 ## 执行日期检查和时间计算
 
+<!--
+> [datetime/duration/checked.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/duration/checked.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Calculates and displays the date and time two weeks from now using
-[`DateTime::checked_add_signed`] and the date of the day before that using
-[`DateTime::checked_sub_signed`]. The methods return None if the date and time
-cannot be calculated.
+使用 [`DateTime::checked_add_signed`] 计算并显示两周之后的日期和时间，使用 [`DateTime::checked_sub_signed`] 计算并显示前一天的日期。如果无法计算出日期和时间，这些方法将返回 None。
 
-Escape sequences that are available for the
-[`DateTime::format`] can be found at [`chrono::format::strftime`].
+可以在 [`chrono::format::strftime`] 中找到可用于 [`DateTime::format`] 的转义序列。
 
 ```rust,edition2018
 use chrono::{DateTime, Duration, Utc};

@@ -1,11 +1,16 @@
 ## 测量运行时间
 
+<!--
+> [datetime/duration/profile.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/duration/profile.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![std-badge]][std] [![cat-time-badge]][cat-time]
 
-Measures [`time::Instant::elapsed`] since [`time::Instant::now`].
+测量从 [`time::Instant::now`] 开始运行的时间 [`time::Instant::elapsed`]。
 
-Calling [`time::Instant::elapsed`] returns a [`time::Duration`] that we print at the end of the example.
-This method will not mutate or reset the [`time::Instant`] object.
+调用 [`time::Instant::elapsed`] 将返回 [`time::Duration`]，我们将在实例末尾打印该时间。此方法不会更改或者重置 [`time::Instant`] 对象。
 
 ```rust,edition2018
 use std::time::{Duration, Instant};
