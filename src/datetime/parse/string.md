@@ -1,4 +1,4 @@
-## Parse string into DateTime struct
+## 将字符串解析为 DateTime 结构体
 
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 

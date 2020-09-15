@@ -1,4 +1,4 @@
-## Perform checked date and time calculations
+## 执行日期检查和时间计算
 
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 

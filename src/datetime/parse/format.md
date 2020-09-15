@@ -1,4 +1,4 @@
-## Display formatted date and time
+## 日期和时间的格式化显示
 
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 

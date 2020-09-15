@@ -1,21 +1,27 @@
 # 日期及时间
 
+<!--
+> [datetime.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime.md)
+> <br />
+> commit 97dabe59ae705bf6a2aaebbcd1d189ec2a83f98b - 2018.07.11
+-->
+
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
-| [Measure elapsed time][ex-measure-elapsed-time] | [![std-badge]][std] | [![cat-time-badge]][cat-time] |
-| [Perform checked date and time calculations][ex-datetime-arithmetic] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
-| [Convert a local time to another timezone][ex-convert-datetime-timezone] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
-| [Examine the date and time][ex-examine-date-and-time] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
-| [Convert date to UNIX timestamp and vice versa][ex-convert-datetime-timestamp] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
-| [Display formatted date and time][ex-format-datetime] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
-| [Parse string into DateTime struct][ex-parse-datetime] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [测量运行时间][ex-measure-elapsed-time] | [![std-badge]][std] | [![cat-time-badge]][cat-time] |
+| [执行日期检查和时间计算][ex-datetime-arithmetic] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [时间的时区转换][ex-convert-datetime-timezone] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [检查日期和时间][ex-examine-date-and-time] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [日期和 UNIX 时间戳的互相转换][ex-convert-datetime-timestamp] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [日期和时间的格式化显示][ex-format-datetime] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
+| [将字符串解析为 DateTime 结构体][ex-parse-datetime] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |
 
-[ex-measure-elapsed-time]: datetime/duration.html#measure-the-elapsed-time-between-two-code-sections
-[ex-datetime-arithmetic]: datetime/duration.html#perform-checked-date-and-time-calculations
-[ex-convert-datetime-timezone]: datetime/duration.html#convert-a-local-time-to-another-timezone
-[ex-examine-date-and-time]: datetime/parse.html#examine-the-date-and-time
-[ex-convert-datetime-timestamp]: datetime/parse.html#convert-date-to-unix-timestamp-and-vice-versa
-[ex-format-datetime]: datetime/parse.html#display-formatted-date-and-time
-[ex-parse-datetime]: datetime/parse.html#parse-string-into-datetime-struct
+[ex-measure-elapsed-time]: datetime/duration.md#测量运行时间
+[ex-datetime-arithmetic]: datetime/duration.md#执行日期检查和时间计算
+[ex-convert-datetime-timezone]: datetime/duration.md#时间的时区转换
+[ex-examine-date-and-time]: datetime/parse.md#检查日期和时间
+[ex-convert-datetime-timestamp]: datetime/parse.md#日期和-unix-时间戳的互相转换
+[ex-format-datetime]: datetime/parse.md#日期和时间的格式化显示
+[ex-parse-datetime]: datetime/parse.md#将字符串解析为-datetime-结构体
 
 {{#include links.md}}

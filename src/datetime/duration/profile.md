@@ -1,4 +1,4 @@
-## Measure the elapsed time between two code sections
+## 测量运行时间
 
 [![std-badge]][std] [![cat-time-badge]][cat-time]
 

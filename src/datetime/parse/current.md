@@ -1,4 +1,4 @@
-## Examine the date and time
+## 检查日期和时间
 
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
