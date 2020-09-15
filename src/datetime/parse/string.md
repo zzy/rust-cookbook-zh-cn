@@ -1,17 +1,16 @@
 ## 将字符串解析为 DateTime 结构体
 
+<!--
+> [datetime/parse/string.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/parse/string.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Parses a [`DateTime`] struct from strings representing the well-known formats
-[RFC 2822], [RFC 3339], and a custom format, using
-[`DateTime::parse_from_rfc2822`], [`DateTime::parse_from_rfc3339`], and
-[`DateTime::parse_from_str`] respectively.
+熟悉的时间格式 [RFC 2822]、[RFC 3339]，以及自定义时间格式，通常用字符串表达。要将这些字符串解析为 [`DateTime`] 结构体，可以分别用 [`DateTime::parse_from_rfc2822`]、[`DateTime::parse_from_rfc3339`]，以及 [`DateTime::parse_from_str`]。
 
-Escape sequences that are available for the [`DateTime::parse_from_str`] can be
-found at [`chrono::format::strftime`]. Note that the [`DateTime::parse_from_str`]
-requires that such a DateTime struct must be creatable that it uniquely
-identifies a date and a time. For parsing dates and times without timezones use
-[`NaiveDate`], [`NaiveTime`], and [`NaiveDateTime`].
+可以在 [`chrono::format::strftime`] 中找到适用于 [`DateTime::parse_from_str`] 的转义序列。注意：[`DateTime::parse_from_str`] 要求这些 DateTime 结构体必须是可创建的，以便它唯一地标识日期和时间。要解析不带时区的日期和时间，请使用 [`NaiveDate`]、[`NaiveTime`]，以及 [`NaiveDateTime`]。
 
 ```rust,edition2018
 use chrono::{DateTime, NaiveDate, NaiveDateTime, NaiveTime};

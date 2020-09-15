@@ -1,11 +1,14 @@
 ## 日期和 UNIX 时间戳的互相转换
 
+<!--
+> [datetime/parse/timestamp.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/parse/timestamp.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Converts a date given by [`NaiveDate::from_ymd`] and [`NaiveTime::from_hms`]
-to [UNIX timestamp] using [`NaiveDateTime::timestamp`].
-Then it calculates what was the date after one billion seconds
-since January 1, 1970 0:00:00 UTC, using [`NaiveDateTime::from_timestamp`].
+使用 [`NaiveDateTime::timestamp`] 将由 [`NaiveDate::from_ymd`] 生成的日期和由 [`NaiveTime::from_hms`] 生成的时间转换为 [UNIX 时间戳][UNIX timestamp]。然后，它使用 [`NaiveDateTime::from_timestamp`] 计算自 UTC 时间 1970 年 01 月 01 日 00:00:00 开始的 10 亿秒后的日期。
 
 ```rust,edition2018
 

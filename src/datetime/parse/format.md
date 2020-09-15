@@ -1,11 +1,14 @@
 ## 日期和时间的格式化显示
 
+<!--
+> [datetime/parse/format.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/parse/format.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Gets and displays the current time in UTC using [`Utc::now`]. Formats the
-current time in the well-known formats [RFC 2822] using [`DateTime::to_rfc2822`]
-and [RFC 3339] using [`DateTime::to_rfc3339`], and in a custom format using
-[`DateTime::format`].
+使用 [`Utc::now`] 获取并显示当前 UTC 时间。使用 [`DateTime::to_rfc2822`] 将当前时间格式化为熟悉的 [RFC 2822] 格式，使用 [`DateTime::to_rfc3339`] 将当前时间格式化为熟悉的 [RFC 3339] 格式，也可以使用 [`DateTime::format`] 自定义时间格式。
 
 ```rust,edition2018
 use chrono::{DateTime, Utc};

@@ -1,8 +1,14 @@
 # 开发工具
 
+<!--
+> [development_tools.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools.md)
+> <br />
+> commit 97dabe59ae705bf6a2aaebbcd1d189ec2a83f98b - 2018.07.11
+-->
+
 {{#include development_tools/debugging.md}}
 
-## Versioning
+## 版本控制
 
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
@@ -12,7 +18,7 @@
 | [Find the latest version satisfying given range][ex-semver-latest] | [![semver-badge]][semver] | [![cat-config-badge]][cat-config] |
 | [Check external command version for compatibility][ex-semver-command] | [![semver-badge]][semver] | [![cat-text-processing-badge]][cat-text-processing] [![cat-os-badge]][cat-os]
 
-## Build Time
+## 构建时
 
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|

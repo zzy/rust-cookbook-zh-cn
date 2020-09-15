@@ -1,9 +1,14 @@
 ## 检查日期和时间
 
+<!--
+> [datetime/parse/current.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/datetime/parse/current.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![chrono-badge]][chrono] [![cat-date-and-time-badge]][cat-date-and-time]
 
-Gets the current UTC [`DateTime`] and its hour/minute/second via [`Timelike`]
-and its year/month/day/weekday via [`Datelike`].
+通过 [`Timelike`] 获取当前 UTC [`DateTime`] 及其时/分/秒，通过 [`Datelike`] 获取其年/月/日/工作日。
 
 ```rust,edition2018
 use chrono::{Datelike, Timelike, Utc};

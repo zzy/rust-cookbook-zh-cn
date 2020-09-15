@@ -10,7 +10,7 @@
 
 使用 [`DateTime::checked_add_signed`] 计算并显示两周之后的日期和时间，使用 [`DateTime::checked_sub_signed`] 计算并显示前一天的日期。如果无法计算出日期和时间，这些方法将返回 None。
 
-可以在 [`chrono::format::strftime`] 中找到可用于 [`DateTime::format`] 的转义序列。
+可以在 [`chrono::format::strftime`] 中找到适用于 [`DateTime::format`] 的转义序列。
 
 ```rust,edition2018
 use chrono::{DateTime, Duration, Utc};
