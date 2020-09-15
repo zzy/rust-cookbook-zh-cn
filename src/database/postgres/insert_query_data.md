@@ -1,9 +1,14 @@
 ## 数据插入和查询
 
+<!--
+> [database/postgres/insert_query_data.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/database/postgres/insert_query_data.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 
-The recipe inserts data into the `author` table using [`execute`] method of `Client`. Then, displays the data from the `author` table  using [`query`] method of `Client`.
-
+下述实例中使用 `Client` 的 [`execute`] 方法将数据插入到 `author` 表中。然后，使用 `Client` 的 [`query`] 方法查询 `author` 表中的数据。
 
 ```rust,edition2018,no_run
 use postgres::{Client, NoTls, Error};

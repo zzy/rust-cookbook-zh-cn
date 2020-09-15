@@ -1,8 +1,14 @@
 ## 数据聚合
 
+<!--
+> [database/postgres/aggregate_data.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/database/postgres/aggregate_data.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 
-This recipe lists the nationalities of the first 7999 artists in the database of the [`Museum of Modern Art`] in descending order.
+下述实例按照降序列出了[`美国纽约州现代艺术博物馆`][`Museum of Modern Art`]数据库中首批 7999 位艺术家的国籍。
 
 ```rust,edition2018,no_run
 use postgres::{Client, Error, NoTls};

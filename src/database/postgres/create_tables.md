@@ -1,10 +1,16 @@
 ## Postgres 数据库中创建表
 
+<!--
+> [database/postgres/create_tables.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/database/postgres/create_tables.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 
-Use the [`postgres`] crate to create tables in a Postgres database.
+Postgres 数据库中，使用 [`postgres`] crate 创建表。
 
-[`Client::connect`] helps in connecting to an existing database. The recipe uses a URL string format with `Client::connect`. It assumes an existing database named `library`, the username is `postgres` and the password is `postgres`.
+[`Client::connect`] 用于连接到现有数据库。本实例中使用 `Client::connect` 格式化连接数据库的 URL 字符串。假设存在一个数据库：名为 `library`，用户名为 `postgres`，密码为 `postgres`。
 
 ```rust,edition2018,no_run
 use postgres::{Client, NoTls, Error};
