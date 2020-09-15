@@ -1,6 +1,6 @@
 # 编码
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Percent-encode a string][ex-percent-encode] | [![percent-encoding-badge]][url] | [![cat-encoding-badge]][cat-encoding] |
 | [Encode a string as application/x-www-form-urlencoded][ex-urlencoded] | [![url-badge]][url] | [![cat-encoding-badge]][cat-encoding] |

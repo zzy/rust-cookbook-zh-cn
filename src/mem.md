@@ -1,6 +1,6 @@
 # 内存管理
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Declare lazily evaluated constant][ex-lazy-constant] | [![lazy_static-badge]][lazy_static] | [![cat-caching-badge]][cat-caching] [![cat-rust-patterns-badge]][cat-rust-patterns] |
 

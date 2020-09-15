@@ -4,7 +4,7 @@
 
 ## Versioning
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Parse and increment a version string][ex-semver-increment] | [![semver-badge]][semver] | [![cat-config-badge]][cat-config] |
 | [Parse a complex version string][ex-semver-complex] | [![semver-badge]][semver] | [![cat-config-badge]][cat-config] |
@@ -14,7 +14,7 @@
 
 ## Build Time
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Compile and link statically to a bundled C library][ex-cc-static-bundled] | [![cc-badge]][cc] | [![cat-development-tools-badge]][cat-development-tools] |
 | [Compile and link statically to a bundled C++ library][ex-cc-static-bundled-cpp] | [![cc-badge]][cc] | [![cat-development-tools-badge]][cat-development-tools] |

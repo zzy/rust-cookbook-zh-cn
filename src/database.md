@@ -1,6 +1,12 @@
 # 数据库
 
-| Recipe | Crates | Categories |
+<!--
+> [database.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/database.md)
+> <br />
+> commit 5824ee21eb8100b5795053a6d3bd61ed8b569cac - 2019.04.12
+-->
+
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Create a SQLite database][ex-sqlite-initialization] | [![rusqlite-badge]][rusqlite] | [![cat-database-badge]][cat-database] |
 | [Insert and Query data][ex-sqlite-insert-select] | [![rusqlite-badge]][rusqlite] | [![cat-database-badge]][cat-database] |

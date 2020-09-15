@@ -1,6 +1,6 @@
 ## 调试工具
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Log a debug message to the console][ex-log-debug] | [![log-badge]][log] [![env_logger-badge]][env_logger] | [![cat-debugging-badge]][cat-debugging] |
 | [Log an error message to the console][ex-log-error] | [![log-badge]][log] [![env_logger-badge]][env_logger] | [![cat-debugging-badge]][cat-debugging] |

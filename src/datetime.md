@@ -1,6 +1,6 @@
 # 日期及时间
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Measure elapsed time][ex-measure-elapsed-time] | [![std-badge]][std] | [![cat-time-badge]][cat-time] |
 | [Perform checked date and time calculations][ex-datetime-arithmetic] | [![chrono-badge]][chrono] | [![cat-date-and-time-badge]][cat-date-and-time] |

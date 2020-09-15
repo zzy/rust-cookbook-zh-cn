@@ -1,6 +1,6 @@
 # 文本处理
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Collect Unicode Graphemes][ex-unicode-graphemes] | [![unicode-segmentation-badge]][unicode-segmentation] | [![cat-encoding-badge]][cat-text-processing] |
 | [Verify and extract login from an email address][ex-verify-extract-email] | [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] | [![cat-text-processing-badge]][cat-text-processing] |

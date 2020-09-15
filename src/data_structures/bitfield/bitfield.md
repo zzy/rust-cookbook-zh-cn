@@ -1,10 +1,14 @@
-## Define and operate on a type represented as a bitfield
+## 定义并操作位域风格的类型
+
+<!--
+> [data_structures/bitfield/bitfield.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/data_structures/bitfield/bitfield.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![bitflags-badge]][bitflags] [![cat-no-std-badge]][cat-no-std]
 
-Creates type safe bitfield type `MyFlags` with help of [`bitflags!`] macro
-and implements elementary `clear` operation as well as [`Display`] trait for it.
-Subsequently, shows basic bitwise operations and formatting.
+如下实例在 [`bitflags!`] 宏的帮助下创建类型安全的位域类型 `MyFlags`，并为其实现基本的`清理`操作（`clear` 方法）以及 [`Display`] trait。随后，展示了基本的按位操作和格式化。
 
 ```rust,edition2018
 use bitflags::bitflags;

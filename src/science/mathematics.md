@@ -1,6 +1,6 @@
 ## 数学
 
-| Recipe | Crates | Categories |
+| 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [Vector Norm][vector-norm] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
 | [Adding matrices][add-matrices] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
