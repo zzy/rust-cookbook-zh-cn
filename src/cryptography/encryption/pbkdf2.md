@@ -1,12 +1,14 @@
-## 使用 PBKDF2 对密码进行随机（salt）和散列（hash）运算
+## 使用 PBKDF2 对密码进行加密（salt）和散列（hash）运算
+
+<!--
+> [cryptography/encryption/pbkdf2.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/cryptography/encryption/pbkdf2.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
 
 [![ring-badge]][ring] [![data-encoding-badge]][data-encoding] [![cat-cryptography-badge]][cat-cryptography]
 
-Uses [`ring::pbkdf2`] to hash a salted password using the PBKDF2 key derivation
-function [`pbkdf2::derive`].  Verifies the hash is correct with
-[`pbkdf2::verify`]. The salt is generated using
-[`SecureRandom::fill`], which fills the salt byte array with
-securely generated random numbers.
+对于通过 PBKDF2 密钥派生函数 [`pbkdf2::derive`] 生成的加密（加盐算法）密码，使用 [`ring::pbkdf2`] 进行散列（哈希）运算，使用 [`pbkdf2::verify`] 验证散列（哈希）运算是否正确。salt 值是使用 [`SecureRandom::fill`] 生成的，salt 字节数组被其安全生成的随机数填充。
 
 ```rust,edition2018
 
