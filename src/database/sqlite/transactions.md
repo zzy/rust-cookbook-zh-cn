@@ -1,16 +1,18 @@
-## Using transactions
+## 事务处理
+
+<!--
+> [database/sqlite/transactions.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/database/sqlite/transactions.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![rusqlite-badge]][rusqlite] [![cat-database-badge]][cat-database]
 
-[`Connection::open`] will open the `cats.db` database from the top recipe.
+[`Connection::open`] 将打开来自前述实例的数据库 `cats.db`。
 
-Begin a transaction with [`Connection::transaction`]. Transactions will
-roll back unless committed explicitly with [`Transaction::commit`].
+使用 [`Connection::transaction`] 开始事务，除非使用 [`Transaction::commit`] 显式提交，否则事务将回滚。
 
-In the following example, colors add to a table having
-a unique constraint on the color name. When an attempt to insert
-a duplicate color is made, the transaction rolls back.
-
+在下面的实例中，颜色表对颜色名称具有唯一性约束。当尝试插入重复的颜色时，事务会回滚。
 
 ```rust,edition2018,no_run
 use rusqlite::{Connection, Result, NO_PARAMS};

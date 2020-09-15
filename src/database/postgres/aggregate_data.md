@@ -1,4 +1,4 @@
-## Aggregate data
+## 数据聚合
 
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 

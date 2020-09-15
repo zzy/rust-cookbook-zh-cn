@@ -1,4 +1,4 @@
-## Create tables in a Postgres database
+## Postgres 数据库中创建表
 
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 

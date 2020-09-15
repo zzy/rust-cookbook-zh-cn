@@ -1,4 +1,4 @@
-## Insert and Query data
+## 数据插入和查询
 
 [![postgres-badge]][postgres] [![cat-database-badge]][cat-database]
 
