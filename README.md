@@ -8,7 +8,10 @@
 书中的实例都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://books.budshome.com/cargo)）项目中进行使用。
 
 > 注1：《Rust 实践指南》翻译自 rust-lang-nursery 组织撰写的 [_"A Rust Cookbook"_](https://github.com/rust-lang-nursery/rust-cookbook)，感谢 rust-lang-nursery 组织的无私奉献！
-> 注2：《Rust 实践指南》计划为两个阶段。第一个阶段：经仔细斟酌，形成专业、通俗、容易理解的 Rust 生态实践指南中文版本；第二个阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。
+
+> 注2：《Rust 实践指南》计划为两个阶段。<br>
+> 第一个阶段：经仔细斟酌，形成专业、通俗、容易理解的 Rust 生态实践指南中文版本；<br>
+> 第二个阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。
 
 ## 在线阅读
 
