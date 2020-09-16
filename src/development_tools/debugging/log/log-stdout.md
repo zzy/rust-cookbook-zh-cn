@@ -1,14 +1,14 @@
 ## 记录信息时，用标准输出 stdout 替换标准错误 stderr
 
 <!--
-> [development_tools/debugging/log/log-error.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-error.md)
+> [development_tools/debugging/log/log-stdout.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-stdout.md)
 > <br />
 > commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
 -->
 
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
-Creates a custom logger configuration using the [`Builder::target`] to set the target of the log output to [`Target::Stdout`].
+使用 [`Builder::target`] 创建自定义的日志记录器配置，将日志输出的目标设置为 [`Target::Stdout`]。
 
 ```rust,edition2018
 
