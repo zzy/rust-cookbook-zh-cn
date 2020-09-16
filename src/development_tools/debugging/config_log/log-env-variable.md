@@ -1,4 +1,4 @@
-## Use a custom environment variable to set up logging
+## 用自定义环境变量设置日志记录
 
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 

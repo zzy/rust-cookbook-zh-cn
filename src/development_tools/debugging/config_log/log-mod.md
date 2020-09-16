@@ -1,4 +1,4 @@
-## Enable log levels per module
+## 启用每个模块的日志级别
 
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 

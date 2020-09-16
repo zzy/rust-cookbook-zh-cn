@@ -1,4 +1,4 @@
-## Compile a C library while setting custom defines
+## 编译 C 语言库时自定义设置
 
 [![cc-badge]][cc] [![cat-development-tools-badge]][cat-development-tools]
 

@@ -1,4 +1,4 @@
-## Log to stdout instead of stderr
+## 记录信息时，用标准输出 stdout 替换标准错误 stderr
 
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 

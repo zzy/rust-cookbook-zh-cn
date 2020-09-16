@@ -1,4 +1,4 @@
-## Parse and increment a version string.
+## 解析并递增版本字符串
 
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 

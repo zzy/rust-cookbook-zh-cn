@@ -1,4 +1,4 @@
-## Log messages with a custom logger
+## 使用自定义日志记录器记录信息
 
 [![log-badge]][log] [![cat-debugging-badge]][cat-debugging]
 

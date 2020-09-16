@@ -1,4 +1,4 @@
-## Find the latest version satisfying given range
+## 查询适配给定范围的最新版本
 
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 

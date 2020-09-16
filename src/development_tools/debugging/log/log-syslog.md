@@ -1,4 +1,4 @@
-## Log to the Unix syslog
+## 记录到 Unix 系统日志
 
 [![log-badge]][log] [![syslog-badge]][syslog] [![cat-debugging-badge]][cat-debugging]
 

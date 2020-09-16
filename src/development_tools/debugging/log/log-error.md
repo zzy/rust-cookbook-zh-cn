@@ -1,4 +1,4 @@
-## Log an error message to the console
+## 记录错误信息到控制台
 
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 

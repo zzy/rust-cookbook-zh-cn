@@ -1,4 +1,4 @@
-## Parse a complex version string.
+## 解析复杂的版本字符串
 
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 

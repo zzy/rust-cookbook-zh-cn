@@ -1,4 +1,4 @@
-## Log messages to a custom location
+## 将信息记录到自定义位置
 
 [![log-badge]][log] [![log4rs-badge]][log4rs] [![cat-debugging-badge]][cat-debugging]
 

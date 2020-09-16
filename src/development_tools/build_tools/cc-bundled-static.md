@@ -1,4 +1,4 @@
-## Compile and link statically to a bundled C library
+## 静态编译并链接到绑定的 C 语言库
 
 [![cc-badge]][cc] [![cat-development-tools-badge]][cat-development-tools]
 
