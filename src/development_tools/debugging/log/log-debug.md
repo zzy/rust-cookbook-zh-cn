@@ -1,10 +1,14 @@
 ## 记录调试信息到控制台
 
+<!--
+> [development_tools/debugging/log/log-debug.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-debug.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
-The `log` crate provides logging utilities. The `env_logger` crate configures
-logging via an environment variable.  The [`log::debug!`] macro works like other
-[`std::fmt`] formatted strings.
+`log` crate 提供了日志工具，`env_logger` crate 通过环境变量配置日志记录。[`log::debug!`] 宏的工作方式类似于其它 [`std::fmt`] 格式化的字符串。
 
 ```rust,edition2018
 
@@ -19,17 +23,15 @@ fn main() {
 }
 ```
 
-No output prints when running this code. By default, the
-log level is `error`, and any lower levels are dropped.
+运行上述代码时，并没有输出信息被打印。因为默认情况下，日志级别为 `error`，任何较低级别的日志信息都将被忽略。
 
-Set the `RUST_LOG` environment variable to print the message:
+设置 `RUST_LOG` 环境变量以打印消息：
 
 ```
 $ RUST_LOG=debug cargo run
 ```
 
-Cargo prints debugging information then the
-following line at the very end of the output:
+Cargo 运行后，会在输出的最后一行打印出调试信息：
 
 ```
 DEBUG:main: Executing query: DROP TABLE students

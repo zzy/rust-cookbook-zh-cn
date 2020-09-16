@@ -1,5 +1,11 @@
 ## 记录信息时，用标准输出 stdout 替换标准错误 stderr
 
+<!--
+> [development_tools/debugging/log/log-error.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-error.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
 Creates a custom logger configuration using the [`Builder::target`] to set the target of the log output to [`Target::Stdout`].

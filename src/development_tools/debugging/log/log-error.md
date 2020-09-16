@@ -1,9 +1,14 @@
 ## 记录错误信息到控制台
 
+<!--
+> [development_tools/debugging/log/log-error.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-error.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
-Proper error handling considers exceptions exceptional.  Here, an error logs
-to stderr with `log`'s convenience macro [`log::error!`].
+正确的错误处理会将异常视为错误。下述实例中，通过 `log` 便捷宏 [`log::error!`]，将错误记录到 stderr。
 
 ```rust,edition2018
 
