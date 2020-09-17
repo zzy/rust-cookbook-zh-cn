@@ -16,7 +16,7 @@
 
 ## 做贡献
 
-《Rust 实践指南》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎你做出自己力所能及的贡献。
+《Rust 实践指南》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎——你做出自己力所能及的贡献。
 
 ### 构建和测试
 
@@ -27,7 +27,7 @@ git clone https://github.com/zzy/rust-cookbook-zh-cn.git
 cd rust-cookbook-zh-cn
 ```
 
-《Rust 实践指南》使用 `mdBook`（[中文文档](https://books.budshome.com/mdbook)）构建，所以首先需要通过 `Cargo`（[中文文档](https://books.budshome.com/cargo)）安装它：
+《Rust 实践指南》使用 `mdBook`（[中文文档](https://books.budshome.com/mdbook)）构建，所以需要通过 `Cargo`（[中文文档](https://books.budshome.com/cargo)）安装它：
 
 ```
 cargo install --version 0.3.5 mdbook
