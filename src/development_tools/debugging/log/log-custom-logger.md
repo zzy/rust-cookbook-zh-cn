@@ -1,10 +1,14 @@
 ## 使用自定义日志记录器记录信息
 
+<!--
+> [development_tools/debugging/log/log-custom-logger.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/log/log-custom-logger.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![cat-debugging-badge]][cat-debugging]
 
-Implements a custom logger `ConsoleLogger` which prints to stdout.
-In order to use the logging macros, `ConsoleLogger` implements
-the [`log::Log`] trait and [`log::set_logger`] installs it.
+本实例实现一个打印到 stdout 的自定义记录器 `ConsoleLogger`。为了使用日志宏，`ConsoleLogger` 实现了 [`log::Log`] trait，通过 [`log::set_logger`] 安置。
 
 ```rust,edition2018
 use log::{Record, Level, Metadata, LevelFilter, SetLoggerError};
