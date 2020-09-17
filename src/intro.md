@@ -18,6 +18,37 @@
 
 《Rust 实践指南》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此它需要——并欢迎你做出自己力所能及的贡献。
 
+### 构建和测试
+
+首先，从 git 克隆《Rust 实践指南》并进入目录：
+
+```
+git clone https://github.com/zzy/rust-cookbook-zh-cn.git
+cd rust-cookbook-zh-cn
+```
+
+《Rust 实践指南》使用 `mdBook`（[中文文档](https://books.budshome.com/mdbook)）构建，所以首先需要通过 `Cargo`（[中文文档](https://books.budshome.com/cargo)）安装它：
+
+```
+cargo install --version 0.3.5 mdbook
+```
+
+若要在本地生成和阅读《Rust 实践指南》，请运行：
+
+```
+mdbook serve
+```
+
+然后在浏览器中打开 `http://localhost:3000`，即可阅读本书。对源代码所做的任何更改都将自动重新生成页面，并会主动刷新浏览器，因此在编辑源码时打开浏览器窗口是很有帮助的。
+
+书中的所有实例都是使用 [skeptic](https://github.com/brson/rust-skeptic) 测试的，它是测试任意 markdown 文档的工具，风格类似于 rustdoc。
+
+提交前，请对整个仓库进行测试：
+
+```
+cargo test
+```
+
 祝你学习愉快，欢迎提交问题，欢迎发送 PR。
 
 {{#include algorithms.md}}
