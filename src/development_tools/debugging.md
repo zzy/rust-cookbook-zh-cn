@@ -18,14 +18,14 @@
 | [在日志信息中包含时间戳][ex-log-timestamp] | [![log-badge]][log] [![env_logger-badge]][env_logger] [![chrono-badge]][chrono] | [![cat-debugging-badge]][cat-debugging] |
 | [将信息记录到自定义位置][ex-log-custom] | [![log-badge]][log] [![log4rs-badge]][log4rs] | [![cat-debugging-badge]][cat-debugging] |
 
-[ex-log-debug]: debugging/log.md#记录调试信息到控制台
-[ex-log-error]: debugging/log.md#记录错误信息到控制台
-[ex-log-stdout]: debugging/log.md#记录信息时用标准输出-stdout-替换标准错误-stderr
-[ex-log-custom-logger]:  debugging/log.md#使用自定义日志记录器记录信息
-[ex-log-syslog]: debugging/log.md#记录到-unix-系统日志
-[ex-log-mod]: debugging/config_log.md#启用每个模块的日志级别
-[ex-log-env-variable]: debugging/config_log.md#用自定义环境变量设置日志记录
-[ex-log-timestamp]: debugging/config_log.md#在日志信息中包含时间戳
-[ex-log-custom]: debugging/config_log.md#将信息记录到自定义位置
+[ex-log-debug]: /rust-cookbook/development_tools/debugging/log.md#记录调试信息到控制台
+[ex-log-error]: /rust-cookbook/development_tools/debugging/log.md#记录错误信息到控制台
+[ex-log-stdout]: /rust-cookbook/development_tools/debugging/log.md#记录信息时用标准输出-stdout-替换标准错误-stderr
+[ex-log-custom-logger]:  /rust-cookbook/development_tools/debugging/log.md#使用自定义日志记录器记录信息
+[ex-log-syslog]: /rust-cookbook/development_tools/debugging/log.md#记录到-unix-系统日志
+[ex-log-mod]: /rust-cookbook/development_tools/debugging/config_log.md#启用每个模块的日志级别
+[ex-log-env-variable]: /rust-cookbook/development_tools/debugging/config_log.md#用自定义环境变量设置日志记录
+[ex-log-timestamp]: /rust-cookbook/development_tools/debugging/config_log.md#在日志信息中包含时间戳
+[ex-log-custom]: /rust-cookbook/development_tools/debugging/config_log.md#将信息记录到自定义位置
 
 {{#include ../links.md}}
