@@ -1,15 +1,16 @@
 ## 将信息记录到自定义位置
 
+<!--
+> [development_tools/debugging/config_log/log-custom.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/config_log/log-custom.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![log4rs-badge]][log4rs] [![cat-debugging-badge]][cat-debugging]
 
-[log4rs] configures log output to a custom location. [log4rs] can use either an
-external YAML file or a builder configuration.
+[log4rs] 将日志输出配置到自定义位置。[log4rs] 可以使用外部 YAML 文件或生成器配置。
 
-Create the log configuration with [`log4rs::append::file::FileAppender`]. An
-appender defines the logging destination.  The configuration continues with
-encoding using a custom pattern from [`log4rs::encode::pattern`].
-Assigns the configuration to [`log4rs::config::Config`] and sets the default
-[`log::LevelFilter`].
+使用文件附加器 [`log4rs::append::file::FileAppender`] 创建日志配置，文件附加器定义日志记录的目标位置。日志配置使用 [`log4rs::encode::pattern`] 中的自定义模式进行编码，将配置项分配给 [`log4rs::config::Config`]，并设置默认的日志等级 [`log::LevelFilter`]。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;

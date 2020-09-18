@@ -1,9 +1,14 @@
 ## 启用每个模块的日志级别
 
+<!--
+> [development_tools/debugging/config_log/log-mod.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/config_log/log-mod.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
-Creates two modules `foo` and nested `foo::bar` with logging directives
-controlled separately with [`RUST_LOG`] environmental variable.
+创建两个模块：`foo` 和其嵌套的 `foo::bar`，日志记录指令分别由 [`RUST_LOG`] 环境变量控制。
 
 ```rust,edition2018
 
@@ -33,16 +38,13 @@ fn main() {
 }
 ```
 
-[`RUST_LOG`] environment variable controls [`env_logger`][env_logger] output.
-Module declarations take comma separated entries formatted like
-`path::to::module=log_level`. Run the `test` application as follows:
+[`RUST_LOG`] 环境变量控制 [`env_logger`][env_logger] 的输出。模块声明采用逗号分隔各项，格式类似于 `path::to::module=log_level`。按如下方式运行 `test` 应用程序：
 
 ```bash
 RUST_LOG="warn,test::foo=info,test::foo::bar=debug" ./test
 ```
 
-Sets the default [`log::Level`] to `warn`, module `foo` and module `foo::bar`
-to `info` and `debug`.
+将日志等级 [`log::Level`] 的默认值设置为 `warn`，将模块 `foo` 和其嵌套的模块 `foo::bar` 的日志等级设置为 `info` 和 `debug`。
 
 ```bash
 WARN:test: [root] warn

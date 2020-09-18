@@ -1,14 +1,16 @@
 ## 在日志信息中包含时间戳
 
+<!--
+> [development_tools/debugging/config_log/log-timestamp.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/config_log/log-timestamp.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![chrono-badge]][chrono] [![cat-debugging-badge]][cat-debugging]
 
-Creates a custom logger configuration with [`Builder`].
-Each log entry calls [`Local::now`] to get the current [`DateTime`] in local
-timezone and uses [`DateTime::format`] with [`strftime::specifiers`] to format
-a timestamp used in the final log.
+使用 [`Builder`] 创建自定义记录器配置。每个日志项调用 [`Local::now`] 以获取本地时区中的当前 [`DateTime`]，并使用 [`DateTime::format`] 和 [`strftime::specifiers`] 来格式化最终日志中使用的时间戳。
 
-The example calls [`Builder::format`] to set a closure which formats each
-message text with timestamp, [`Record::level`] and body ([`Record::args`]).
+如下实例调用 [`Builder::format`] 设置一个闭包，该闭包用时间戳、[`Record::level`] 和正文（[`Record::args`]）对每个信息文本进行格式化。
 
 ```rust,edition2018
 use std::io::Write;

@@ -1,13 +1,16 @@
 ## 用自定义环境变量设置日志记录
 
+<!--
+> [development_tools/debugging/config_log/log-env-variable.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/debugging/config_log/log-env-variable.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![log-badge]][log] [![env_logger-badge]][env_logger] [![cat-debugging-badge]][cat-debugging]
 
-[`Builder`] configures logging.
+[`Builder`] 配置日志记录。
 
-[`Builder::parse`] parses `MY_APP_LOG`
-environment variable contents in the form of [`RUST_LOG`] syntax.
-Then, [`Builder::init`] initializes the logger.
-All these steps are normally done internally by [`env_logger::init`].
+[`Builder::parse`] 以 [`RUST_LOG`] 语法的形式解析 `MY_APP_LOG` 环境变量的内容。然后，[`Builder::init`] 初始化记录器。所有这些步骤通常由 [`env_logger::init`] 在内部完成。
 
 ```rust,edition2018
 
