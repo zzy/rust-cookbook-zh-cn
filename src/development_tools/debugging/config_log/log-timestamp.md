@@ -36,7 +36,9 @@ fn main() {
     log::debug!("debug");
 }
 ```
-stderr output will contain
+
+stderr 输入将含有：
+
 ```
 2017-05-22T21:57:06 [WARN] - warn
 2017-05-22T21:57:06 [INFO] - info
