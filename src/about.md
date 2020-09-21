@@ -54,7 +54,7 @@ cargo new my-example --bin
 cd my-example
 ```
 
-然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：了解更多请阅读 [Cargo 中文文档](https://cargo.budshome.com)，关于 Cargo.toml 详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://cargo.budshome.com/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面实例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
+然后，我们还需要添加必要的 crate 到 [Cargo.toml] 中（译者注：了解更多请阅读 [Cargo 中文文档](https://budshome.com/cargo)，关于 Cargo.toml 详细信息也可参阅 [Cargo.toml 与 Cargo.lock](https://budshome.com/cargo/guide/cargo-toml-vs-cargo-lock.html) 中文文档），如上面实例代码顶部的 crate 标志所示，在本例中仅使用了 “rand” crate。为了增加 “rand” crate，我们将使用 `cargo add` 命令，该命令由 [`cargo-edit`] crate 提供，我们需要先安装它：
 
 ```sh
 cargo install cargo-edit
@@ -144,7 +144,7 @@ fn main() -> Result<()> {
 {{#include links.md}}
 
 [index]: intro.md
-[error-docs]: https://rust-lang.budshome.com/ch09-00-error-handling.html
+[error-docs]: https://budshome.com/rust-lang/ch09-00-error-handling.html
 [error-blog]: https://brson.github.io/2016/11/30/starting-with-error-chain
 [error-chain]: https://docs.rs/error-chain/
 [Rust Libz Blitz]: https://internals.rust-lang.org/t/rust-libz-blitz/5184

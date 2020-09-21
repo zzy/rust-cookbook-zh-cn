@@ -3,9 +3,9 @@
 [Build Status travis]: https://api.travis-ci.com/zzy/rust-cookbook-zh-cn.svg?branch=master
 [travis]: https://travis-ci.com/zzy/rust-cookbook-zh-cn
 
-《Rust 实践指南》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://rust-lang.budshome.com)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
+《Rust 实践指南》是 Rust 程序设计语言（[Rust 2018 简体中文版文档](https://budshome.com/rust-lang)）的简要实例示例集合：展示了在 Rust 生态系统中，使用各类 crate 来完成常见编程任务的良好实践。
 
-书中的实例都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://cargo.budshome.com)）项目中进行使用。
+书中的实例都是完整的，并且经过测试，保证能正常工作，可以直接复制到你新建的 Cargo（[中文文档](https://budshome.com/cargo)）项目中进行使用。
 
 > 注1：《Rust 实践指南》翻译自 rust-lang-nursery 组织撰写的 [_"A Rust Cookbook"_](https://github.com/rust-lang-nursery/rust-cookbook)，感谢 rust-lang-nursery 组织的无私奉献！
 
@@ -15,11 +15,11 @@
 
 ## 在线阅读
 
-在线阅读地址：[**《Rust 实践指南》** - http://rust-cookbook.budshome.com](http://rust-cookbook.budshome.com)。
+在线阅读地址：[**《Rust 实践指南》** - http://budshome.com/rust-cookbook](http://budshome.com/rust-cookbook)。
 
 ## 离线阅读
 
-如果你喜欢本地阅读方式，可以使用 mdBook（[中文文档](https://mdbook.budshome.com)） 进行书籍构建：
+如果你喜欢本地阅读方式，可以使用 mdBook（[中文文档](https://budshome.com/mdbook)） 进行书籍构建：
 
 ```bash
 $ git clone https://github.com/zzy/rust-cookbook-zh-cn
@@ -40,7 +40,7 @@ $ open ./book/index.html     # mac
 
 如果欲运行构建本书的测试组件，请执行：
 
-> 测试组件需要安装一些 crate，中国大陆推荐[更换默认的 Cargo 源为国内镜像源](https://cargo.budshome.com/reference/source-replacement.html)。
+> 测试组件需要安装一些 crate，中国大陆推荐[更换默认的 Cargo 源为国内镜像源](https://budshome.com/cargo/reference/source-replacement.html)。
 
 ```bash
 $ cargo test
@@ -59,7 +59,7 @@ git clone https://github.com/zzy/rust-cookbook-zh-cn.git
 cd rust-cookbook-zh-cn
 ```
 
-《Rust 实践指南》使用 `mdBook`（[中文文档](https://mdbook.budshome.com)）构建，所以需要通过 `Cargo`（[中文文档](https://cargo.budshome.com)）安装它：
+《Rust 实践指南》使用 `mdBook`（[中文文档](https://budshome.com/mdbook)）构建，所以需要通过 `Cargo`（[中文文档](https://budshome.com/cargo)）安装它：
 
 ```
 cargo install --version 0.3.5 mdbook
