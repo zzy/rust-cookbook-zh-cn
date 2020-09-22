@@ -1,18 +1,18 @@
-## 静态编译并链接到绑定的 C 语言库
+## 编译并静态链接到绑定的 C 语言库
+
+<!--
+> [development_tools/build_tools/cc-bundled-static.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/build_tools/cc-bundled-static.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
 
 [![cc-badge]][cc] [![cat-development-tools-badge]][cat-development-tools]
 
-To accommodate scenarios where additional C, C++, or assembly is required in a project, the [**cc**][cc] crate
-offers a simple api for compiling bundled C/C++/asm code into static libraries (**.a**) that can be statically linked to by **rustc**.
+为了适应项目中需要混合 C、C++，或 asm 等语言的场景，[**cc**][cc] crate 提供了一个简单的 API，用于将绑定的 C/C++/asm 代码编译成静态库（**.a**），静态库可以通过 **rustc** 静态链接。
 
-The following example has some bundled C code (**src/hello.c**) that will be used from rust.
-Before compiling rust source code, the "build" file (**build.rs**) specified in **Cargo.toml** runs.
-Using the [**cc**][cc] crate, a static library file will be produced (in this case, **libhello.a**, see
-[`compile` docs][cc-build-compile]) which can then be used from rust by declaring the external function signatures in an `extern` block.
+下面的实例有一些绑定的 C 语言代码（**src/hello.c**），它们将从 rust 中调用。在编译 rust 源代码之前，**Cargo.toml** 中指定的“构建”文件（**build.rs**）预先运行。使用 [**cc**][cc] crate，将生成一个静态库文件（本例中为 **libhello.a**，请参阅 [`compile` 文档][cc-build-compile]），通过在 `extern` 代码块中声明外部函数签名，然后就可以从 rust 中调用该静态库。
 
-Since the bundled C is very simple, only a single source file needs to be passed to [`cc::Build`][cc-build].
-For more complex build requirements, [`cc::Build`][cc-build] offers a full suite of builder methods for specifying
-[`include`][cc-build-include] paths and extra compiler [`flag`][cc-build-flag]s.
+本实例中绑定的 C 语言文件非常简单，只需要将一个源文件传递给 [`cc::Build`][cc-build]。对于更复杂的构建需求，[`cc::Build`][cc-build] 提供了一整套构建器方法，用于指定[`（包含）include`][cc-build-include]路径和扩展编译器[`标志（flag）`][cc-build-flag]。
 
 ### `Cargo.toml`
 
@@ -34,7 +34,7 @@ error-chain = "0.11"
 fn main() {
     cc::Build::new()
         .file("src/hello.c")
-        .compile("hello");   // outputs `libhello.a`
+        .compile("hello");   // 输出 `libhello.a`
 }
 ```
 

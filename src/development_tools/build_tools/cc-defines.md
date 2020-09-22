@@ -1,13 +1,14 @@
 ## 编译 C 语言库时自定义设置
 
+<!--
+> [development_tools/build_tools/cc-defines.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/build_tools/cc-defines.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![cc-badge]][cc] [![cat-development-tools-badge]][cat-development-tools]
 
-It is simple to build bundled C code with custom defines using [`cc::Build::define`].
-The method takes an [`Option`] value, so it is possible to create defines such as `#define APP_NAME "foo"`
-as well as `#define WELCOME` (pass `None` as the value for a value-less define). This example builds
-a bundled C file with dynamic defines set in `build.rs` and prints "**Welcome to foo - version 1.0.2**"
-when run. Cargo sets some [environment variables][cargo-env] which may be useful for some custom defines.
-
+使用 [`cc::Build::define`] 自定义构建绑定的 C 语言代码非常简单。该方法接受 [`Option`] 值，因此可以创建这样的定义：`#define APP_NAME "foo"`、`#define WELCOME`（将 `None` 作为不确定值传递）。如下实例构建了一个绑定的 C 语言文件，其在 `build.rs` 中设置了动态定义，并在运行时打印 “**Welcome to foo - version 1.0.2**”。Cargo 设定了一些[环境变量][cargo-env]，这些变量可能对某些自定义设置有用。
 
 ### `Cargo.toml`
 

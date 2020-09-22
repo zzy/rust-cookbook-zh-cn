@@ -1,9 +1,14 @@
-## 静态编译并链接到绑定的 C++ 语言库
+## 编译并静态链接到绑定的 C++ 语言库
+
+<!--
+> [development_tools/build_tools/cc-bundled-cpp.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/build_tools/cc-bundled-cpp.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![cc-badge]][cc] [![cat-development-tools-badge]][cat-development-tools]
 
-Linking a bundled C++ library is very similar to linking a bundled C library. The two core differences when compiling and statically linking a bundled C++ library are specifying a C++ compiler via the builder method [`cpp(true)`][cc-build-cpp] and preventing name mangling by the C++ compiler by adding the `extern "C"` section at the top of our C++ source file.
-
+链接绑定的 C++ 语言库非常类似于链接绑定的 C 语言库。编译并静态链接绑定的 C++ 库时，与链接绑定的 C 语言库相比有两个核心区别：一是通过构造器方法 [`cpp(true)`][cc-build-cpp] 指定 C++ 编译器；二是通过在 C++ 源文件顶部添加 `extern "C"` 代码段，以防止 C++ 编译器的名称篡改。
 
 ### `Cargo.toml`
 
