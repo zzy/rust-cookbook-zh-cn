@@ -1,4 +1,4 @@
-## Handle invalid CSV data with Serde
+## 用 Serde 处理无效的 CSV 数据
 
 [![csv-badge]][csv] [![serde-badge]][serde] [![cat-encoding-badge]][cat-encoding]
 

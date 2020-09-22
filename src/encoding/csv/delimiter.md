@@ -1,4 +1,4 @@
-## Read CSV records with different delimiter
+## 读取有不同分隔符的 CSV 记录
 
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 

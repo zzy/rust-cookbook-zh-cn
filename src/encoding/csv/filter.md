@@ -1,4 +1,4 @@
-## Filter CSV records matching a predicate
+## 筛选匹配断言的 CSV 记录
 
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 

@@ -8,9 +8,9 @@
 
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 
-使用 [`Version::parse`] 从字符串字面量构造语义化版本 [`semver::Version`]，然后逐个递增补丁版本号、副（次要）版本号和主版本号。
+使用 [`Version::parse`] 从字符串字面量构造语义化版本 [`semver::Version`]，然后逐个递增补丁（修订）版本号、副（次要）版本号和主版本号。
 
-注意：根据[语义化版本控制规范][Semantic Versioning Specification]，增加副（次要）版本号时会将补丁版本号重置为 0，增加主版本号时会将副（次要）版本号和补丁版本号都重置为 0。
+注意：根据[语义化版本控制规范][Semantic Versioning Specification]，增加副（次要）版本号时会将补丁（修订）版本号重置为 0，增加主版本号时会将副（次要）版本号和补丁（修订）版本号都重置为 0。
 
 ```rust,edition2018
 use semver::{Version, SemVerError};

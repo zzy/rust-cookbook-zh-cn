@@ -1,4 +1,4 @@
-## Percent-encode a string
+## 百分比编码（URL 编码）字符串
 
 [![percent-encoding-badge]][percent-encoding] [![cat-encoding-badge]][cat-encoding]
 

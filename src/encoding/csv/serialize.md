@@ -1,4 +1,4 @@
-## Serialize records to CSV
+## 将记录序列化为 CSV
 
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 

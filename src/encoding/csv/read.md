@@ -1,4 +1,4 @@
-## Read CSV records
+## 读取 CSV 记录
 
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 

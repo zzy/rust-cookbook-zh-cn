@@ -1,4 +1,4 @@
-## Read and write integers in little-endian byte order
+## 以小端字节顺序读写整数
 
 [![byteorder-badge]][byteorder] [![cat-encoding-badge]][cat-encoding]
 

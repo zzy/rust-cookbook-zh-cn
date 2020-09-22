@@ -1,4 +1,4 @@
-## Encode a string as application/x-www-form-urlencoded
+## 将字符串编码为 application/x-www-form-urlencoded
 
 [![url-badge]][url] [![cat-encoding-badge]][cat-encoding]
 

@@ -1,4 +1,4 @@
-## Serialize records to CSV using Serde
+## 用 Serde 将记录序列化为 CSV
 
 [![csv-badge]][csv] [![serde-badge]][serde] [![cat-encoding-badge]][cat-encoding]
 

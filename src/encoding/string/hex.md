@@ -1,4 +1,4 @@
-## Encode and decode hex
+## 编码和解码十六进制
 
 [![data-encoding-badge]][data-encoding] [![cat-encoding-badge]][cat-encoding]
 
