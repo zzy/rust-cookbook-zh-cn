@@ -1,12 +1,16 @@
 ## 解析复杂的版本字符串
 
+<!--
+> [development_tools/versioning/semver-complex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/versioning/semver-complex.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 
-Constructs a [`semver::Version`] from a complex version string using [`Version::parse`]. The string
-contains pre-release and build metadata as defined in the [Semantic Versioning Specification].
+使用 [`Version::parse`] 从复杂的版本字符串构造语义化版本 [`semver::Version`]。该字符串包含[语义化版本控制规范][Semantic Versioning Specification]中定义的预发布和构建元数据。
 
-Note that, in accordance with the Specification, build metadata is parsed but not considered when
-comparing versions. In other words, two versions may be equal even if their build strings differ.
+需要注意的是：根据[语义化版本控制规范][Semantic Versioning Specification]，构建元数据是虽然被解析，但在比较版本时不考虑。换句话说，即使两个版本的构建字符串不同，但它们的版本可能是相等的。
 
 ```rust,edition2018
 use semver::{Identifier, Version, SemVerError};

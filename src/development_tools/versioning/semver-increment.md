@@ -1,14 +1,16 @@
 ## 解析并递增版本字符串
 
+<!--
+> [development_tools/versioning/semver-increment.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/versioning/semver-increment.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 
-Constructs a [`semver::Version`] from a string literal using [`Version::parse`],
-then increments it by patch, minor, and major version number one by one.
+使用 [`Version::parse`] 从字符串字面量构造语义化版本 [`semver::Version`]，然后逐个递增补丁版本号、副（次要）版本号和主版本号。
 
-Note that in accordance with the [Semantic Versioning Specification],
-incrementing the minor version number resets the patch version number to 0 and
-incrementing the major version number resets both the minor and patch version
-numbers to 0.
+注意：根据[语义化版本控制规范][Semantic Versioning Specification]，增加副（次要）版本号时会将补丁版本号重置为 0，增加主版本号时会将副（次要）版本号和补丁版本号都重置为 0。
 
 ```rust,edition2018
 use semver::{Version, SemVerError};

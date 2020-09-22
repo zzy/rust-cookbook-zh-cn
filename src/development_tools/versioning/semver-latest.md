@@ -1,10 +1,14 @@
 ## 查询适配给定范围的最新版本
 
+<!--
+> [development_tools/versioning/semver-latest.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/development_tools/versioning/semver-latest.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![semver-badge]][semver] [![cat-config-badge]][cat-config]
 
-Given a list of version &strs, finds the latest [`semver::Version`].
-[`semver::VersionReq`] filters the list with [`VersionReq::matches`].
-Also demonstrates `semver` pre-release preferences.
+给定一个版本字符串 &str 的列表，查找最新的语义化版本 [`semver::Version`]。[`semver::VersionReq`] 用 [`VersionReq::matches`] 过滤列表，也可以展示语义化版本 `semver` 的预发布参数设置。
 
 ```rust,edition2018
 # use error_chain::error_chain;
