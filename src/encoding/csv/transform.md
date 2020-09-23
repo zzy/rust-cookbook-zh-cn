@@ -10,7 +10,7 @@
 
 将包含颜色名称和十六进制颜色值的 CSV 文件转换为具有颜色名称和 rgb 颜色值的 CSV 文件。使用 [csv] crate 读写 csv 文件，使用 [serde] crate 对行输入字节进行反序列化，对行输出字节进行序列化。
 
-详细请参阅[`csv::Reader::deserialize`]、[`serde::Deserialize`]，以及 [`std::str::FromStr`]。
+详细请参阅 [`csv::Reader::deserialize`]、[`serde::Deserialize`]，以及 [`std::str::FromStr`]。
 
 ```rust,edition2018
 # use error_chain::error_chain;
