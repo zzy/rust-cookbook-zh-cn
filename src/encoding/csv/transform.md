@@ -1,12 +1,16 @@
 ## 转换 CSV 文件的列
 
+<!--
+> [encoding/csv/transform.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/csv/transform.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![csv-badge]][csv] [![serde-badge]][serde] [![cat-encoding-badge]][cat-encoding]
 
-Transform a CSV file containing a color name and a hex color into one with a
-color name and an rgb color.  Utilizes the [csv] crate to read and write the
-csv file, and [serde] to deserialize and serialize the rows to and from bytes.
+将包含颜色名称和十六进制颜色值的 CSV 文件转换为具有颜色名称和 rgb 颜色值的 CSV 文件。使用 [csv] crate 读写 csv 文件，使用 [serde] crate 对行输入字节进行反序列化，对行输出字节进行序列化。
 
-See [`csv::Reader::deserialize`], [`serde::Deserialize`], and [`std::str::FromStr`]
+详细请参阅[`csv::Reader::deserialize`]、[`serde::Deserialize`]，以及 [`std::str::FromStr`]。
 
 ```rust,edition2018
 # use error_chain::error_chain;

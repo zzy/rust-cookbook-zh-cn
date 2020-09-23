@@ -1,10 +1,14 @@
 ## 用 Serde 处理无效的 CSV 数据
 
+<!--
+> [encoding/csv/invalid.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/csv/invalid.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![csv-badge]][csv] [![serde-badge]][serde] [![cat-encoding-badge]][cat-encoding]
 
-CSV files often contain invalid data. For these cases, the `csv` crate
-provides a custom deserializer, [`csv::invalid_option`], which automatically
-converts invalid data to None values.
+CSV 文件通常包含无效数据。对于这些情形，`csv` crate 提供了一个自定义的反序列化程序 [`csv::invalid_option`]，它自动将无效数据转换为 None 值。
 
 ```rust,edition2018
 use csv::Error;

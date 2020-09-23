@@ -1,9 +1,14 @@
 ## 用 Serde 将记录序列化为 CSV
 
+<!--
+> [encoding/csv/serde-serialize.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/csv/serde-serialize.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![csv-badge]][csv] [![serde-badge]][serde] [![cat-encoding-badge]][cat-encoding]
 
-The following example shows how to serialize custom structs as CSV records using
-the [serde] crate.
+下面的实例展示如何使用 [serde] crate 将自定义结构体序列化为 CSV 记录。
 
 ```rust,edition2018
 # use error_chain::error_chain;

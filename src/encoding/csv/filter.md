@@ -1,8 +1,14 @@
 ## 筛选匹配断言的 CSV 记录
 
+<!--
+> [encoding/csv/filter.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/csv/filter.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 
-Returns _only_ the rows from `data` with a field that matches `query`.
+_仅仅_ 返回 `data` 中字段（field）与 `query` 匹配的的行。
 
 ```rust,edition2018
 # use error_chain::error_chain;
@@ -42,4 +48,4 @@ West Hollywood,CA,37031,34.0900000,-118.3608333";
 }
 ```
 
-_Disclaimer: this example has been adapted from [the csv crate tutorial](https://docs.rs/csv/*/csv/tutorial/index.html#filter-by-search)_.
+_免责声明：此实例改编自[csv crate 教程](https://docs.rs/csv/*/csv/tutorial/index.html#filter-by-search)_。
