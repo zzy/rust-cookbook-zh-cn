@@ -39,7 +39,7 @@
 - [编码](encoding.md)
   - [字符集](encoding/strings.md)
   - [CSV 处理](encoding/csv.md)
-  - [结构化资料](encoding/complex.md)
+  - [结构化数据](encoding/complex.md)
 - [错误处理](errors.md)
   - [处理错误变量](errors/handle.md)
 - [文件系统](file.md)

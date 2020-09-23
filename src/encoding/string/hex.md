@@ -1,16 +1,18 @@
 ## 编码和解码十六进制
 
+<!--
+> [encoding/string/hex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/string/hex.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![data-encoding-badge]][data-encoding] [![cat-encoding-badge]][cat-encoding]
 
-The [`data_encoding`] crate provides a `HEXUPPER::encode` method which
-takes a `&[u8]` and returns a `String` containing the hexadecimal
-representation of the data.
+[`data_encoding`] crate 提供了 `HEXUPPER::encode` 方法，该方法接受 `&[u8]` 参数并返回十六进制数据的字符串 `String`。
 
-Similarly, a `HEXUPPER::decode` method is provided which takes a `&[u8]` and
-returns a `Vec<u8>` if the input data is successfully decoded.
+类似地，[`data_encoding`] crate 提供了 `HEXUPPER::decode` 方法，该方法接受 `&[u8]` 参数。如果输入数据被成功解码，则返回 `Vec<u8>`。
 
-The example below coverts `&[u8]` data to hexadecimal equivalent.  Compares this
-value to the expected value.
+下面的实例将 `&[u8]` 数据转换为等效的十六进制数据，然后将此值与预期值进行比较。
 
 ```rust,edition2018
 use data_encoding::{HEXUPPER, DecodeError};

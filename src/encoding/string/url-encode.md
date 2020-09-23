@@ -1,11 +1,14 @@
 ## 将字符串编码为 application/x-www-form-urlencoded
 
+<!--
+> [encoding/string/hex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/string/hex.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![url-badge]][url] [![cat-encoding-badge]][cat-encoding]
 
-Encodes a string into [application/x-www-form-urlencoded] syntax
-using the [`form_urlencoded::byte_serialize`] and subsequently
-decodes it with [`form_urlencoded::parse`]. Both functions return iterators
-that collect into a `String`.
+如下实例使用 [`form_urlencoded::byte_serialize`] 将字符串编码为 [application/x-www-form-urlencoded] 表单语法，随后使用 [`form_urlencoded::parse`] 对其进行解码。这两个函数都返回迭代器，然后这些迭代器聚集为 `String`。
 
 ```rust,edition2018
 use url::form_urlencoded::{byte_serialize, parse};

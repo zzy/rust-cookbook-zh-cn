@@ -1,10 +1,14 @@
 ## 百分比编码（URL 编码）字符串
 
+<!--
+> [encoding/string/percent-encode.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/string/percent-encode.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
+
 [![percent-encoding-badge]][percent-encoding] [![cat-encoding-badge]][cat-encoding]
 
-Encode an input string with [percent-encoding] using the [`utf8_percent_encode`]
-function from the `percent-encoding` crate. Then decode using the [`percent_decode`]
-function.
+使用 `percent-encoding` crate 中的 [`utf8_percent_encode`] 函数对输入字符串进行[百分比编码（URL 编码）][percent-encoding]。解码使用 [`percent_decode`] 函数。
 
 ```rust,edition2018
 use percent_encoding::{utf8_percent_encode, percent_decode, AsciiSet, CONTROLS};
@@ -28,12 +32,9 @@ fn main() -> Result<(), Utf8Error> {
 }
 ```
 
-The encode set defines which bytes (in addition to non-ASCII and controls) need
-to be percent-encoded. The choice of this set depends on context. For example,
-`url` encodes `?` in a URL path but not in a query string.
+编码集定义哪些字节（除了非 ASCII 字节和控制键之外）需要进行百分比编码（URL 编码），这个集合的选择取决于上下文。例如，`url` 对 URL 路径中的 `?` 编码，而不对查询字符串中的 `?` 编码。
 
-The return value of encoding is an iterator of `&str` slices which collect into
-a `String`.
+编码的返回值是 `&str` 切片的迭代器，然后聚集为一个字符串 `String`。
 
 [`percent_decode`]: https://docs.rs/percent-encoding/*/percent_encoding/fn.percent_decode.html
 [`utf8_percent_encode`]: https://docs.rs/percent-encoding/*/percent_encoding/fn.utf8_percent_encode.html

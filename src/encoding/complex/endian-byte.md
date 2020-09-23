@@ -1,5 +1,11 @@
 ## 以小端字节顺序读写整数
 
+<!--
+> [encoding/string/hex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/string/hex.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![byteorder-badge]][byteorder] [![cat-encoding-badge]][cat-encoding]
 
 `byteorder` can reverse the significant bytes of structured data.  This may
