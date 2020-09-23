@@ -21,7 +21,7 @@
 | [转换 CSV 文件的列][ex-csv-transform-column] | [![csv-badge]][csv] [![serde-badge]][serde] | [![cat-encoding-badge]][cat-encoding] |
 | [将非结构化 JSON 序列化和反序列化][ex-json-value] | [![serde-json-badge]][serde-json] | [![cat-encoding-badge]][cat-encoding] |
 | [反序列化 TOML 配置文件][ex-toml-config] | [![toml-badge]][toml] | [![cat-encoding-badge]][cat-encoding] |
-| [以小端字节顺序读写整数][ex-byteorder-le] | [![byteorder-badge]][byteorder] | [![cat-encoding-badge]][cat-encoding] |
+| [以小端模式（低位模式）字节顺序读写整数][ex-byteorder-le] | [![byteorder-badge]][byteorder] | [![cat-encoding-badge]][cat-encoding] |
 
 [ex-percent-encode]: encoding/strings.md#百分比编码url-编码字符串
 [ex-urlencoded]: encoding/strings.md#将字符串编码为-applicationx-www-form-urlencoded
@@ -36,7 +36,7 @@
 [ex-csv-transform-column]: encoding/csv.md#转换-csv-文件的列
 [ex-json-value]: encoding/complex.md#将非结构化-json-序列化和反序列化
 [ex-toml-config]: encoding/complex.md#反序列化-toml-配置文件
-[ex-byteorder-le]: encoding/complex.md#以小端字节顺序读写整数
+[ex-byteorder-le]: encoding/complex.md#以小端模式低位模式字节顺序读写整数
 
 
 {{#include links.md}}

@@ -1,5 +1,11 @@
 ## 读取有不同分隔符的 CSV 记录
 
+<!--
+> [encoding/complex/toml.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/complex/toml.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![csv-badge]][csv] [![cat-encoding-badge]][cat-encoding]
 
 Reads CSV records with a tab [`delimiter`].

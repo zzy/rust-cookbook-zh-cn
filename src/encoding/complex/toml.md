@@ -1,9 +1,14 @@
 ## 反序列化 TOML 配置文件
 
+<!--
+> [encoding/complex/toml.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/complex/toml.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![toml-badge]][toml] [![cat-encoding-badge]][cat-encoding]
 
-Parse some TOML into a universal `toml::Value` that is able to represent any
-valid TOML data.
+将一些 TOML 配置项解析为一个通用的值 `toml::Value`，该值能够表示任何有效的 TOML 数据。
 
 ```rust,edition2018
 use toml::{Value, de::Error};
@@ -29,7 +34,7 @@ fn main() -> Result<(), Error> {
 }
 ```
 
-Parse TOML into your own structs using [Serde].
+使用 [Serde] crate 将 TOML 解析为自定义的结构体。
 
 ```rust,edition2018
 use serde::Deserialize;

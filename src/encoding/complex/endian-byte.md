@@ -1,16 +1,14 @@
-## 以小端字节顺序读写整数
+## 以小端模式（低位模式）字节顺序读写整数
 
 <!--
-> [encoding/string/hex.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/string/hex.md)
+> [encoding/complex/endian-byte.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/encoding/complex/endian-byte.md)
 > <br />
 > commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
 -->
 
 [![byteorder-badge]][byteorder] [![cat-encoding-badge]][cat-encoding]
 
-`byteorder` can reverse the significant bytes of structured data.  This may
-be necessary when receiving information over the network, such that bytes
-received are from another system.
+字节序 `byteorder` 可以反转结构化数据的有效字节。当通过网络接收信息时，这可能是必要的，例如接收到的字节来自另一个系统。
 
 ```rust,edition2018
 
