@@ -1,5 +1,11 @@
 ## 在 main 方法中对错误适当处理
 
+<!--
+> [errors/handle/main.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/errors/handle/main.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 
 Handles error that occur when trying to open a file that does not
