@@ -1,4 +1,4 @@
-## Obtain backtrace of complex error scenarios
+## 获取复杂错误场景的回溯
 
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 

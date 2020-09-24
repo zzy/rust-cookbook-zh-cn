@@ -71,6 +71,8 @@ cargo test
 
 {{#include encoding.md}}
 
+{{#include errors.md}}
+
 {{#include file.md}}
 
 {{#include hardware.md}}

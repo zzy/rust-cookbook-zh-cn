@@ -1,4 +1,4 @@
-## Avoid discarding errors during error conversions
+## 避免在错误转变过程中遗漏错误
 
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 

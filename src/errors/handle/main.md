@@ -1,4 +1,4 @@
-## Handle errors correctly in main
+## 在 main 方法中对错误适当处理
 
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 
