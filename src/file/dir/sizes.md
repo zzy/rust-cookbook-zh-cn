@@ -1,4 +1,4 @@
-## Recursively calculate file sizes at given depth
+## 在给定深度的目录，递归计算文件大小
 
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 

@@ -1,4 +1,4 @@
-## Find all png files recursively
+## 递归查找所有 png 文件
 
 [![glob-badge]][glob] [![cat-filesystem-badge]][cat-filesystem]
 

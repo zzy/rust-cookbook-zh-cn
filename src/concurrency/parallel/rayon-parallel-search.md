@@ -1,4 +1,4 @@
-## 使用指定断言并行搜索项
+## 使用给定断言并行搜索项
 
 <!--
 > [concurrency/parallel/rayon-parallel-search.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-parallel-search.md)

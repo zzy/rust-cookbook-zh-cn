@@ -1,4 +1,4 @@
-##  Traverse directories while skipping dotfiles
+## 跳过隐藏文件遍历目录
 
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 

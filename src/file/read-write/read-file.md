@@ -1,4 +1,4 @@
-## Read lines of strings from a file
+## 读取文件的字符串行
 
 [![std-badge]][std] [![cat-filesystem-badge]][cat-filesystem]
 

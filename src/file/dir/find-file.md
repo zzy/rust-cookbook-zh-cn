@@ -1,4 +1,4 @@
-##  Recursively find all files with given predicate
+## 使用给定断言递归查找所有文件
 
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 

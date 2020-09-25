@@ -1,4 +1,4 @@
-## Avoid writing and reading from a same file
+## 避免读取写入同一文件
 
 [![same_file-badge]][same_file] [![cat-filesystem-badge]][cat-filesystem]
 

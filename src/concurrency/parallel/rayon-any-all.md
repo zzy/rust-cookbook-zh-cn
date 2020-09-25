@@ -1,4 +1,4 @@
-## 并行测试集合中任意或所有的元素是否匹配指定断言
+## 并行测试集合中任意或所有的元素是否匹配给定断言
 
 <!--
 > [concurrency/parallel/rayon-any-all.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/concurrency/parallel/rayon-any-all.md)

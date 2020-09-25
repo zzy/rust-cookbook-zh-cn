@@ -1,4 +1,4 @@
-## Recursively find duplicate file names
+## 递归查找重名文件
 
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 
