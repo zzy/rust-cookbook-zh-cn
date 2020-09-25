@@ -1,4 +1,4 @@
-## 忽略文件名大小写，根据给定模式查找所有文件
+## 忽略文件名大小写，使用给定模式查找所有文件
 
 [![glob-badge]][glob] [![cat-filesystem-badge]][cat-filesystem]
 

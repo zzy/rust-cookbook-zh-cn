@@ -18,7 +18,7 @@
 | [跳过隐藏文件遍历目录][ex-file-skip-dot] | [![walkdir-badge]][walkdir] | [![cat-filesystem-badge]][cat-filesystem] |
 | [在给定深度的目录，递归计算文件大小][ex-file-sizes] | [![walkdir-badge]][walkdir] | [![cat-filesystem-badge]][cat-filesystem] |
 | [递归查找所有 png 文件][ex-glob-recursive] | [![glob-badge]][glob] | [![cat-filesystem-badge]][cat-filesystem] |
-| [忽略文件名大小写，根据给定模式查找所有文件][ex-glob-with] | [![glob-badge]][glob] | [![cat-filesystem-badge]][cat-filesystem] |
+| [忽略文件名大小写，使用给定模式查找所有文件][ex-glob-with] | [![glob-badge]][glob] | [![cat-filesystem-badge]][cat-filesystem] |
 
 [ex-std-read-lines]: file/read-write.md#读取文件的字符串行
 [ex-avoid-read-write]: file/read-write.md#避免读取写入同一文件
@@ -30,6 +30,6 @@
 [ex-file-skip-dot]: file/dir.md#跳过隐藏文件遍历目录
 [ex-file-sizes]: file/dir.md#在给定深度的目录递归计算文件大小
 [ex-glob-recursive]: file/dir.md#递归查找所有-png-文件
-[ex-glob-with]: file/dir.md#忽略文件名大小写根据给定模式查找所有文件
+[ex-glob-with]: file/dir.md#忽略文件名大小写使用给定模式查找所有文件
 
 {{#include links.md}}
