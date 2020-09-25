@@ -1,15 +1,16 @@
 ## 获取复杂错误场景的回溯
 
+<!--
+> [errors/handle/backtrace.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/errors/handle/backtrace.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 
-This recipe shows how to handle a complex error scenario and then
-print a backtrace. It relies on [`chain_err`] to extend errors by
-appending new errors. The error stack can be unwound, thus providing
-a better context to understand why an error was raised.
+本实例展示了如何处理一个复杂的错误场景，并且打印出错误回溯。依赖于 [`chain_err`]，通过附加新的错误来扩展错误信息。从而可以展开错误堆栈，这样提供了更好的上下文来理解错误的产生原因。
 
-The below recipes attempts to deserialize the value `256` into a
-`u8`. An error will bubble up from Serde then csv and finally up to the
-user code.
+下述代码尝试将值 `256` 反序列化为 `u8`。首先 Serde 产生错误，然后是 csv，最后是用户代码。
 
 ```rust,edition2018
 use error_chain::error_chain;
@@ -77,7 +78,7 @@ fn main() {
 }
 ```
 
-Backtrace error rendered:
+错误回溯信息如下：
 
 ```text
 Error level - description
@@ -87,7 +88,7 @@ Error level - description
 └> 3 - field 1: number too large to fit in target type
 ```
 
-Run the recipe with `RUST_BACKTRACE=1` to display a detailed [`backtrace`] associated with this error.
+可以通过附加命令参数 `RUST_BACKTRACE=1` 运行实例，以显示与此错误相关的详细[回溯][`backtrace`]。
 
 [`backtrace`]: https://docs.rs/error-chain/*/error_chain/trait.ChainedError.html#tymethod.backtrace
 [`chain_err`]: https://docs.rs/error-chain/*/error_chain/index.html#chaining-errors

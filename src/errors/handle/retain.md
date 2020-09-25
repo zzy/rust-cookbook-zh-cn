@@ -1,16 +1,16 @@
 ## 避免在错误转变过程中遗漏错误
 
+<!--
+> [errors/handle/retain.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/errors/handle/retain.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![error-chain-badge]][error-chain] [![cat-rust-patterns-badge]][cat-rust-patterns]
 
-The  [error-chain] crate makes [matching] on different error types returned by
-a function possible and relatively compact. [`ErrorKind`] determines the error
-type.
+[error-chain] crate 使得[匹配][matching]函数返回的不同错误类型成为可能，并且相对简洁。[`ErrorKind`] 是枚举类型，可以确定错误类型。
 
-Uses [reqwest]::[blocking] to query a random integer generator web service.  Converts
-the string response into an integer. The Rust standard library,
-[reqwest], and the web service can all generate errors. Well defined Rust errors
-use [`foreign_links`]. An additional [`ErrorKind`] variant for the web service
-error uses `errors` block of the `error_chain!` macro.
+下文实例使用 [reqwest]::[blocking] 来查询一个随机整数生成器的 web 服务，并将服务器响应的字符串转换为整数。Rust 标准库 [reqwest] 和 web 服务都可能会产生错误，所以使用 [`foreign_links`] 定义易于辨认理解的 Rust 错误。另外，web 服务错误的 [`ErrorKind`] 变体，使用 `error_chain!` 宏的 `errors` 代码块定义。
 
 ```rust,edition2018
 use error_chain::error_chain;
