@@ -1,8 +1,14 @@
-## Read Environment Variable 
+## 读取环境变量
+
+<!--
+> [os/external/read-env-variable.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/os/external/read-env-variable.md)
+> <br />
+> commit bba147f18531934c904b1c5afaed3e6550b1c1c0 - 2020.06.14
+-->
 
 [![std-badge]][std] [![cat-os-badge]][cat-os]
 
-Reads an environment variable via [std::env::var].
+通过 [std::env::var] 读取环境变量。
 
 ```rust,edition2018,no_run
 use std::env;
@@ -10,8 +16,8 @@ use std::fs;
 use std::io::Error;
 
 fn main() -> Result<(), Error> {
-    // read `config_path` from the environment variable `CONFIG`.
-    // If `CONFIG` isn't set, fall back to a default config path.
+    // 从环境变量 `CONFIG` 读取配置路径 `config_path`。
+    // 如果 `CONFIG` 未设置，采用默认配置路径。
     let config_path = env::var("CONFIG")
         .unwrap_or("/etc/myapp/config".to_string());
 

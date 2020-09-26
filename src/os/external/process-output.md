@@ -1,9 +1,14 @@
-## Run an external command and process stdout
+## 运行外部命令并处理 stdout
+
+<!--
+> [os/external/process-output.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/os/external/process-output.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![regex-badge]][regex] [![cat-os-badge]][cat-os] [![cat-text-processing-badge]][cat-text-processing]
 
-Runs `git log --oneline` as an external [`Command`] and inspects its [`Output`]
-using [`Regex`] to get the hash and message of the last 5 commits.
+将 `git log --oneline` 作为外部命令 [`Command`] 运行，并使用 [`Regex`] 检查其 [`Output`]，以获取最后 5 次提交的哈希值和消息。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;

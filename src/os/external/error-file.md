@@ -1,16 +1,17 @@
-## Redirect both stdout and stderr of child process to the same file
+## 将子进程的 stdout 和 stderr 重定向到同一个文件
+
+<!--
+> [os/external/error-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/os/external/error-file.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-os-badge]][cat-os]
 
-Spawns a child process and redirects `stdout` and `stderr` to the same
-file. It follows the same idea as [run piped external
-commands](#run-piped-external-commands), however [`process::Stdio`]
-writes to a specified file.  [`File::try_clone`] references the same file handle
-for `stdout` and `stderr`. It will ensure that both handles write with the same
-cursor position.
+生成子进程并将 `stdout` 和 `stderr` 重定向到同一个文件。它遵循与[运行管道传输的外部命令](#运行管道传输的外部命令)相同的思想，但是 [`process::Stdio`] 会将输出写入指定的文件。对 `stdout` 和 `stderr` 而言，[`File::try_clone`] 引用相同的文件句柄。它将确保两个句柄使用相同的光标位置进行写入。
 
-The below recipe is equivalent to run the Unix shell command `ls
-. oops >out.txt 2>&1`.
+下面的实例等同于运行 Unix shell 命令 `ls
+. oops >out.txt 2>&1`。
 
 ```rust,edition2018,no_run
 use std::fs::File;

@@ -1,13 +1,17 @@
-## Run piped external commands
+## 运行管道传输的外部命令
+
+<!--
+> [os/external/piped.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/os/external/piped.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-os-badge]][cat-os]
 
-Shows up to the 10<sup>th</sup> biggest files and subdirectories in
-the current working directory. It is equivalent to running: `du -ah . |
-sort -hr | head -n 10`.
+显示当前工作目录中前 10 大的文件和子目录，它等同于运行： `du -ah . |
+sort -hr | head -n 10`。
 
-[`Command`]s represent a process. Output of a child process is captured with a
-[`Stdio::piped`] between parent and child.
+每个命令 [`Command`] 代表一个进程，子进程的输出是通过父进程和子进程之间的管道 [`Stdio::piped`] 捕获的。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;
