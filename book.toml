@@ -1,5 +1,5 @@
 [book]
-title = "Rust 实践指南 - A Rust Cookbook 中文版"
+title = "Rust 实践指南（v1） - A Rust Cookbook 中文版"
 authors = ["zzy"]
 language = "zh"
 description = "Rust 实践指南, rust cookbook 中文版, Rust 实例示例, Rust 编程实战, Rust crate 生态实践, Rust crate 集成应用"

@@ -1,12 +1,14 @@
 ## 读取文件的字符串行
 
+<!--
+> [file/read-write/read-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/read-write/read-file.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![std-badge]][std] [![cat-filesystem-badge]][cat-filesystem]
 
-Writes a three-line message to a file, then reads it back a line at a
-time with the [`Lines`] iterator created by
-[`BufRead::lines`]. [`File`] implements [`Read`] which provides [`BufReader`]
-trait.  [`File::create`] opens a [`File`] for writing, [`File::open`] for
-reading.
+我们向文件写入三行信息，然后使用 [`BufRead::lines`] 创建的迭代器 [`Lines`] 读取文件，一次读回一行。[`File`] 模块实现了提供 [`BufReader`] 结构体的 [`Read`] trait。[`File::create`] 打开文件 [`File`] 进行写入，[`File::open`] 则进行读取。
 
 ```rust,edition2018
 use std::fs::File;

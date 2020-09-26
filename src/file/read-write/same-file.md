@@ -1,10 +1,14 @@
 ## 避免读取写入同一文件
 
+<!--
+> [file/read-write/same-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/read-write/same-file.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![same_file-badge]][same_file] [![cat-filesystem-badge]][cat-filesystem]
 
-Use [`same_file::Handle`] to a file that can be tested for equality with
-other handles. In this example, the handles of file to be read from and
-to be written to are tested for equality.
+对文件使用 [`same_file::Handle`] 结构体，可以测试文件句柄是否等同。在本例中，将对要读取和写入的文件句柄进行相等性测试。
 
 ```rust,edition2018,no_run
 use same_file::Handle;
@@ -38,11 +42,11 @@ fn main() -> Result<(), Error> {
 ```bash
 cargo run
 ```
-displays the contents of the file new.txt.
+显示文件 new.txt 的内容。
 
 ```bash
 cargo run >> ./new.txt
 ```
-errors because the two files are same.
+报错，因为是同一文件。
 
 [`same_file::Handle`]: https://docs.rs/same-file/*/same_file/struct.Handle.html
