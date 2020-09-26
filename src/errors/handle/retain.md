@@ -10,7 +10,7 @@
 
 [error-chain] crate 使得[匹配][matching]函数返回的不同错误类型成为可能，并且相对简洁。[`ErrorKind`] 是枚举类型，可以确定错误类型。
 
-下文实例使用 [reqwest]::[blocking] 来查询一个随机整数生成器的 web 服务，并将服务器响应的字符串转换为整数。Rust 标准库 [reqwest] 和 web 服务都可能会产生错误，所以使用 [`foreign_links`] 定义易于辨认理解的 Rust 错误。另外，web 服务错误的 [`ErrorKind`] 变体，使用 `error_chain!` 宏的 `errors` 代码块定义。
+下文实例使用 [reqwest]::[blocking] 来查询一个随机整数生成器的 web 服务，并将服务器响应的字符串转换为整数。Rust 标准库 [reqwest] 和 web 服务都可能会产生错误，所以使用 [`foreign_links`] 定义易于辨认理解的 Rust 错误。另外，用于 web 服务错误信息的 [`ErrorKind`] 变量，使用 `error_chain!` 宏的 `errors` 代码块定义。
 
 ```rust,edition2018
 use error_chain::error_chain;
