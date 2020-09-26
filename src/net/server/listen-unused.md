@@ -1,10 +1,14 @@
-## Listen on unused port TCP/IP
+## 监听未使用的 TCP/IP 端口
+
+<!--
+> [net/server/listen-unused.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/net/server/listen-unused.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-net-badge]][cat-net]
 
-In this example, the port is displayed on the console, and the program will
-listen until a request is made.  `SocketAddrV4` assigns a random port when
-setting port to 0.
+在本例中，程序将监听显示在控制台上的端口，直到一个请求被发出。当将端口设置为 0 时，`SocketAddrV4` 会分配一个随机端口。
 
 ```rust,edition2018,no_run
 use std::net::{SocketAddrV4, Ipv4Addr, TcpListener};
