@@ -1,14 +1,16 @@
 ## 跳过隐藏文件遍历目录
 
+<!--
+> [file/dir/skip-dot.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/dir/skip-dot.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 
-Uses [`filter_entry`] to descend recursively into entries passing the
-`is_not_hidden` predicate thus skipping hidden files and directories.
- [`Iterator::filter`] applies to each [`WalkDir::DirEntry`] even if the parent
- is a hidden directory.
+递归下行到子目录的过程中，使用 [`filter_entry`] 对目录中的条目传递 `is_not_hidden` 断言，从而跳过隐藏的文件和目录。[`Iterator::filter`] 可应用到要检索的任何目录 [`WalkDir::DirEntry`]，即使父目录是隐藏目录。
 
-Root dir `"."` yields through [`WalkDir::depth`] usage in `is_not_hidden`
-predicate.
+根目录 `"."` 的检索检索，通过在断言 `is_not_hidden` 中使用 [`WalkDir::depth`] 参数生成。
 
 ```rust,edition2018,no_run
 use walkdir::{DirEntry, WalkDir};

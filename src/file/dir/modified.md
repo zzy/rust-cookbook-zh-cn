@@ -8,13 +8,7 @@
 
 [![std-badge]][std] [![cat-filesystem-badge]][cat-filesystem]
 
-Gets the current working directory by calling [`env::current_dir`],
-then for each entries in [`fs::read_dir`], extracts the
-[`DirEntry::path`] and gets the metadata via [`fs::Metadata`]. The
-[`Metadata::modified`] returns the [`SystemTime::elapsed`] time since
-last modification. [`Duration::as_secs`] converts the time to seconds and
-compared with 24 hours (24 * 60 * 60 seconds). [`Metadata::is_file`] filters
-out directories.
+通过调用 [`env::current_dir`] 获取当前工作目录，然后通过 [`fs::read_dir`] 读取目录中的每个条目，通过 [`DirEntry::path`] 提取条目路径，以及通过通过 [`fs::Metadata`] 获取条目元数据。[`Metadata::modified`] 返回条目自上次更改以来的运行时间 [`SystemTime::elapsed`]。[`Duration::as_secs`] 将时间转换为秒，并与 24 小时（24 * 60 * 60 秒）进行比较。[`Metadata::is_file`] 用于筛选出目录。
 
 ```rust,edition2018
 # use error_chain::error_chain;
