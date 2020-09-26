@@ -1,9 +1,14 @@
 ## 递归查找重名文件
 
+<!--
+> [file/dir/duplicate-name.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/dir/duplicate-name.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![walkdir-badge]][walkdir] [![cat-filesystem-badge]][cat-filesystem]
 
-Find recursively in the current directory duplicate filenames,
-printing them only once.
+在当前目录中递归查找重复的文件名，只打印一次。
 
 ```rust,edition2018,no_run
 use std::collections::HashMap;

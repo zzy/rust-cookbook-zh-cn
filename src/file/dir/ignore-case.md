@@ -1,10 +1,18 @@
 ## 忽略文件名大小写，使用给定模式查找所有文件
 
+<!--
+> [file/dir/ignore-case.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/dir/ignore-case.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
+
 [![glob-badge]][glob] [![cat-filesystem-badge]][cat-filesystem]
 
-Find all image files in the `/media/` directory matching the `img_[0-9]*.png` pattern.
+在 `/media/` 目录中查找与正则表达模式 `img_[0-9]*.png` 匹配的所有图像文件。
 
-A custom [`MatchOptions`] struct is passed to the [`glob_with`] function making the glob pattern case insensitive while keeping the other options [`Default`].
+一个自定义 [`MatchOptions`] 结构体被传递给 [`glob_with`] 函数，使全局命令模式下不区分大小写，同时保持其他选项的默认值 [`Default`]。
+
+> 译注：`glob` 是 `glob command` 的简写。在 shell 里面，用 `*` 等匹配模式来匹配文件，如：ls src/*.rs。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;

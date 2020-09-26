@@ -1,14 +1,21 @@
 ## 查找给定路径的循环
 
+<!--
+> [file/dir/loops.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/dir/loops.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![same_file-badge]][same_file] [![cat-filesystem-badge]][cat-filesystem]
 
-Use [`same_file::is_same_file`] to detect loops for a given path.
-For example, a loop could be created on a Unix system via symlinks:
+使用 [`same_file::is_same_file`] 检测给定路径的循环。例如，可以通过软连接（符号链接）在 Unix 系统上创建循环：
+
 ```bash
 mkdir -p /tmp/foo/bar/baz
 ln -s /tmp/foo/  /tmp/foo/bar/baz/qux
 ```
-The following would assert that a loop exists.
+
+下面的实例将断言存在一个循环。
 
 ```rust,edition2018,no_run
 use std::io;

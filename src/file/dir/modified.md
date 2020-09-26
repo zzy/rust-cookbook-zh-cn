@@ -1,5 +1,11 @@
 ## 过去 24 小时内修改过的文件名
 
+<!--
+> [file/dir/modified.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/file/dir/modified.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![std-badge]][std] [![cat-filesystem-badge]][cat-filesystem]
 
 Gets the current working directory by calling [`env::current_dir`],
