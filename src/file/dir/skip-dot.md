@@ -10,7 +10,7 @@
 
 递归下行到子目录的过程中，使用 [`filter_entry`] 对目录中的条目传递 `is_not_hidden` 断言，从而跳过隐藏的文件和目录。[`Iterator::filter`] 可应用到要检索的任何目录 [`WalkDir::DirEntry`]，即使父目录是隐藏目录。
 
-根目录 `"."` 的检索检索，通过在断言 `is_not_hidden` 中使用 [`WalkDir::depth`] 参数生成。
+根目录 `"."` 的检索结果，通过在断言 `is_not_hidden` 中使用 [`WalkDir::depth`] 参数生成。
 
 ```rust,edition2018,no_run
 use walkdir::{DirEntry, WalkDir};
