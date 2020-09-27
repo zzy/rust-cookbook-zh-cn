@@ -45,13 +45,13 @@ fn main() -> Result<()> {
 
     let re = Regex::new(
         r#"(?x)
-          (?:\+?1)?                       # Country Code Optional
+          (?:\+?1)?                       # 国家代码，可选项
           [\s\.]?
-          (([2-9]\d{2})|\(([2-9]\d{2})\)) # Area Code
+          (([2-9]\d{2})|\(([2-9]\d{2})\)) # 地区代码
           [\s\.\-]?
-          ([2-9]\d{2})                    # Exchange Code
+          ([2-9]\d{2})                    # 交换代码
           [\s\.\-]?
-          (\d{4})                         # Subscriber Number"#,
+          (\d{4})                         # 用户号码"#,
     )?;
 
     let phone_numbers = re.captures_iter(phone_text).filter_map(|cap| {

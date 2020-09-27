@@ -38,8 +38,8 @@ fn main() -> Result<()> {
     }
 
     let pattern = Regex::new(r"(?x)
-                               ([0-9a-fA-F]+) # commit hash
-                               (.*)           # The commit message")?;
+                               ([0-9a-fA-F]+) # 提交的哈希值
+                               (.*)           # 提交信息")?;
 
     String::from_utf8(output.stdout)?
         .lines()
