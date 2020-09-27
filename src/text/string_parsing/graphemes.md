@@ -1,4 +1,4 @@
-## Collect Unicode Graphemes
+## 收集 Unicode 字符
 
 [![unicode-segmentation-badge]][`unicode-segmentation`] [![cat-text-processing-badge]][cat-text-processing]
 

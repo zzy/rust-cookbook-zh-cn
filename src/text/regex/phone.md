@@ -1,4 +1,4 @@
-## Extract phone numbers from text
+## 从文本提取电话号码
 
 [![regex-badge]][regex] [![cat-text-processing-badge]][cat-text-processing]
 

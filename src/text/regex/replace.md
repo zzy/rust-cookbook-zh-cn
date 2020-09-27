@@ -1,4 +1,4 @@
-## Replace all occurrences of one text pattern with another pattern.
+## 文本模式提换
 
 [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] [![cat-text-processing-badge]][cat-text-processing]
 

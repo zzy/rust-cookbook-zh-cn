@@ -1,4 +1,4 @@
-## Filter a log file by matching multiple regular expressions
+## 通过匹配多个正则表达式来筛选日志文件
 
 [![regex-badge]][regex] [![cat-text-processing-badge]][cat-text-processing]
 

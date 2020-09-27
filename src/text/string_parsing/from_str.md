@@ -1,4 +1,4 @@
-## Implement the `FromStr` trait for a custom `struct`
+## 自定义`结构体`并实现 `FromStr` trait
 
 [![std-badge]][std] [![cat-text-processing-badge]][cat-text-processing]
 
