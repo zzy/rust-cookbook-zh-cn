@@ -1,10 +1,16 @@
-### 集中趋势量数
+### 集中趋势度量
+
+<!--
+> [science/mathematics/statistics/central-tendency.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/statistics/central-tendency.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-These examples calculate measures of central tendency for a data set contained within a Rust array. There may be no mean, median or mode to calculate for an empty set of data, so each function returns an [`Option`] to be handled by the caller.
+本节实例计算 Rust 数组中包含的数据集的集中趋势度量。对于一个空的数据集，可能没有平均数、中位数或众数去计算，因此每个函数都返回 [`Option`] ，由调用者处理。
 
-The first example calculates the mean (the sum of all measurements divided by the number of measurements in the set) by producing an iterator of references over the data, and using [`sum`] and [`len`] to determine the total value and count of values respectively.
+第一个实例是通过对数据引用生成一个迭代器，然后计算平均数（所有测量值的总和除以测量值的计数），并使用 [`sum`] 和 [`len`] 函数分别确定值的总和及值的计数。
 
 ```rust,edition2018
 fn main() {
@@ -22,7 +28,7 @@ fn main() {
 }
 ```
 
-The second example calculates the median using the quickselect algorithm, which avoids a full [`sort`] by sorting only partitions of the data set known to possibly contain the median. This uses [`cmp`] and [`Ordering`] to succinctly decide the next partition to examine, and [`split_at`] to choose an arbitrary pivot for the next partition at each step.
+第二个实例使用快速选择算法（quick select algorithm）计算中位数，该算法只对已知可能包含中位数的数据集的分区进行排序，从而避免了完整[排序][`sort`]。该算法使用 [`cmp`] 和 [`Ordering`] 简便地地决定要检查的下一个分区，并使用 [`split_at`] 为每个步骤的下一个分区选择一个任意的枢轴量。
 
 ```rust,edition2018
 use std::cmp::Ordering;
@@ -99,7 +105,7 @@ fn main() {
 }
 ```
 
-The final example calculates the  mode using a mutable [`HashMap`] to collect counts of each distinct integer from the set, using a [`fold`] and the [`entry`] API. The most frequent value in the [`HashMap`] surfaces with [`max_by_key`].
+最后一个实例使用可变的 [`HashMap`] 来计算众数，[`fold`] 和 [`entry`] API 用来从集合中收集每个不同整数的计数。[`HashMap`] 中最常见的值可以用 [`max_by_key`] 取得。
 
 ```rust,edition2018
 use std::collections::HashMap;

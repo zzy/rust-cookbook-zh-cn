@@ -54,10 +54,10 @@
 
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
-| [集中趋势量数][ex-central-tendency] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
+| [集中趋势度量][ex-central-tendency] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
 | [计算标准偏差][ex-standard-deviation] | [![std-badge]][std] | [![cat-science-badge]][cat-science] |
 
-[ex-central-tendency]: /science/mathematics/statistics.md#集中趋势量数
+[ex-central-tendency]: /science/mathematics/statistics.md#集中趋势度量
 [ex-standard-deviation]: /science/mathematics/statistics.md#计算标准偏差
 
 ## 其它数学计算
