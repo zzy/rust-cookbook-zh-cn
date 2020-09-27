@@ -1,31 +1,20 @@
 ## Vector 范数
 
+<!--
+> [science/mathematics/linear_algebra/vector-norm.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/linear_algebra/vector-norm.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![ndarray-badge]][ndarray]
 
-This recipe demonstrates use of the [`Array1`] type, [`ArrayView1`] type,
-[`fold`] method, and [`dot`] method in computing the [l1] and [l2] norms of a
-given vector. 
-+ The `l2_norm` function is the simpler of the two, as it computes the
-square root of the dot product of a vector with itself.
-+ The `l1_norm` function is computed by a `fold`
-operation that sums the absolute values of the elements. (This could also be
-performed with `x.mapv(f64::abs).scalar_sum()`, but that would allocate a new
-array for the result of the `mapv`.)
+这个实例展示了 [`Array1`] 类型、[`ArrayView1`] 类型、[`fold`] 方法，以及 [`dot`] 方法在计算给定 vector 的 [l1] 和 [l2] 范数时的用法。
++ `l2_norm` 函数是两者中较简单的，它计算一个 vector 与自身的点积（dot product，数量积）的平方根。
++ `l1_norm` 函数通过 `fold` 运算来计算元素的绝对值（也可以通过 `x.mapv(f64::abs).scalar_sum()` 执行，但是会为 `mapv` 的结果分配一个新的数组）。
 
-Note that both `l1_norm` and `l2_norm` take the [`ArrayView1`] type. This recipe
-considers vector norms, so the norm functions only need to accept one-dimensional 
-views (hence [`ArrayView1`]). While the functions could take a
-parameter of type `&Array1<f64>` instead, that would require the caller to have
-a reference to an owned array, which is more restrictive than just having access
-to a view (since a view can be created from any array or view, not just an owned
-array).
+请注意：`l1_norm` 和 `l2_norm` 都采用 [`ArrayView1`] 类型。这个实例考虑了 vector 范数，所以范数函数只需要接受一维视图（[`ArrayView1`]）。虽然函数可以使用类型为 `&Array1<f64>` 的参数，但这将要求调用方引用拥有所有权的数组，这比访问视图更为严格（因为视图可以从任意数组或视图创建，而不仅仅是从拥有所有权的数组创建）。
 
-`Array` and `ArrayView` are both type aliases for `ArrayBase`. So, the most 
-general argument type for the caller would be `&ArrayBase<S, Ix1> where S: Data`, 
-because then the caller could use `&array` or `&view` instead of `x.view()`. 
-If the function is part of a public API, that may be a better choice for the 
-benefit of users. For internal functions, the more concise `ArrayView1<f64>` 
-may be preferable.
+`Array` 和 `ArrayView` 都是 `ArrayBase` 的类型别名。于是，大多数的调用方参数类型可以是 `&ArrayBase<S, Ix1> where S: Data`，这样调用方就可以使用 `&array` 或者 `&view` 而不是 `x.view()`。如果该函数是公共 API 的一部分，那么对于用户来说，这可能是一个更好的选择。对于内部函数，更简明的 `ArrayView1<f64>` 或许更合适。
 
 ```rust,edition2018
 use ndarray::{array, Array1, ArrayView1};

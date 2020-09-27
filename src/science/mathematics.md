@@ -16,7 +16,7 @@
 | [矩阵相乘][multiply-matrices] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
 | [标量、vector、矩阵相乘][multiply-scalar-vector-matrix] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
 | [矩阵求逆][invert-matrix] | [![nalgebra-badge]][nalgebra] | [![cat-science-badge]][cat-science] |
-| [deserialize-matrix][deserialize-matrix] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
+| [（反）序列化矩阵][deserialize-matrix] | [![ndarray-badge]][ndarray] | [![cat-science-badge]][cat-science] |
 
 [vector-norm]: /science/mathematics/linear_algebra.md#vector-范数
 [vector-comparison]: /science/mathematics/linear_algebra.md#vector-比较

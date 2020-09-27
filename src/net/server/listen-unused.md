@@ -8,7 +8,7 @@
 
 [![std-badge]][std] [![cat-net-badge]][cat-net]
 
-在本例中，程序将监听显示在控制台上的端口，直到一个请求被发出。当将端口设置为 0 时，`SocketAddrV4` 会分配一个随机端口。
+在本实例中，程序将监听显示在控制台上的端口，直到一个请求被发出。当将端口设置为 0 时，`SocketAddrV4` 会分配一个随机端口。
 
 ```rust,edition2018,no_run
 use std::net::{SocketAddrV4, Ipv4Addr, TcpListener};

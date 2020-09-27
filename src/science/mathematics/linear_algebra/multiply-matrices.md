@@ -1,8 +1,14 @@
 ## 矩阵相乘
 
+<!--
+> [science/mathematics/linear_algebra/multiply-matrices.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/linear_algebra/multiply-matrices.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![ndarray-badge]][ndarray] [![cat-science-badge]][cat-science]
 
-Creates two matrices with [`ndarray::arr2`] and performs matrix multiplication on them with [`ndarray::ArrayBase::dot`].
+使用 [`ndarray::arr2`] 创建两个矩阵，并使用 [`ndarray::ArrayBase::dot`] 对它们执行矩阵乘法。
 
 ```rust,edition2018
 use ndarray::arr2;

@@ -1,21 +1,18 @@
 ## Vector 比较
 
+<!--
+> [science/mathematics/linear_algebra/vector-comparison.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/linear_algebra/vector-comparison.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![ndarray-badge]][ndarray]
 
-The [ndarray] crate supports a number of ways to create arrays -- this recipe creates 
-[`ndarray::Array`]s from `std::Vec` using `from`. Then, it sums the arrays element-wise.
+[ndarray] crate 支持多种创建数组的方法——此实例使用 `from` 从 `std::Vec` 创建数组 [`ndarray::Array`]。然后，对数组以元素方式求和。
 
-This recipe contains an example of comparing two floating-point vectors element-wise. 
-Floating-point numbers are often stored inexactly, making exact comparisons difficult. 
-However, the [`assert_abs_diff_eq!`] macro from the [`approx`] crate allows for convenient 
-element-wise comparisons. To use the `approx` crate with `ndarray`, the `approx` 
-feature must be added to the `ndarray` dependency in `Cargo.toml`. For example, 
-`ndarray = { version = "0.13", features = ["approx"] }`.
+下面的实例按元素方式比较两个浮点型 vector。浮点数的存储通常不精确，因此很难进行精确的比较。但是，[`approx`] crate 中的 [`assert_abs_diff_eq!`] 宏允许方便地比较浮点型元素。要将 `approx` 和 `ndarray` 两个 crate一起使用，必须在 `Cargo.toml` 文件中的 `ndarray` 依赖项添加 `approx` 特性。例如：`ndarray = { version = "0.13", features = ["approx"] }`。
 
-This recipe also contains additional ownership examples. Here, `let z = a + b` consumes 
-`a` and `b`, updates `a` with the result, then moves ownership to `z`. Alternatively, 
-`let w = &c + &d` creates a new vector without consuming `c` or `d`, allowing 
-their modification later. See [Binary Operators With Two Arrays] for additional detail.
+此实例还包含其他所有权示例。在这里，`let z = a + b` 执行后，会销毁 `a` and `b`，然后所有权会转移到 `z`。或者，`let w = &c + &d` 创建一个新的 vector，而不销毁 `c` 或者 `d`，允许以后对它们进行修改。有关其他详细信息，请参见[带有两个数组的二进制运算符][Binary Operators With Two Arrays]。
 
 ```rust,edition2018
 use approx::assert_abs_diff_eq;

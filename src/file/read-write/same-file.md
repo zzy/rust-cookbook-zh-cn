@@ -8,7 +8,7 @@
 
 [![same_file-badge]][same_file] [![cat-filesystem-badge]][cat-filesystem]
 
-对文件使用 [`same_file::Handle`] 结构体，可以测试文件句柄是否等同。在本例中，将对要读取和写入的文件句柄进行相等性测试。
+对文件使用 [`same_file::Handle`] 结构体，可以测试文件句柄是否等同。在本实例中，将对要读取和写入的文件句柄进行相等性测试。
 
 ```rust,edition2018,no_run
 use same_file::Handle;

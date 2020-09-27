@@ -1,10 +1,16 @@
 ## 矩阵相加
 
+<!--
+> [science/mathematics/linear_algebra/add-matrices.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/linear_algebra/add-matrices.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![ndarray-badge]][ndarray] [![cat-science-badge]][cat-science]
 
-Creates two 2-D matrices with [`ndarray::arr2`] and sums them element-wise.
+使用 [`ndarray::arr2`] 创建两个二维（2-D）矩阵，并按元素方式求和。
 
-Note the sum is computed as `let sum = &a + &b`. The `&` operator is used to avoid consuming `a` and `b`, making them available later for display. A new array is created containing their sum.
+注意：sum 的计算方式为 `let sum = &a + &b`，借用 `&` 运算符获得 `a` 和 `b` 的引用，可避免销毁他们，使它们可以稍后显示。这样，就创建了一个包含其和的新数组。
 
 ```rust,edition2018
 use ndarray::arr2;
