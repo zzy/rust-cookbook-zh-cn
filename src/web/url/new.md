@@ -1,4 +1,4 @@
-## Create new URLs from a base URL
+## 从基本 URL 创建新 URLs
 
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 

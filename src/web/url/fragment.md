@@ -1,4 +1,4 @@
-## Remove fragment identifiers and query pairs from a URL
+## 从 URL 移除片段标识符和查询对
 
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 

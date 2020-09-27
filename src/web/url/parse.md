@@ -1,4 +1,4 @@
-## Parse a URL from a string to a `Url` type
+## 解析 URL 字符串为 `Url` 类型
 
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 

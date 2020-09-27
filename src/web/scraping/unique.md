@@ -1,4 +1,4 @@
-## Extract all unique links from a MediaWiki markup
+## 从 MediaWiki 标记页面提取所有唯一性链接
 
 [![reqwest-badge]][reqwest] [![regex-badge]][regex] [![cat-net-badge]][cat-net]
 

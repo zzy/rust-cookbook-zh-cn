@@ -1,4 +1,4 @@
-## Create a base URL by removing path segments
+## 通过移除路径段创建基本 URL
 
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 
