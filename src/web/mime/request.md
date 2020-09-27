@@ -1,4 +1,4 @@
-## Parse the MIME type of a HTTP response
+## 解析 HTTP 响应的 MIME 类型
 
 [![reqwest-badge]][reqwest] [![mime-badge]][mime] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 

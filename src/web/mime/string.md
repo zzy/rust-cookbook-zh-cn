@@ -1,4 +1,4 @@
-## Get MIME type from string
+## 从字符串获取 MIME 类型
 
 [![mime-badge]][mime] [![cat-encoding-badge]][cat-encoding]
 

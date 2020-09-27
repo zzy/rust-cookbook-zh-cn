@@ -25,26 +25,26 @@
 | [解析 URL 字符串为 `Url` 类型][ex-url-parse] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
 | [通过移除路径段创建基本 URL][ex-url-base] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
 | [从基本 URL 创建新 URLs][ex-url-new-from-base] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
-| [提取 URL 源（scheme/host/port）][ex-url-origin] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
+| [提取 URL 源（scheme/ host/ port）][ex-url-origin] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
 | [从 URL 移除片段标识符和查询对][ex-url-rm-frag] | [![url-badge]][url] | [![cat-net-badge]][cat-net] |
 
 [ex-url-parse]: web/url.md#解析-url-字符串为-url-类型
 [ex-url-base]: web/url.md#通过移除路径段创建基本-url
 [ex-url-new-from-base]: web/url.md#从基本-url-创建新-urls
-[ex-url-origin]: web/url.md#提取-url-源-scheme-host-port
+[ex-url-origin]: web/url.md#提取-url-源scheme-host-port
 [ex-url-rm-frag]: web/url.md#从-url-移除片段标识符和查询对
 
 ## 媒体类型（MIME）
 
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
-| [Get MIME type from string][ex-mime-from-string] | [![mime-badge]][mime] | [![cat-encoding-badge]][cat-encoding] |
-| [Get MIME type from filename][ex-mime-from-filename] | [![mime-badge]][mime] | [![cat-encoding-badge]][cat-encoding] |
-| [Parse the MIME type of a HTTP response][ex-http-response-mime-type] | [![mime-badge]][mime] [![reqwest-badge]][reqwest] | [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding] |
+| [从字符串获取 MIME 类型][ex-mime-from-string] | [![mime-badge]][mime] | [![cat-encoding-badge]][cat-encoding] |
+| [从文件名获取 MIME 类型][ex-mime-from-filename] | [![mime-badge]][mime] | [![cat-encoding-badge]][cat-encoding] |
+| [解析 HTTP 响应的 MIME 类型][ex-http-response-mime-type] | [![mime-badge]][mime] [![reqwest-badge]][reqwest] | [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding] |
 
-[ex-mime-from-string]: web/mime.md#get-mime-type-from-string
-[ex-mime-from-filename]: web/mime.md#get-mime-type-from-filename
-[ex-http-response-mime-type]: web/mime.md#parse-the-mime-type-of-a-http-response
+[ex-mime-from-string]: web/mime.md#从字符串获取-mime-类型
+[ex-mime-from-filename]: web/mime.md#从文件名获取-mime-类型
+[ex-http-response-mime-type]: web/mime.md#解析-http-响应的-mime-类型
 
 {{#include web/clients.md}}
 

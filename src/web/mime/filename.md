@@ -1,4 +1,4 @@
-## Get MIME type from filename
+## 从文件名获取 MIME 类型
 
 [![mime-badge]][mime] [![cat-encoding-badge]][cat-encoding]
 
