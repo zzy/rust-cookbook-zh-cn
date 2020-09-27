@@ -1,4 +1,5 @@
-## Vector norm
+## Vector 范数
+
 [![ndarray-badge]][ndarray]
 
 This recipe demonstrates use of the [`Array1`] type, [`ArrayView1`] type,

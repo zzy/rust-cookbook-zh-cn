@@ -1,4 +1,4 @@
-## Mathematical functions
+## 复数的数学函数
 
 [![num-badge]][num] [![cat-science-badge]][cat-science]
 

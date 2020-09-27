@@ -1,4 +1,5 @@
-## Adding matrices
+## 矩阵相加
+
 [![ndarray-badge]][ndarray] [![cat-science-badge]][cat-science]
 
 Creates two 2-D matrices with [`ndarray::arr2`] and sums them element-wise.

@@ -1,4 +1,4 @@
-### Standard deviation
+### 计算标准偏差
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 

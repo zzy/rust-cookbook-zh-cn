@@ -1,4 +1,5 @@
-## Multiply a scalar with a vector with a matrix
+## 标量、vector、矩阵相乘
+
 [![ndarray-badge]][ndarray] [![cat-science-badge]][cat-science]
 
 Creates a 1-D array (vector) with [`ndarray::arr1`] and a 2-D array (matrix)

@@ -1,4 +1,5 @@
-## Vector comparison
+## Vector 比较
+
 [![ndarray-badge]][ndarray]
 
 The [ndarray] crate supports a number of ways to create arrays -- this recipe creates 

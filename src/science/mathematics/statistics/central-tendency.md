@@ -1,4 +1,4 @@
-### Measures of central tendency
+### 集中趋势量数
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 

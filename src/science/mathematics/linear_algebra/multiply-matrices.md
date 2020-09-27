@@ -1,4 +1,5 @@
-## Multiplying matrices
+## 矩阵相乘
+
 [![ndarray-badge]][ndarray] [![cat-science-badge]][cat-science]
 
 Creates two matrices with [`ndarray::arr2`] and performs matrix multiplication on them with [`ndarray::ArrayBase::dot`].

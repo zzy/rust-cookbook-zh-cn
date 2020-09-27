@@ -1,4 +1,4 @@
-## Verifying tan is equal to sin divided by cos
+## 验证正切（tan）等于正弦（sin）除以余弦（cos）
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 

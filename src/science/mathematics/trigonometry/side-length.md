@@ -1,4 +1,4 @@
-## Calculating the side length of a triangle
+## 计算三角形的边长
 
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
