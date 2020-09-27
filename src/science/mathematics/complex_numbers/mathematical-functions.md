@@ -1,12 +1,14 @@
 ## 复数的数学函数
 
+<!--
+> [science/mathematics/complex_numbers/mathematical-functions.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/complex_numbers/mathematical-functions.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![num-badge]][num] [![cat-science-badge]][cat-science]
 
-Complex numbers have a range of interesting properties when it comes to
-how they interact with other mathematical functions, most notibly the family
-of sine functions as well as the number e. To use these functions with
-complex numbers, the Complex type has a few built in
-functions, all of which can be found here: [`num::complex::Complex`].
+在与其他数学函数交互时，复数有一系列有趣的特性，尤其是和自然常数（欧拉数） e 类似的正弦相关函数。要将这些函数与复数一起使用，复数类型有几个内置函数，详细请参阅 [`num::complex::Complex`]。
 
 ```rust,edition2018
 use std::f64::consts::PI;

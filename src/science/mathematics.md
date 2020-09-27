@@ -22,7 +22,7 @@
 [vector-comparison]: /science/mathematics/linear_algebra.md#vector-比较
 [add-matrices]: /science/mathematics/linear_algebra.md#矩阵相加
 [multiply-matrices]: /science/mathematics/linear_algebra.md#矩阵相乘
-[multiply-scalar-vector-matrix]: /science/mathematics/linear_algebra.md#标量-vector-矩阵相乘
+[multiply-scalar-vector-matrix]: /science/mathematics/linear_algebra.md#标量vector矩阵相乘
 [invert-matrix]: /science/mathematics/linear_algebra.md#矩阵求逆
 [deserialize-matrix]: /science/mathematics/linear_algebra.md#反序列化矩阵
 
