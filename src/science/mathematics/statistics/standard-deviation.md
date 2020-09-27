@@ -63,4 +63,4 @@ fn main() {
 
 [sqrt]: https://doc.rust-lang.org/std/primitive.f32.html#method.sqrt
 [sum]: https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.sum
-[mean]: central-tendency.md
+[mean]: #集中趋势度量

@@ -1,8 +1,14 @@
 ## 计算三角形的边长
 
+<!--
+> [science/mathematics/trigonometry/side-length.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/trigonometry/side-length.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![std-badge]][std] [![cat-science-badge]][cat-science]
 
-Calculates the length of the hypotenuse of a right-angle triangle with an angle of 2 radians and opposite side length of 80.
+计算直角三角形斜边的长度，其中斜边的角度为 2 弧度，对边长度为 80。
 
 ```rust,edition2018
 fn main() {
