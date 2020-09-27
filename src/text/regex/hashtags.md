@@ -1,4 +1,4 @@
-## 从文本中提取标签 #Hashtags 的列表
+## 从文本提取标签 #Hashtags 的列表
 
 [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] [![cat-text-processing-badge]][cat-text-processing]
 

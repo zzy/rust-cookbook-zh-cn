@@ -1,4 +1,4 @@
-## Verify and extract login from an email address
+## 验证并提取电子邮件登录信息
 
 [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] [![cat-text-processing-badge]][cat-text-processing]
 
