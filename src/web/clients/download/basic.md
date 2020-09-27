@@ -1,4 +1,4 @@
-## Download a file to a temporary directory
+## 下载文件到临时目录
 
 [![reqwest-badge]][reqwest] [![tempdir-badge]][tempdir] [![cat-net-badge]][cat-net] [![cat-filesystem-badge]][cat-filesystem]
 
