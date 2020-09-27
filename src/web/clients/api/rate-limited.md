@@ -1,4 +1,4 @@
-## Handle a rate-limited API
+## 处理速率限制 API
 
 [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![cat-net-badge]][cat-net]
 

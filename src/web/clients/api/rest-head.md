@@ -1,4 +1,4 @@
-## Check if an API resource exists
+## 检查 API 资源是否存在
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 

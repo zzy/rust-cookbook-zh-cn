@@ -1,4 +1,4 @@
-## Set custom headers and URL parameters for a REST request
+## 为 REST 请求设置自定义消息头和 URL 参数
 
 [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![url-badge]][url] [![cat-net-badge]][cat-net]
 

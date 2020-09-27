@@ -1,4 +1,4 @@
-## Make a partial download with HTTP range headers
+## 使用 HTTP range 请求头进行部分下载
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 

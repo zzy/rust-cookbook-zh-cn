@@ -1,4 +1,4 @@
-## Make a HTTP GET request
+## 发出 HTTP GET 请求
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 

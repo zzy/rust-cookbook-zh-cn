@@ -1,4 +1,4 @@
-## Create and delete Gist with GitHub API
+## 使用 GitHub API 创建和删除 Gist
 
 [![reqwest-badge]][reqwest] [![serde-badge]][serde] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 

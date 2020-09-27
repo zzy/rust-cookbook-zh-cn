@@ -1,4 +1,4 @@
-## Consume a paginated RESTful API
+## 使用 RESTful API 分页
 
 [![reqwest-badge]][reqwest] [![serde-badge]][serde] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 

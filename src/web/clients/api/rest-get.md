@@ -1,4 +1,4 @@
-## Query the GitHub API
+## 查询 GitHub API
 
 [![reqwest-badge]][reqwest] [![serde-badge]][serde] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 

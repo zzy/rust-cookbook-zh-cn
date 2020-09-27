@@ -1,4 +1,4 @@
-## POST a file to paste-rs
+## POST 文件到 paste-rs
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
