@@ -8,7 +8,7 @@
 
 [![num-badge]][num] [![cat-science-badge]][cat-science]
 
-在与其他数学函数交互时，复数有一系列有趣的特性，尤其是和自然常数（欧拉数） e 类似的正弦相关函数。要将这些函数与复数一起使用，复数类型有几个内置函数，详细请参阅 [`num::complex::Complex`]。
+在与其他数学函数交互时，复数有一系列有趣的特性，尤其是和自然常数 e（欧拉数）类似的正弦相关函数。要将这些函数与复数一起使用，复数类型有几个内置函数，详细请参阅 [`num::complex::Complex`]。
 
 ```rust,edition2018
 use std::f64::consts::PI;

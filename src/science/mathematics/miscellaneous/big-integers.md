@@ -1,8 +1,14 @@
 ## 大数
 
+<!--
+> [science/mathematics/miscellaneous/big-integers.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics/miscellaneous/big-integers.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![num-badge]][num] [![cat-science-badge]][cat-science]
 
-Calculation for integers exceeding 128 bits are possible with [`BigInt`].
+[`BigInt`] 使得超过 128 位的大整数计算成为可能。
 
 ```rust,edition2018
 use num::bigint::{BigInt, ToBigInt};
