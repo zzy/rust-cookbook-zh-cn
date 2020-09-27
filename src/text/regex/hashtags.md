@@ -1,11 +1,16 @@
-## 从文本提取标签 #Hashtags 的列表
+## 从文本提取标签元素唯一的列表
+
+<!--
+> [text/regex/hashtags.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/text/regex/hashtags.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
 
 [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] [![cat-text-processing-badge]][cat-text-processing]
 
-Extracts, sorts, and deduplicates list of hashtags from text.
+本实例展示从文本中提取、排序和去除标签列表的重复元素。
 
-The hashtag regex given here only catches Latin hashtags that start with a
-letter. The complete [twitter hashtag regex] is much more complicated.
+这里给出的标签正则表达式只捕获以字母开头的拉丁语标签，完整的 [twitter 标签正则表达式][twitter hashtag regex]要复杂得多。
 
 ```rust,edition2018
 use lazy_static::lazy_static;

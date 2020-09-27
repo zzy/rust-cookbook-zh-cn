@@ -1,9 +1,14 @@
 ## 验证并提取电子邮件登录信息
 
+<!--
+> [text/regex/email.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/text/regex/email.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] [![cat-text-processing-badge]][cat-text-processing]
 
-Validates that an email address is formatted correctly, and extracts everything
-before the @ symbol.
+验证电子邮件地址的格式是否正确，并提取 @ 符号之前的所有内容。
 
 ```rust,edition2018
 use lazy_static::lazy_static;
