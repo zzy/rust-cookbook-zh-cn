@@ -33,7 +33,7 @@ fn main() -> Result<()> {
 
 ```
 
-## Async
+### 异步
 
 A similar approach can be used by including the [`tokio`] executor
 to make the main function asynchronous, retrieving the same information.
