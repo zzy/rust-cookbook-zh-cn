@@ -1,15 +1,16 @@
 ## 使用 GitHub API 创建和删除 Gist
 
+<!--
+> [web/clients/api/rest-post.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/api/rest-post.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![serde-badge]][serde] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 
-Creates a gist with POST request to GitHub [gists API v3](https://developer.github.com/v3/gists/)
-using [`Client::post`] and removes it with DELETE request using [`Client::delete`].
+使用 [`Client::post`] 创建一个 POST 请求提交到 GitHub [gists API v3](https://docs.github.com/cn/free-pro-team@latest/rest/reference/gists) 接口的 gist，并使用 [`Client::delete`] 使用 DELETE 请求删除它。
 
-The [`reqwest::Client`] is responsible for details of both requests including
-URL, body and authentication. The POST body from [`serde_json::json!`] macro
-provides arbitrary JSON body. Call to [`RequestBuilder::json`] sets the request
-body. [`RequestBuilder::basic_auth`] handles authentication. The call to
-[`RequestBuilder::send`] synchronously executes the requests.
+[`reqwest::Client`] 负责这两个请求的详细信息，包括：URL、消息体（body）和身份验证。[`serde_json::json!`] 宏的 POST 主体可以提供任意形式的 JSON 主体，通过调用 [`RequestBuilder::json`] 设置请求主体，[`RequestBuilder::basic_auth`] 处理身份验证。本实例中调用 [`RequestBuilder::send`] 方法同步执行请求。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
@@ -66,9 +67,7 @@ async fn main() ->  Result<()> {
 }
 ```
 
-The example uses [HTTP Basic Auth] in order to authorize access to [GitHub API].
-Typical use case would employ one of the much more complex [OAuth] authorization
-flows.
+实例中使用 [HTTP 基本认证][HTTP Basic Auth] 为了授权访问 [GitHub API]。实际应用中或许将使用一个更为复杂的 [OAuth] 授权流程。
 
 [`Client::delete`]: https://docs.rs/reqwest/*/reqwest/struct.Client.html#method.delete
 [`Client::post`]: https://docs.rs/reqwest/*/reqwest/struct.Client.html#method.post
@@ -78,6 +77,6 @@ flows.
 [`reqwest::Client`]: https://docs.rs/reqwest/*/reqwest/struct.Client.html
 [`serde_json::json!`]: https://docs.rs/serde_json/*/serde_json/macro.json.html
 
-[GitHub API]: https://developer.github.com/v3/auth/
+[GitHub API]: https://docs.github.com/cn/free-pro-team@latest/rest/overview/other-authentication-methods
 [HTTP Basic Auth]: https://tools.ietf.org/html/rfc2617
 [OAuth]: https://oauth.net/getting-started/

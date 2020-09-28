@@ -1,11 +1,14 @@
-## 处理速率限制 API
+## 处理速率受限 API
+
+<!--
+> [web/clients/api/rate-limited.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/api/rate-limited.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
 
 [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![cat-net-badge]][cat-net]
 
-This example uses the [GitHub API - Rate limiting], as an example of how to
-handle remote server errors.  This example uses the [`hyper::header!`] macro
-to parse the response header and checks for [`reqwest::StatusCode::Forbidden`].
-If the response exceeds the rate limit, the example waits and retries.
+此实例使用 [GitHub API - 速率限制](https://docs.github.com/cn/free-pro-team@latest/rest/reference/rate-limit)展示如何处理远程服务器错误。本实例使用 [`hyper::header!`] 宏来解析响应头并检查 [`reqwest::StatusCode::Forbidden`]。如果响应超过速率限制，则将等待并重试。
 
 ```rust,edition2018,no_run
 # use error_chain::error_chain;

@@ -1,10 +1,14 @@
 ## 使用 RESTful API 分页
 
+<!--
+> [web/clients/api/paginated.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/api/paginated.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![serde-badge]][serde] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 
-Wraps a paginated web API in a convenient Rust iterator. The iterator lazily
-fetches the next page of results from the remote server as it arrives at the end
-of each page.
+可以将分页的 web API 方便地包裹在 Rust 迭代器中，当到达每一页的末尾时，迭代器会从远程服务器加载下一页结果。
 
 ```rust,edition2018,no_run
 use reqwest::Result;

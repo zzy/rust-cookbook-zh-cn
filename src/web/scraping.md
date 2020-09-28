@@ -1,4 +1,4 @@
-# 萃取链接
+# 提取链接
 
 <!--
 > [web/scraping.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/scraping.md)

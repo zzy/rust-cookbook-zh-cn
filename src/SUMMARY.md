@@ -64,7 +64,7 @@
   - [正则表达式](text/regex.md)
   - [字符串解析](text/string_parsing.md)
 - [Web 编程](web.md)
-  - [萃取链接](web/scraping.md)
+  - [提取链接](web/scraping.md)
   - [URL](web/url.md)
   - [媒介类型](web/mime.md)
   - [客户端](web/clients.md)
