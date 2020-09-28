@@ -8,7 +8,7 @@
 
 [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![url-badge]][url] [![cat-net-badge]][cat-net]
 
-本示例中为 HTTP GET 请求设置标准的和自定义的 HTTP 消息标头以及 URL 参数。使用 [`hyper::header!`] 宏创建 `XPoweredBy` 类型的自定义消息标头。
+本实例中为 HTTP GET 请求设置标准的和自定义的 HTTP 消息标头以及 URL 参数。使用 [`hyper::header!`] 宏创建 `XPoweredBy` 类型的自定义消息标头。
 
 使用 [`Url::parse_with_params`] 构建复杂的 URL。使用 [`RequestBuilder::header`] 方法设置标准消息标头 [`header::UserAgent`]、[`header::Authorization`]，以及自定义类型 `XPoweredBy`，然后使用 [`RequestBuilder::send`] 发起请求。
 
