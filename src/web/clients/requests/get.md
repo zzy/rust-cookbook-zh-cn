@@ -1,18 +1,14 @@
 ## 发出 HTTP GET 请求
 
 <!--
-> [web/clients/download/post-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/download/post-file.md)
+> [web/clients/requests/get.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/requests/get.md)
 > <br />
 > commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
 -->
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
-Parses the supplied URL and makes a synchronous HTTP GET request
-with [`reqwest::blocking::get`]. Prints obtained [`reqwest::blocking::Response`]
-status and headers. Reads HTTP response body into an allocated [`String`]
-using [`read_to_string`].
-
+解析提供的 URL，并使用 [`reqwest::blocking::get`] 发起同步 HTTP GET 请求。打印获取的响应消息状态和标头 [`reqwest::blocking::Response`]。使用 [`read_to_string`] 将 HTTP 响应消息主体正文读入到指派的字符串 [`String`]。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
@@ -41,14 +37,11 @@ fn main() -> Result<()> {
 
 ### 异步
 
-A similar approach can be used by including the [`tokio`] executor
-to make the main function asynchronous, retrieving the same information.
+常见的方法是通过包含 [`tokio`] 在内的类似异步执行器，使主函数执行异步，但检索处理相同的信息。
 
-In this example, [`tokio::main`] handles all the heavy executor setup
-and allows sequential code implemented without blocking until `.await`.
+本实例中，[`tokio::main`] 处理所有繁重的执行器设置，并允许在 `.await` 之前不阻塞的按顺序执行代码。
 
-Uses the asynchronous versions of [reqwest], both [`reqwest::get`] and
-[`reqwest::Response`].
+也可以使用 [reqwest](https://docs.rs/crate/reqwest/0.10.8) 的异步版本，其中 [`reqwest::get`] 和 [`reqwest::Response`] 都是异步的。
 
 ```rust,no_run
 use error_chain::error_chain;

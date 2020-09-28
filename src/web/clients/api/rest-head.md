@@ -8,7 +8,7 @@
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
-使用消息头 HEAD 请求（([`Client::head`]）查询 GitHub 用户端接口，然后检查响应代码以确定是否成功。这是一种无需接收 HTTP 响应消息主体，即可快速查询 rest 资源的方法。使用 [`ClientBuilder::timeout`] 方法配置的 [`reqwest::Client`] 结构体将确保请求不会超时。
+使用消息标头 HEAD 请求（([`Client::head`]）查询 GitHub 用户端接口，然后检查响应代码以确定是否成功。这是一种无需接收 HTTP 响应消息主体，即可快速查询 rest 资源的方法。使用 [`ClientBuilder::timeout`] 方法配置的 [`reqwest::Client`] 结构体将确保请求不会超时。
 
 由于 [`ClientBuilder::build`] 和 [`RequestBuilder::send`] 都返回错误类型 [`reqwest::Error`]，所以便捷的 [`reqwest::Result`] 类型被用于主函数的返回类型。
 

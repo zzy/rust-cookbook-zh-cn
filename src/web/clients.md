@@ -11,7 +11,7 @@
 | 实例名称 | Crates | 类别 |
 |--------|--------|------------|
 | [发出 HTTP GET 请求][ex-url-basic] | [![reqwest-badge]][reqwest] | [![cat-net-badge]][cat-net] |
-| [为 REST 请求设置自定义消息头和 URL 参数][ex-rest-custom-params] | [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![url-badge]][url] [![cat-net-badge]][cat-net] |
+| [为 REST 请求设置自定义消息标头和 URL 参数][ex-rest-custom-params] | [![reqwest-badge]][reqwest] [![hyper-badge]][hyper] [![url-badge]][url] [![cat-net-badge]][cat-net] |
 
 ### Web API 调用
 
@@ -32,7 +32,7 @@
 | [POST 文件到 paste-rs][ex-file-post] | [![reqwest-badge]][reqwest] | [![cat-net-badge]][cat-net] |
 
 [ex-url-basic]: /web/clients/requests.md#发出-http-get-请求
-[ex-rest-custom-params]: /web/clients/requests.md#为-rest-请求设置自定义消息头和-url-参数
+[ex-rest-custom-params]: /web/clients/requests.md#为-rest-请求设置自定义消息标头和-url-参数
 
 [ex-rest-get]: /web/clients/apis.md#查询-github-api
 [ex-rest-head]: /web/clients/apis.md#检查-api-资源是否存在
