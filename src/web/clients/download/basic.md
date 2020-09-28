@@ -1,13 +1,16 @@
 ## 下载文件到临时目录
 
+<!--
+> [web/clients/download/basic.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/download/basic.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![tempdir-badge]][tempdir] [![cat-net-badge]][cat-net] [![cat-filesystem-badge]][cat-filesystem]
 
-Creates a temporary directory with [`tempfile::Builder`] and downloads
-a file over HTTP using [`reqwest::get`] asynchronously.
+使用 [`tempfile::Builder`] 创建一个临时目录，并使用 [`reqwest::get`] 通过 HTTP 协议异步下载文件。
 
-Creates a target [`File`] with name obtained from [`Response::url`] within
-[`tempdir()`] and copies downloaded data into it with [`io::copy`].
-The temporary directory is automatically removed on program exit.
+使用 [`Response::url`] 方法内部的 [`tempdir()`] 方法获取文件名字，使用  [`File`]  结构体创建目标文件，并使用 [`io::copy`] 将下载的数据复制到文件中。程序退出时，会自动删除临时目录。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;

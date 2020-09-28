@@ -1,13 +1,14 @@
 ## POST 文件到 paste-rs
 
+<!--
+> [web/clients/download/post-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/download/post-file.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
-[`reqwest::Client`] establishes a connection to https://paste.rs
-following the [`reqwest::RequestBuilder`] pattern.  Calling [`Client::post`]
-with a URL establishes the destination, [`RequestBuilder::body`] sets the
-content to send by reading the file, and [`RequestBuilder::send`] blocks until
-the file uploads and the response returns.  [`read_to_string`] returns the
-response and displays in the console.
+本实例使用 [`reqwest::Client`] 建立与 https://paste.rs 的连接，遵循 [`reqwest::RequestBuilder`] 结构体模式。调用 [`Client::post`] 方法，以 URL 为参数连接目标，[`RequestBuilder::body`] 通过读取文件设置要发送的内容，[`RequestBuilder::send`] 方法在文件上传过程中将一直阻塞，直到返回响应消息。最后，[`read_to_string`] 返回响应消息并显示在控制台中。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;

@@ -1,5 +1,11 @@
 ## 发出 HTTP GET 请求
 
+<!--
+> [web/clients/download/post-file.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/download/post-file.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
 Parses the supplied URL and makes a synchronous HTTP GET request

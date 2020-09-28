@@ -1,14 +1,18 @@
 ## 使用 HTTP range 请求头进行部分下载
 
+<!--
+> [web/clients/download/partial.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/download/partial.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
 
-Uses [`reqwest::blocking::Client::head`] to get the [Content-Length] of the response.
+使用 [`reqwest::blocking::Client::head`] 获取响应的[消息主体的大小][Content-Length]（即消息主体内容长度）。
 
-The code then uses [`reqwest::blocking::Client::get`] to download the content in
-chunks of 10240 bytes, while printing progress messages. This exmple uses the synchronous
-reqwest module.  The [Range] header specifies the chunk size and position.
+然后，使用 [`reqwest::blocking::Client::get`] 下载 10240 字节的内容，同时打印进度消息。本实例使用同步的 reqwest 模块，[消息范围][Range]标头指定响应的消息块大小和位置。
 
-The Range header is defined in [RFC7233][HTTP Range RFC7233].
+[RFC7233][HTTP Range RFC7233] 中定义了[消息范围][Range]标头（Request For Comments，是一系列以编号排定的文件。文件收集了有关互联网相关信息，以及 UNIX 和互联网社区的软件文件）。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
@@ -93,7 +97,7 @@ fn main() -> Result<()> {
 
 [`reqwest::blocking::Client::get`]: https://docs.rs/reqwest/*/reqwest/blocking/struct.Client.html#method.get
 [`reqwest::blocking::Client::head`]: https://docs.rs/reqwest/*/reqwest/blocking/struct.Client.html#method.head
-[Content-Length]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length
-[Range]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range
+[Content-Length]: https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Length
+[Range]: https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Range
 
 [HTTP Range RFC7233]: https://tools.ietf.org/html/rfc7233#section-3.1
