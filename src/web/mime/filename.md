@@ -1,5 +1,11 @@
 ## 从文件名获取 MIME 类型
 
+<!--
+> [web/mime/filename.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/mime/filename.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![mime-badge]][mime] [![cat-encoding-badge]][cat-encoding]
 
 The following example shows how to return the correct MIME type from a given

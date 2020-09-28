@@ -12,7 +12,9 @@
 
 然后，使用 [`reqwest::blocking::Client::get`] 下载 10240 字节的内容，同时打印进度消息。本实例使用同步的 reqwest 模块，[消息范围][Range]标头指定响应的消息块大小和位置。
 
-[RFC7233][HTTP Range RFC7233] 中定义了[消息范围][Range]标头（Request For Comments，是一系列以编号排定的文件。文件收集了有关互联网相关信息，以及 UNIX 和互联网社区的软件文件）。
+[RFC7233][HTTP Range RFC7233] 中定义了[消息范围][Range]标头。
+
+> 译者注：RFC（Request For Comments）是一系列以编号排定的文件。文件收集了有关互联网相关信息，以及 UNIX 和互联网社区的软件文件。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
