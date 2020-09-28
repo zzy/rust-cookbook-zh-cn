@@ -41,7 +41,7 @@ fn main() -> Result<()> {
 
 本实例中，[`tokio::main`] 处理所有繁重的执行器设置，并允许在 `.await` 之前不阻塞的按顺序执行代码。
 
-也可以使用 [reqwest](https://docs.rs/crate/reqwest/0.10.8) 的异步版本，其中 [`reqwest::get`] 和 [`reqwest::Response`] 都是异步的。
+也可以使用 [reqwest](https://docs.rs/crate/reqwest/0.10.8) 的异步版本，其请求函数 [`reqwest::get`] 和响应结构体 [`reqwest::Response`] 都是异步的。
 
 ```rust,no_run
 use error_chain::error_chain;
