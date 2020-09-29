@@ -1,15 +1,18 @@
 ## 解析 HTTP 响应的 MIME 类型
 
+<!--
+> [web/mime/request.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/mime/request.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![mime-badge]][mime] [![cat-net-badge]][cat-net] [![cat-encoding-badge]][cat-encoding]
 
-When receiving a HTTP reponse from `reqwest` the [MIME type] or media type may be
-found in the [Content-Type] header. [`reqwest::header::HeaderMap::get`] retrieves
-the header as a [`reqwest::header::HeaderValue`], which can be converted to a
-string. The `mime` crate can then parse that, yielding a [`mime::Mime`] value.
+当从 `reqwest` 接收到 HTTP 响应时，[MIME 类型][MIME type]或媒体类型可以在实体头部的 [Content-Type] 标头中找到。[`reqwest::header::HeaderMap::get`] 方法将标头检索为结构体 [`reqwest::header::HeaderValue`]，结构体可以转换为字符串。然后 `mime` crate 可以解析它，生成 [`mime::Mime`] 值。
 
-The [`mime`] crate also defines some commonly used MIME types.
+[`mime`] crate 也定义了一些常用的 MIME 类型。
 
-Note that the [`reqwest::header`] module is exported from the [`http`] crate.
+请注意：[`reqwest::header`] 模块是从 [`http`] crate 导出的。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
@@ -58,5 +61,5 @@ async fn main() -> Result<()> {
 [`reqwest::header::HeaderValue`]: https://docs.rs/reqwest/*/reqwest/header/struct.HeaderValue.html
 [`reqwest::header`]: https://docs.rs/reqwest/*/reqwest/header/index.html
 
-[Content-Type]: https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Type
-[MIME type]: https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/MIME_types
+[Content-Type]: https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Content-Type
+[MIME type]: https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/MIME_types
