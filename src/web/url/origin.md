@@ -1,9 +1,14 @@
 ## 提取 URL 源（scheme / host / port）
 
+<!--
+> [web/url/origin.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/url/origin.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 
-The [`Url`] struct exposes various methods to extract information about the URL
-it represents.
+[`Url`] 结构体定义了多种方法，以便于提取有关它所表示的 URL 的信息。
 
 ```rust,edition2018
 
@@ -23,7 +28,7 @@ fn main() -> Result<(), ParseError> {
 }
 ```
 
-[`origin`] produces the same result.
+[`origin`] 方法产生相同的结果。
 
 ```rust,edition2018
 # use error_chain::error_chain;

@@ -1,8 +1,14 @@
 ## 从基本 URL 创建新 URLs
 
+<!--
+> [web/url/new.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/url/new.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 
-The [`join`] method creates a new URL from a base and relative path.
+[`join`] 方法从基路径和相对路径创建新的 URL。
 
 ```rust,edition2018
 

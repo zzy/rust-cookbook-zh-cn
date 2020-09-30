@@ -1,8 +1,14 @@
 ## 从 URL 移除片段标识符和查询对
 
+<!--
+> [web/url/fragment.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/url/fragment.md)
+> <br />
+> commit b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+-->
+
 [![url-badge]][url] [![cat-net-badge]][cat-net]
 
-Parses [`Url`] and slices it with [`url::Position`] to strip unneeded URL parts.
+解析 [`Url`] 结构体，并使用 [`url::Position`] 枚举对其进行切片，以去除不需要的 URL 片段。
 
 ```rust,edition2018
 
