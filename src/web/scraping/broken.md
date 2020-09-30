@@ -1,15 +1,16 @@
 ## 检查网页死链
 
+<!--
+> [web/scraping/broken.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/scraping/broken.md)
+> <br />
+> commit 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+-->
+
 [![reqwest-badge]][reqwest] [![select-badge]][select] [![url-badge]][url] [![cat-net-badge]][cat-net]
 
-Call `get_base_url` to retrieve the base URL. If the document has a base tag,
-get the href [`attr`] from base tag. [`Position::BeforePath`] of the original
-URL acts as a default.
+调用 `get_base_url` 方法检索 `base URL`，如果 HTML 文档有 `base` 标签，从 `base` 标记获取 href [`attr`]，初始 URL 的默认值是 [`Position::BeforePath`]。
 
-Iterates through links in the document and creates a [`tokio::spawn`] task that will 
-parse an individual link with [`url::ParseOptions`] and [`Url::parse`]). 
-The task makes a request to the links with [reqwest] and verifies
-[`StatusCode`].  Then the tasks `await` completion before ending the program.
+遍历 HTML 文档中的链接，并创建一个 [`tokio::spawn`] 任务，该任务将使用 [`url::ParseOptions`] 结构体和 [`Url::parse`] 方法解析单个链接。任务执行中，使用 [reqwest] 向链接发起请求，并验证状态码结构体 [`StatusCode`]。实例中使用 `await` 异步等待任务完成，然后结束程序。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;

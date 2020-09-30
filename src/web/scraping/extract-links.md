@@ -1,12 +1,14 @@
 ## 从 HTML 网页中提取所有链接
 
+<!--
+> [web/scraping/extract-links.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/scraping/extract-links.md)
+> <br />
+> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+-->
+
 [![reqwest-badge]][reqwest] [![select-badge]][select] [![cat-net-badge]][cat-net]
 
-Use [`reqwest::get`] to perform a HTTP GET request and then use
-[`Document::from_read`] to parse the response into a HTML document.
-[`find`] with the criteria of [`Name`] is "a" retrieves all links.
-Call [`filter_map`] on the [`Selection`] retrieves URLs
-from links that have the "href" [`attr`] (attribute).
+使用 [`reqwest::get`] 执行 HTTP GET 请求，然后使用 [`Document::from_read`] 将响应信息解析为 HTML 文档。以“a”（锚元素）作为结构体 [`Name`] 的参数，将结构体 [`Name`] 作为条件，使用 [`find`] 方法检索所有链接。在结构体 [`Selection`] 上调用 [`filter_map`] 方法，从具有 “href” [`attr`]（属性）的链接检索所有 URL。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
