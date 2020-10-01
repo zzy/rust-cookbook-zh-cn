@@ -14,7 +14,7 @@
 | [从文本提取标签元素唯一的列表][ex-extract-hashtags] | [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] | [![cat-text-processing-badge]][cat-text-processing] |
 | [从文本提取电话号码][ex-phone] | [![regex-badge]][regex] | [![cat-text-processing-badge]][cat-text-processing] |
 | [通过匹配多个正则表达式来筛选日志文件][ex-regex-filter-log] | [![regex-badge]][regex] | [![cat-text-processing-badge]][cat-text-processing]
-| [文本模式提换][ex-regex-replace-named] | [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] | [![cat-text-processing-badge]][cat-text-processing] |
+| [文本模式替换][ex-regex-replace-named] | [![regex-badge]][regex] [![lazy_static-badge]][lazy_static] | [![cat-text-processing-badge]][cat-text-processing] |
 
 ## 字符串解析
 
@@ -27,7 +27,7 @@
 [ex-extract-hashtags]: text/regex.md#从文本提取标签元素唯一的列表
 [ex-phone]: text/regex.md#从文本提取电话号码
 [ex-regex-filter-log]: text/regex.md#通过匹配多个正则表达式来筛选日志文件
-[ex-regex-replace-named]: text/regex.md#文本模式提换
+[ex-regex-replace-named]: text/regex.md#文本模式替换
 
 [ex-unicode-graphemes]: text/string_parsing.md#收集-unicode-字符
 [string_parsing-from_str]: text/string_parsing.md#自定义结构体并实现-fromstr-trait

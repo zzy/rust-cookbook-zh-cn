@@ -1,4 +1,4 @@
-## 文本模式提换
+## 文本模式替换
 
 <!--
 > [text/regex/replace.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/text/regex/replace.md)
