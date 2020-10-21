@@ -6,7 +6,7 @@
 > commit c5f6880ac0c514faf863aa7e86007fda0dd5e0bb - 2019.01.11
 -->
 
-[Rust 实践指南](intro.md)
+[Rust 实践指南（第一版）](intro.md)
 [关于本书](about.md)
 - [算法](algorithms.md)
   - [生成随机值](algorithms/randomness.md)
