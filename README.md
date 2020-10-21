@@ -16,7 +16,7 @@
 
 ## 在线阅读
 
-在线阅读地址：[**《Rust 实践指南》** - http://rust-cookbook.budshome.com](http://rust-cookbook.budshome.com)。
+在线阅读地址：[**《Rust 实践指南（第一版）》** - http://rust-cookbook.budshome.com](http://rust-cookbook.budshome.com)。
 
 ## 离线阅读
 
