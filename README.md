@@ -1,4 +1,4 @@
-# Rust 实践指南 &emsp; [![Build Status travis]][travis]
+# Rust 实践指南（第一版） &emsp; [![Build Status travis]][travis]
 
 [Build Status travis]: https://api.travis-ci.com/zzy/rust-cookbook-zh-cn.svg?branch=master
 [travis]: https://travis-ci.com/zzy/rust-cookbook-zh-cn

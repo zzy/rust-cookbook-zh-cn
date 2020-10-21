@@ -1,4 +1,4 @@
-# Rust 实践指南
+# Rust 实践指南（第一版）
 
 <!--
 > [intro.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/intro.md)
