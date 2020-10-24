@@ -33,7 +33,7 @@ fn main() {
         Person::new("John".to_string(), 1),
     ];
 
-    // Sort people by derived natural order (Name and age)
+    // 根据获得的自然顺序（name 和 age）对 people 进行排序
     people.sort();
 
     assert_eq!(
@@ -44,7 +44,7 @@ fn main() {
             Person::new("Zoe".to_string(), 25),
         ]);
 
-    // Sort people by age
+    // 根据 age 值对 people 进行排序
     people.sort_by(|a, b| b.age.cmp(&a.age));
 
     assert_eq!(
