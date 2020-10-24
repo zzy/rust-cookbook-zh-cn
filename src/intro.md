@@ -10,12 +10,14 @@
 
 了解更多关于《Rust Cookbook 中文版》一书的信息，请阅读[关于本书](about.md)，包括：如何阅读本书的提示、如何使用实例示例，以及关于注释的约定。
 
-> 注1：《Rust Cookbook 中文版》翻译自 rust-lang-nursery 组织撰写的 _"A Rust Cookbook"_，感谢 rust-lang-nursery 组织的无私奉献！
+> 注1：《Rust Cookbook 中文版》翻译自 rust-lang-nursery 团队撰写的 _"A Rust Cookbook"_，感谢 rust-lang-nursery 团队的无私奉献！
 
-> 注2：《Rust Cookbook 中文版》计划为两个阶段。<br>
-> 第一个阶段：经仔细斟酌，形成专业、通俗、容易理解的 Rust 生态实践指南中文版本；<br>
-> 第二个阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。<br>
-> 若需要，欢迎联系我：linshi@budshome.com。
+> 注2：《Rust Cookbook 中文版》计划为两个阶段：<br>
+> 第一阶段：经仔细斟酌，形成专业、通俗、容易理解的 Rust 生态实践指南中文版本；<br>
+> 第二阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。<br>
+> 目前，第一阶段已经完成，并且和 rust-lang-nursery 团队项目同步更新。<br>
+> 第二阶段正在进行中，但可能需要另开一个开源项目，欢迎参与。<br>
+> 若需要，欢迎联系：linshi@budshome.com。
 
 ## 做贡献
 
