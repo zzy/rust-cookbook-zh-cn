@@ -1,4 +1,4 @@
-# Rust 实践指南
+# Rust Cookbook 中文版
 
 <!--
 > [SUMMARY.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/SUMMARY.md)
@@ -6,7 +6,7 @@
 > commit c5f6880ac0c514faf863aa7e86007fda0dd5e0bb - 2019.01.11
 -->
 
-[Rust 实践指南（第一版）](intro.md)
+[总览](intro.md)
 [关于本书](about.md)
 - [算法](algorithms.md)
   - [生成随机值](algorithms/randomness.md)
