@@ -23,7 +23,7 @@
 
 《Rust Cookbook 中文版》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此欢迎你做出贡献。
 
-欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
+    欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
 
 ### 构建和测试
 

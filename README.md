@@ -14,13 +14,12 @@
 > 第二阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。<br>
 > 目前，第一阶段已经完成，并且和 rust-lang-nursery 团队项目同步更新。<br>
 > 第二阶段正在进行中，但可能需要另开一个开源项目，欢迎参与。<br>
-> 若需要，欢迎联系：linshi@budshome.com。
+
+    欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
 
 ## 在线阅读
 
 在线阅读地址：[**《Rust Cookbook 中文版》** - http://rust-cookbook.budshome.com](http://rust-cookbook.budshome.com)。
-
-欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
 
 ## 离线阅读
 
