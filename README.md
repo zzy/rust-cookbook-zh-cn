@@ -20,6 +20,8 @@
 
 在线阅读地址：[**《Rust Cookbook 中文版》** - http://rust-cookbook.budshome.com](http://rust-cookbook.budshome.com)。
 
+欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
+
 ## 离线阅读
 
 如果你喜欢本地阅读方式，可以使用 mdBook（[中文文档](https://mdbook.budshome.com)） 进行书籍构建：
