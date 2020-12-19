@@ -17,13 +17,12 @@
 > 第二阶段：对书中代码进行详细讲解，在实际应用场景中对 Rust 生态 crate 进行分析、比较，以及拓展。<br>
 > 目前，第一阶段已经完成，并且和 rust-lang-nursery 团队项目同步更新。<br>
 > 第二阶段正在进行中，但可能需要另开一个开源项目，欢迎参与。<br>
-> 若需要，欢迎联系：linshi@budshome.com。
+
+    欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
 
 ## 做贡献
 
 《Rust Cookbook 中文版》的目的是让 Rust 程序员新手能够更容易地参与到 Rust 社区中，因此欢迎你做出贡献。
-
-    欢迎您提出宝贵意见：linshi@budshome.com，budshome（个人微信），晨曦中（微信公众号）。
 
 ### 构建和测试
 
