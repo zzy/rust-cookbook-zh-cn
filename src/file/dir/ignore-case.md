@@ -12,7 +12,7 @@
 
 一个自定义 [`MatchOptions`] 结构体被传递给 [`glob_with`] 函数，使全局命令模式下不区分大小写，同时保持其他选项的默认值 [`Default`]。
 
-> 译注：`glob` 是 `glob command` 的简写。在 shell 里面，用 `*` 等匹配模式来匹配文件，如：ls src/*.rs。
+> 译者注：`glob` 是 `glob command` 的简写。在 shell 里面，用 `*` 等匹配模式来匹配文件，如：ls src/*.rs。
 
 ```rust,edition2018,no_run
 use error_chain::error_chain;
