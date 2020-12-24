@@ -3,7 +3,7 @@
 <!--
 > [web/clients/requests/get.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/web/clients/requests/get.md)
 > <br />
-> commit dd4efa8dcd8e611326caa01c08db8f227aa909d6 - 2020.06.07
+> commit 6fe24cb266ca8c71c482fabcc4b3f7c7982438dc - 2020.12.18
 -->
 
 [![reqwest-badge]][reqwest] [![cat-net-badge]][cat-net]
