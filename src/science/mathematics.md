@@ -3,7 +3,7 @@
 <!--
 > [science/mathematics.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/science/mathematics.md)
 > <br />
-> commit a00ff787ce5e326e27dd7747bd25f8a527f7d97e - 2020.06.07
+> commit 714e9f4fcd2fc7649abd87eef00b13b3b571c655 2020.12.31
 -->
 
 ## 线性代数
