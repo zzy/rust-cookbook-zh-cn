@@ -3,7 +3,7 @@
 <!--
 > [algorithms/randomness/rand-choose.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/randomness/rand-choose.md)
 > <br />
-> commit - b61c8e588ad8445de36cd5f28e99232b5f858a41 - 2020.06.01
+> commit - 8d0d2e3fb1f26e4e79a914ea332096a0ba2ba2da - 2021.01.02
 -->
 
 [![rand-badge]][rand] [![cat-os-badge]][cat-os]
@@ -21,7 +21,7 @@ fn main() {
 
     let password: String = (0..PASSWORD_LEN)
         .map(|_| {
-            let idx = rng.gen_range(0, CHARSET.len());
+            let idx = rng.gen_range(0..CHARSET.len());
             CHARSET[idx] as char
         })
         .collect();

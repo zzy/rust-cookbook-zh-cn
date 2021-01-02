@@ -3,7 +3,7 @@
 <!--
 > [algorithms/randomness/rand-passwd.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/randomness/rand-passwd.md)
 > <br />
-> commit - 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+> commit - 8d0d2e3fb1f26e4e79a914ea332096a0ba2ba2da - 2021.01.02
 -->
 
 [![rand-badge]][rand] [![cat-os-badge]][cat-os]
@@ -18,6 +18,7 @@ fn main() {
     let rand_string: String = thread_rng()
         .sample_iter(&Alphanumeric)
         .take(30)
+        .map(char::from)
         .collect();
 
     println!("{}", rand_string);

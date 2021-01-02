@@ -3,7 +3,7 @@
 <!--
 > [algorithms/randomness/rand-range.md](https://github.com/rust-lang-nursery/rust-cookbook/blob/master/src/algorithms/randomness/rand-range.md)
 > <br />
-> commit - 203b1085212a7b857d9a29bdc6a763515e77e0f9 - 2020.06.08
+> commit - 8d0d2e3fb1f26e4e79a914ea332096a0ba2ba2da - 2021.01.02
 -->
 
 [![rand-badge]][rand] [![cat-science-badge]][cat-science]
@@ -15,8 +15,8 @@ use rand::Rng;
 
 fn main() {
     let mut rng = rand::thread_rng();
-    println!("Integer: {}", rng.gen_range(0, 10));
-    println!("Float: {}", rng.gen_range(0.0, 10.0));
+    println!("Integer: {}", rng.gen_range(0..10));
+    println!("Float: {}", rng.gen_range(0.0..10.0));
 }
 ```
 
